@@ -6,7 +6,7 @@ import TotalLookPinComponent from "./total-look-pin.component";
 export default class TotalLookComponent extends Component {
 
 	onInit(node) {
-		console.log('TotalLookComponent', node);
+		// console.log('TotalLookComponent', node);
 		this.groupLook = node.querySelector('.group--look');
 		this.picture = node.querySelector('.group--look .picture');
 		this.listing = node.querySelector('.listing--products');
@@ -49,23 +49,49 @@ export default class TotalLookComponent extends Component {
 		this.containerHeight = containerHeight;
 		this.imageWidth = imageWidth;
 		this.imageHeight = imageHeight;
-		if (this.cards.length) {
-			const width = this.cards[0].node.offsetWidth * Math.ceil(this.cards.length / 2);
-			this.listingInner.style.width = `${width}px`;
-		}
-		this.pins.forEach(x => {
-			gsap.set(x.node, {
-				x: imageWidth / img.naturalWidth * x.item.position.x,
-				y: imageWidth / img.naturalWidth * x.item.position.y,
+		this.cards.forEach((card, i) => {
+			const listingInnerWidth = card.node.offsetWidth * Math.ceil(this.cards.length / 2);
+			if (i === 0) {
+				this.listingInner.style.width = `${listingInnerWidth}px`;
+			}
+			if (card.item.active) {
+				// const dx = containerWidth - listingInnerWidth;
+				const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
+				// x = Math.min(0, Math.max(dx, x)) * -1;
+				gsap.to(this.listing, {
+					scrollLeft: x,
+					duration: 0.3,
+					delay: 0.1,
+					overwrite: true,
+				});
+			}
+		});
+		this.pins.forEach(pin => {
+			const pinX = imageWidth / img.naturalWidth * pin.item.position.x;
+			const pinY = imageWidth / img.naturalWidth * pin.item.position.y;
+			gsap.set(pin.node, {
+				x: pinX,
+				y: pinY,
 			});
+			if (pin.item.active) {
+				const dx = containerWidth - imageWidth;
+				const x = containerWidth / 2 - pinX;
+				gsap.to(this.picture, {
+					x: Math.min(0, Math.max(dx, x)),
+					duration: 0.3,
+					overwrite: true,
+				});
+			}
 		});
 	}
 
 	loadImage() {
 		const img = this.node.querySelector('.group--look img');
-		img.onload = () => {
+		const loader = new Image();
+		loader.onload = () => {
 			this.onImage(img);
 		}
+		loader.src = img.src;
 	}
 
 	setActive(item) {
@@ -74,6 +100,7 @@ export default class TotalLookComponent extends Component {
 			x.update();
 		});
 		this.pins.forEach(x => x.update());
+		this.onResize();
 	}
 
 	addListeners() {
@@ -82,13 +109,13 @@ export default class TotalLookComponent extends Component {
 		window.addEventListener('resize', this.onResize);
 		this.cards.forEach(x => {
 			x.on('click', () => {
-				console.log('TotalLookComponent.card.click', x.item);
+				// console.log('TotalLookComponent.card.click', x.item);
 				this.setActive(x.item);
 			});
 		});
 		this.pins.forEach(x => {
 			x.on('click', () => {
-				console.log('TotalLookComponent.pin.click', x.item);
+				// console.log('TotalLookComponent.pin.click', x.item);
 				this.setActive(x.item);
 			});
 		});

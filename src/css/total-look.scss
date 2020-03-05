@@ -28,6 +28,7 @@
 		.picture {
 			position: absolute;
 			opacity: 0;
+			transition: opacity ease-in-out 350ms;
 
 			img {
 				pointer-events: none;

@@ -44,7 +44,8 @@
     cursor: pointer; }
     .total-look .group--look .picture {
       position: absolute;
-      opacity: 0; }
+      opacity: 0;
+      transition: opacity ease-in-out 350ms; }
       .total-look .group--look .picture img {
         pointer-events: none; }
     .total-look .group--look .pin {

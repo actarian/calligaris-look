@@ -403,8 +403,7 @@
       this.removeListeners();
     };
 
-    _proto.onResize = function onResize() {
-      console.log('TotalLookCardComponent.onResize');
+    _proto.onResize = function onResize() {// console.log('TotalLookCardComponent.onResize');
     };
 
     _proto.onClick = function onClick() {
@@ -413,14 +412,14 @@
     };
 
     _proto.addListeners = function addListeners() {
-      this.onResize = this.onResize.bind(this);
-      this.onClick = this.onClick.bind(this);
-      window.addEventListener('resize', this.onResize);
+      // this.onResize = this.onResize.bind(this);
+      this.onClick = this.onClick.bind(this); // window.addEventListener('resize', this.onResize);
+
       this.node.addEventListener('click', this.onClick);
     };
 
     _proto.removeListeners = function removeListeners() {
-      window.removeEventListener('resize', this.onResize);
+      // window.removeEventListener('resize', this.onResize);
       this.node.removeEventListener('click', this.onClick);
     };
 
@@ -457,7 +456,7 @@
     };
 
     _proto.onResize = function onResize() {
-      console.log('TotalLookPinComponent.onResize');
+      // console.log('TotalLookPinComponent.onResize');
       this.emit('click');
     };
 
@@ -467,14 +466,14 @@
     };
 
     _proto.addListeners = function addListeners() {
-      this.onResize = this.onResize.bind(this);
-      this.onClick = this.onClick.bind(this);
-      window.addEventListener('resize', this.onResize);
+      // this.onResize = this.onResize.bind(this);
+      this.onClick = this.onClick.bind(this); // window.addEventListener('resize', this.onResize);
+
       this.node.addEventListener('click', this.onClick);
     };
 
     _proto.removeListeners = function removeListeners() {
-      window.removeEventListener('resize', this.onResize);
+      // window.removeEventListener('resize', this.onResize);
       this.node.removeEventListener('click', this.onClick);
     };
 
@@ -505,7 +504,7 @@
     _proto.onInit = function onInit(node) {
       var _this = this;
 
-      console.log('TotalLookComponent', node);
+      // console.log('TotalLookComponent', node);
       this.groupLook = node.querySelector('.group--look');
       this.picture = node.querySelector('.group--look .picture');
       this.listing = node.querySelector('.listing--products');
@@ -531,6 +530,8 @@
     };
 
     _proto.onResize = function onResize() {
+      var _this2 = this;
+
       var img = this.img;
       var groupLook = this.groupLook;
       var picture = this.picture;
@@ -554,28 +555,57 @@
       this.containerHeight = containerHeight;
       this.imageWidth = imageWidth;
       this.imageHeight = imageHeight;
+      this.cards.forEach(function (card, i) {
+        var listingInnerWidth = card.node.offsetWidth * Math.ceil(_this2.cards.length / 2);
 
-      if (this.cards.length) {
-        var width = this.cards[0].node.offsetWidth * Math.ceil(this.cards.length / 2);
-        this.listingInner.style.width = width + "px";
-      }
+        if (i === 0) {
+          _this2.listingInner.style.width = listingInnerWidth + "px";
+        }
 
-      this.pins.forEach(function (x) {
-        gsap.set(x.node, {
-          x: imageWidth / img.naturalWidth * x.item.position.x,
-          y: imageWidth / img.naturalWidth * x.item.position.y
+        if (card.item.active) {
+          // const dx = containerWidth - listingInnerWidth;
+          var x = card.node.getBoundingClientRect().left - _this2.listing.getBoundingClientRect().left + _this2.listing.scrollLeft; // x = Math.min(0, Math.max(dx, x)) * -1;
+
+
+          gsap.to(_this2.listing, {
+            scrollLeft: x,
+            duration: 0.3,
+            delay: 0.1,
+            overwrite: true
+          });
+        }
+      });
+      this.pins.forEach(function (pin) {
+        var pinX = imageWidth / img.naturalWidth * pin.item.position.x;
+        var pinY = imageWidth / img.naturalWidth * pin.item.position.y;
+        gsap.set(pin.node, {
+          x: pinX,
+          y: pinY
         });
+
+        if (pin.item.active) {
+          var dx = containerWidth - imageWidth;
+          var x = containerWidth / 2 - pinX;
+          gsap.to(_this2.picture, {
+            x: Math.min(0, Math.max(dx, x)),
+            duration: 0.3,
+            overwrite: true
+          });
+        }
       });
     };
 
     _proto.loadImage = function loadImage() {
-      var _this2 = this;
+      var _this3 = this;
 
       var img = this.node.querySelector('.group--look img');
+      var loader = new Image();
 
-      img.onload = function () {
-        _this2.onImage(img);
+      loader.onload = function () {
+        _this3.onImage(img);
       };
+
+      loader.src = img.src;
     };
 
     _proto.setActive = function setActive(item) {
@@ -586,26 +616,25 @@
       this.pins.forEach(function (x) {
         return x.update();
       });
+      this.onResize();
     };
 
     _proto.addListeners = function addListeners() {
-      var _this3 = this;
+      var _this4 = this;
 
       this.loadImage();
       this.onResize = this.onResize.bind(this);
       window.addEventListener('resize', this.onResize);
       this.cards.forEach(function (x) {
         x.on('click', function () {
-          console.log('TotalLookComponent.card.click', x.item);
-
-          _this3.setActive(x.item);
+          // console.log('TotalLookComponent.card.click', x.item);
+          _this4.setActive(x.item);
         });
       });
       this.pins.forEach(function (x) {
         x.on('click', function () {
-          console.log('TotalLookComponent.pin.click', x.item);
-
-          _this3.setActive(x.item);
+          // console.log('TotalLookComponent.pin.click', x.item);
+          _this4.setActive(x.item);
         });
       });
     };
@@ -616,7 +645,7 @@
     };
 
     _proto.addDragListener = function addDragListener() {
-      var _this4 = this;
+      var _this5 = this;
 
       var picture = this.picture;
       var x_ = 0,
@@ -630,8 +659,8 @@
           y_ = parseFloat(coords[1]);
         }
       }, function (e) {
-        var dx = _this4.containerWidth - _this4.imageWidth;
-        var dy = _this4.containerHeight - _this4.imageHeight;
+        var dx = _this5.containerWidth - _this5.imageWidth;
+        var dy = _this5.containerHeight - _this5.imageHeight;
         var x = x_ + e.distance.x;
         var y = y_ + e.distance.y;
         gsap.to(picture, {

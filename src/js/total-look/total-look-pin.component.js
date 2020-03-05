@@ -16,7 +16,7 @@ export default class TotalLookPinComponent extends Component {
 	}
 
 	onResize() {
-		console.log('TotalLookPinComponent.onResize');
+		// console.log('TotalLookPinComponent.onResize');
 		this.emit('click');
 	}
 
@@ -26,14 +26,14 @@ export default class TotalLookPinComponent extends Component {
 	}
 
 	addListeners() {
-		this.onResize = this.onResize.bind(this);
+		// this.onResize = this.onResize.bind(this);
 		this.onClick = this.onClick.bind(this);
-		window.addEventListener('resize', this.onResize);
+		// window.addEventListener('resize', this.onResize);
 		this.node.addEventListener('click', this.onClick);
 	}
 
 	removeListeners() {
-		window.removeEventListener('resize', this.onResize);
+		// window.removeEventListener('resize', this.onResize);
 		this.node.removeEventListener('click', this.onClick);
 	}
 

@@ -32,6 +32,15 @@
           ],
           "output": "docs/js/total-look-vendors.js",
           "minify": true
+        },
+        {
+          "input": [
+            "src/css/sito/vendors.css",
+            "src/css/sito/bootstrap.css",
+            "src/css/sito/main.css"
+          ],
+          "output": "docs/css/sito.css",
+          "minify": true
         }
       ]
     }
