@@ -1,0 +1,155 @@
+{
+    "ID": "basil",
+    "name": "Basil",
+    "metadata": {
+        "height": 84.5,
+        "width": 49,
+        "depth": 50,
+        "seat height": 46,
+        "collection": "2018"
+    },
+    "tags": [
+        "basil",
+        "collezione 2018"
+    ],
+    "model3D": [
+        {
+            "ID": "basil",
+            "url": "basil\/basil.glb",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "scale": [0.01, 0.01, 0.01],
+            "floor" : {
+                "map": "floor",
+                "size": [283.765472,0,283.765472]
+            },
+            "aoMaps": {
+                "group_seduta": "group_seduta",
+                "group_struttura": "group_struttura",
+                "piedini_group": "piedini_group"
+            }
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "basil",
+            "ID": "1",
+            "name": "seduta",
+            "meshes": [
+                "group_seduta"
+            ],
+            "material": "$sedile"
+        },
+        {
+            "modelID": "basil",
+            "ID": "2",
+            "name": "struttura",
+            "meshes": [
+                "group_struttura"
+            ],
+            "material": "$struttura"
+        },
+        {
+            "modelID": "basil",
+            "ID": 3,
+            "name": "piedini",
+            "meshes": [
+                "piedini_group"
+            ],
+            "material": "blackPlastic",
+            "repeat": 1
+        }
+    ],
+    "configurables": [
+        {
+            "ID": "sedile",
+            "materials": [
+                {
+                    "material": "polipropilene-p16",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p2l",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p94",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p151",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p100",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p328",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p900",
+                    "repeat": 1
+                },
+                {
+                    "material": "polipropilene-p973",
+                    "repeat": 1
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p3l",
+                    "repeat": 1
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p27p",
+                    "repeat": 1
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p28p",
+                    "repeat": 1
+                },
+                {
+                    "material": "rigenerati-di-cuoio-315",
+                    "repeat": 2
+                },
+                {
+                    "material": "rigenerati-di-cuoio-474",
+                    "repeat": 2
+                },
+                {
+                    "material": "rigenerati-di-cuoio-d03",
+                    "repeat": 2
+                },
+                {
+                    "material": "rigenerati-di-cuoio-r03",
+                    "repeat": 2
+                },
+                {
+                    "material": "rigenerati-di-cuoio-r04",
+                    "repeat": 2
+                },
+                {
+                    "material": "rigenerati-di-cuoio-r16",
+                    "repeat": 2
+                }
+            ]
+        },
+        {
+            "ID": "struttura",
+            "materials": [{
+                "material": "alluminio-p74",
+                "repeat": 1
+            },
+            {
+                "material": "alluminio-p94",
+                "repeat": 1
+            },
+            {
+                "material": "alluminio-p15",
+                "repeat": 1
+            }
+        ]
+        }
+    ],
+    "states": []
+}

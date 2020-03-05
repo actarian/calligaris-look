@@ -1,0 +1,129 @@
+{
+    "ID": "medea",
+    "name": "medea",
+    "clientCodes": [
+        "CS/3398"
+    ],
+    "metadata": {
+        "height": "80",
+        "depth": "170",
+        "collection": "2018"
+    },
+    "model3D": [
+        {
+            "ID": "medea",
+            "url": "medea\/medea.glb",
+            "name": "medea",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "floor" : {
+                "map": "floor",
+                "size": [5,0,5]
+            },
+            "aoMaps": {
+                "cuscino": "cuscino",
+                "schienale": "schienale",
+                "piedini": "piedini",
+                "seduta": "seduta",
+                "gommini": "gommini"  
+            }
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "medea",
+            "name": "cuscino",
+            "ID": "1",
+            "meshes":
+                [
+                        "cuscino"
+            ],
+            "material": "$30"
+        },
+        {
+            "modelID": "medea",
+            "name": "schienale",
+            "ID": "2",
+            "meshes":
+                [
+                        "schienale"
+                ],
+            "material": "$30"
+        },
+        {
+            "modelID": "medea",
+            "name": "seduta",
+            "ID": "3",
+            "meshes":
+                [
+                        "seduta"
+                ],
+            "material": "$30"
+        },
+        {
+            "modelID": "medea",
+            "name": "piedini",
+            "ID": "4",
+            "meshes":
+                [
+                        "piedini"
+                ],
+            "material": "$40"
+        },
+        {
+            "modelID": "medea",
+            "name": "gommini",
+            "ID": "5",
+            "meshes":
+                [
+                        "gommini"
+                ],
+                "material": "blackPlastic"
+        }
+    ],
+    "configurables": [
+        {
+            "ID": "10",
+            "type": "value"
+        },
+        {
+            "ID": "30",
+            "materials": [
+                {
+                    "material": "rigenerati-di-cuoio-315",
+                    "repeat": 1
+                },
+                {
+                    "material": "rigenerati-di-cuoio-474",
+                    "repeat": 1
+                },
+                {
+                    "material": "rigenerati-di-cuoio-d03",
+                    "repeat": 1
+                },
+                {
+                    "material": "rigenerati-di-cuoio-r04",
+                    "repeat": 1
+                }
+            ]
+        },
+        {
+            "ID": "40",
+            "materials": [
+                {
+                    "material": "impiallacciature-p19w",
+                    "repeat": 1
+                },
+                {
+                    "material": "impiallacciature-p23w",
+                    "repeat": 1
+                },
+                {
+                    "material": "impiallacciature-p201",
+                    "repeat": 1
+                }
+            ]
+        }
+    ],
+    "states": []
+}

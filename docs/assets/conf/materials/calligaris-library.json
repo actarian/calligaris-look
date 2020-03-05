@@ -1,0 +1,1566 @@
+[
+  {
+    "ID": "blackPlastic",
+    "name": "blackPlastic",
+    "type": "standard",
+    "basecolor": [0.01, 0.01, 0.01],
+    "roughness": 0.5,
+    "metallic": 0.0,
+    "description": {
+      "name": "KGHKJH",
+      "asdfsd": "GJYGHGJ"
+  }  
+  },
+  {
+    "ID": "polipropilene",
+    "name": "polipropilene",
+    "type": "standard",
+    "roughness": 0.46,
+    "basecolor": [1,1,1],
+    "metallic": 0
+  },
+  {
+    "ID": "polipropilene-p100",
+    "parentID": "polipropilene",
+    "basecolor": [0.374, 0.468, 0.596]
+  },
+  {
+    "ID": "polipropilene-p16",
+    "parentID": "polipropilene",
+    "basecolor": [0.33, 0.33, 0.33]
+  },
+  {
+    "ID": "polipropilene-p2l",
+    "parentID": "polipropilene",
+    "basecolor": [0.857, 0.765, 0.769]
+  },
+  {
+    "ID": "polipropilene-p94",
+    "parentID": "polipropilene",
+    "basecolor": [0.9, 0.9, 0.9]
+  },
+  {
+    "ID": "polipropilene-p151",
+    "parentID": "polipropilene",
+    "basecolor": [0.693, 0.668, 0.604]
+  },
+  {
+    "ID": "polipropilene-p328",
+    "parentID": "polipropilene",
+    "basecolor": [0.484, 0.409, 0.314]
+  },
+  {
+    "ID": "polipropilene-p900",
+    "parentID": "polipropilene",
+    "basecolor": [0.44, 0.44, 0.44]
+  },
+  {
+    "ID": "polipropilene-p973",
+    "parentID": "polipropilene",
+    "basecolor": [0.554, 0.513, 0.306]
+  },
+  {
+    "ID": "cuoio",
+    "name": "cuoio",
+    "type": "standard",
+    "roughness": 0.753,
+    "normalMap": "cuoio",
+    "metallic": 0.0
+  },
+  {
+    "ID": "rigenerati-di-cuoio-315",
+    "parentID": "cuoio",
+    "basecolor": [0.15, 0.15, 0.15]
+  },
+  {
+    "ID": "rigenerati-di-cuoio-474",
+    "parentID": "cuoio",
+    "basecolor": [0.7, 0.7, 0.7]
+  },
+  {
+    "ID": "rigenerati-di-cuoio-d03",
+    "parentID": "cuoio",
+    "basecolor": [0.5, 0.5, 0.5]
+  },
+  {
+    "ID": "rigenerati-di-cuoio-r03",
+    "parentID": "cuoio",
+    "basecolor": [0.550, 0.453, 0.349]
+  },
+  {
+    "ID": "rigenerati-di-cuoio-r04",
+    "parentID": "cuoio",
+    "basecolor": [0.451, 0.272, 0.169]
+  },
+  {
+    "ID": "rigenerati-di-cuoio-r16",
+    "parentID": "cuoio",
+    "basecolor": [0.255, 0.255, 0.255]
+  },
+  {
+    "ID": "greyPlastic",
+    "name": "greyPlastic",
+    "type": "standard",
+    "basecolor": [0.6, 0.6, 0.6],
+    "roughness": 0.5,
+    "metallic": 0.0
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro PADRE",
+    "type": "standard",
+    "roughness": 0.1
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p2c",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p2c",
+    "basecolorMap": "accoppiato-ceramica-vetro-p2c",
+    "aoMap": "accoppiato-ceramica-vetro-p2c"
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p3c",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p3c",
+    "basecolorMap": "accoppiato-ceramica-vetro-p3c",
+    "aoMap": "accoppiato-ceramica-vetro-p3c"
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p4c",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p4c",
+    "basecolorMap": "accoppiato-ceramica-vetro-p4c",
+    "aoMap": "accoppiato-ceramica-vetro-p4c"
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p5c",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p5c",
+    "basecolorMap": "accoppiato-ceramica-vetro-p5c",
+    "aoMap": "accoppiato-ceramica-vetro-p5c"
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p6c",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p6c",
+    "basecolorMap": "accoppiato-ceramica-vetro-p6c",
+    "aoMap": "accoppiato-ceramica-vetro-p6c"
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p7c",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p7c",
+    "basecolorMap": "accoppiato-ceramica-vetro-p7c",
+    "aoMap": "accoppiato-ceramica-vetro-p7c"
+  },
+  {
+    "ID": "accoppiato-ceramica-vetro-p321",
+    "parentID": "accoppiato-ceramica-vetro",
+    "name": "accoppiato-ceramica-vetro-p321",
+    "basecolorMap": "accoppiato-ceramica-vetro-p321",
+    "aoMap": "accoppiato-ceramica-vetro-p321"
+  },
+  {
+    "ID": "accoppiato-ceramica-legno",
+    "name": "accoppiato-ceramica-legno PADRE",
+    "type": "standard",
+    "roughness": 0.1,
+    "metalness": 0
+  },
+  {
+    "ID": "accoppiamento-ceramica-legno-p2c",
+    "parentID": "accoppiato-ceramica-legno",
+    "name": "accoppiamento-ceramica-legno-p2c",
+    "basecolorMap": "accoppiamento-ceramica-legno-p2c",
+    "aoMap": "accoppiamento-ceramica-legno-p2c",
+    "normalMap": "accoppiamento-ceramica-legno-p2c",
+    "roughnessMap": "accoppiamento-ceramica-legno-p2c"
+  },
+  {
+    "ID": "accoppiamento-ceramica-legno-p321",
+    "parentID": "accoppiato-ceramica-legno",
+    "name": "accoppiamento-ceramica-legno-p321",
+    "basecolorMap": "accoppiamento-ceramica-legno-p321",
+    "aoMap": "accoppiamento-ceramica-legno-p321",
+    "normalMap": "accoppiamento-ceramica-legno-p321",
+    "normalMapScale": [0.1,0.1],
+    "roughnessMap": "accoppiamento-ceramica-legno-p321"
+  },
+
+
+  
+  {
+    "ID": "alluminio",
+    "name": "alluminio PADRE",
+    "type": "standard",
+    "roughness": 0.5
+  },
+  {
+    "ID": "alluminio-p15",
+    "parentID": "alluminio",
+    "name": "alluminio-p15",
+    "roughness": 0.3,
+    "metallic": 0,
+    "basecolor": [0.1, 0.1, 0.1]
+  },
+  {
+    "ID": "alluminio-p74",
+    "parentID": "alluminio",
+    "name": "alluminio-p74",
+    "roughness": 0.2,
+    "metallic": 1,
+    "basecolor": [0.9, 0.9, 0.9]
+  },
+  {
+    "ID": "alluminio-p94",
+    "parentID": "alluminio",
+    "name": "alluminio-p94",
+    "roughness": 0.3,
+    "basecolor": [0.9, 0.9, 0.86]
+  },
+  {
+    "ID": "beers",
+    "name": "beers PADRE",
+    "type": "cloth",
+    "roughnessMap": "beers",
+    "normalMap": "beers",
+    "aoMap": "beers"
+  },
+  {
+    "ID": "beers-su6",
+    "parentID": "beers",
+    "name": "beers-su6",
+    "basecolorMap": "beers-su6"
+  },
+  {
+    "ID": "beers-su7",
+    "parentID": "beers",
+    "name": "beers-su7",
+    "basecolorMap": "beers-su7"
+  },
+  {
+    "ID": "beers-su8",
+    "parentID": "beers",
+    "name": "beers-su8",
+    "basecolorMap": "beers-su8"
+  },
+  {
+    "ID": "beers-su9",
+    "parentID": "beers",
+    "name": "beers-su9",
+    "basecolorMap": "beers-su9"
+  },
+  {
+    "ID": "beers-sv0",
+    "parentID": "beers",
+    "name": "beers-sv0",
+    "basecolorMap": "beers-sv0"
+  },
+  {
+    "ID": "beers-sv1",
+    "parentID": "beers",
+    "name": "beers-sv1",
+    "basecolorMap": "beers-sv1"
+  },
+  {
+    "ID": "beers-sv2",
+    "parentID": "beers",
+    "name": "beers-sv2",
+    "basecolorMap": "beers-sv2"
+  },
+  {
+    "ID": "beers-sv3",
+    "parentID": "beers",
+    "name": "beers-sv3",
+    "basecolorMap": "beers-sv3"
+  },
+  {
+    "ID": "beers-sv4",
+    "parentID": "beers",
+    "name": "beers-sv4",
+    "basecolorMap": "beers-sv4"
+  },
+  {
+    "ID": "bergen",
+    "name": "bergen PADRE",
+    "type": "cloth",
+    "roughnessMap": "bergen",
+    "normalMap": "bergen",
+    "aoMap": "bergen"
+  },
+  {
+    "ID": "bergen-s2m",
+    "parentID": "bergen",
+    "name": "bergen-s2m",
+    "basecolorMap": "bergen-s2m"
+  },
+  {
+    "ID": "bergen-s2n",
+    "parentID": "bergen",
+    "name": "bergen-s2n",
+    "basecolorMap": "bergen-s2n"
+  },
+  {
+    "ID": "bergen-s2p",
+    "parentID": "bergen",
+    "name": "bergen-s2p",
+    "basecolorMap": "bergen-s2p"
+  },
+  {
+    "ID": "bergen-s2q",
+    "parentID": "bergen",
+    "name": "bergen-s2q",
+    "basecolorMap": "bergen-s2q"
+  },
+  {
+    "ID": "bergen-s2r",
+    "parentID": "bergen",
+    "name": "bergen-s2r",
+    "basecolorMap": "bergen-s2r"
+  },
+  {
+    "ID": "berna",
+    "name": "berna PADRE",
+    "type": "cloth",
+    "roughnessMap": "berna",
+    "normalMap": "berna",
+    "aoMap": "berna"
+  },
+  {
+    "ID": "berna-1sa2",
+    "parentID": "berna",
+    "name": "berna-1sa2",
+    "basecolorMap": "berna-1sa2"
+  },
+  {
+    "ID": "berna-1sa3",
+    "parentID": "berna",
+    "name": "berna-1sa3",
+    "basecolorMap": "berna-1sa3"
+  },
+  {
+    "ID": "berna-1sa4",
+    "parentID": "berna",
+    "name": "berna-1sa4",
+    "basecolorMap": "berna-1sa4"
+  },
+  {
+    "ID": "berna-1sa6",
+    "parentID": "berna",
+    "name": "berna-1sa6",
+    "basecolorMap": "berna-1sa6"
+  },
+  {
+    "ID": "berna-1sa7",
+    "parentID": "berna",
+    "name": "berna-1sa7",
+    "basecolorMap": "berna-1sa7"
+  },
+  {
+    "ID": "berna-1sa8",
+    "parentID": "berna",
+    "name": "berna-1sa8",
+    "basecolorMap": "berna-1sa8"
+  },
+  {
+    "ID": "berna-1sb0",
+    "parentID": "berna",
+    "name": "berna-1sb0",
+    "basecolorMap": "berna-1sb0"
+  },
+  {
+    "ID": "berna-1sb1",
+    "parentID": "berna",
+    "name": "berna-1sb1",
+    "basecolorMap": "berna-1sb1"
+  },
+  {
+    "ID": "berna-1sb2",
+    "parentID": "berna",
+    "name": "berna-1sb2",
+    "basecolorMap": "berna-1sb2"
+  },
+  {
+    "ID": "cannes",
+    "name": "cannes PADRE",
+    "type": "cloth",
+    "roughnessMap": "cannes",
+    "normalMap": "cannes",
+    "aoMap": "cannes"
+  },
+  {
+    "ID": "cannes-sl8",
+    "parentID": "cannes",
+    "name": "cannes-sl8",
+    "basecolorMap": "cannes-sl8"
+  },
+  {
+    "ID": "cannes-sm0",
+    "parentID": "cannes",
+    "name": "cannes-sm0",
+    "basecolorMap": "cannes-sm0"
+  },
+  {
+    "ID": "cannes-sm1",
+    "parentID": "cannes",
+    "name": "cannes-sm1",
+    "basecolorMap": "cannes-sm1"
+  },
+  {
+    "ID": "cannes-sm2",
+    "parentID": "cannes",
+    "name": "cannes-sm2",
+    "basecolorMap": "cannes-sm2"
+  },
+  {
+    "ID": "cannes-sm3",
+    "parentID": "cannes",
+    "name": "cannes-sm3",
+    "basecolorMap": "cannes-sm3"
+  },
+  {
+    "ID": "cannes-sm5",
+    "parentID": "cannes",
+    "name": "cannes-sm5",
+    "basecolorMap": "cannes-sm5"
+  },
+  {
+    "ID": "cullinan",
+    "name": "cullinan PADRE",
+    "type": "cloth",
+    "roughnessMap": "cullinan",
+    "normalMap": "cullinan",
+    "aoMap": "cullinan"
+  },
+  {
+    "ID": "cullinan-st8",
+    "parentID": "cullinan",
+    "name": "cullinan-st8",
+    "basecolorMap": "cullinan-st8"
+  },
+  {
+    "ID": "cullinan-st9",
+    "parentID": "cullinan",
+    "name": "cullinan-st9",
+    "basecolorMap": "cullinan-st9"
+  },
+  {
+    "ID": "cullinan-su0",
+    "parentID": "cullinan",
+    "name": "cullinan-su0",
+    "basecolorMap": "cullinan-su0"
+  },
+  {
+    "ID": "cullinan-su1",
+    "parentID": "cullinan",
+    "name": "cullinan-su1",
+    "basecolorMap": "cullinan-su1"
+  },
+  {
+    "ID": "cullinan-su2",
+    "parentID": "cullinan",
+    "name": "cullinan-su2",
+    "basecolorMap": "cullinan-su2"
+  },
+  {
+    "ID": "cullinan-su3",
+    "parentID": "cullinan",
+    "name": "cullinan-su3",
+    "basecolorMap": "cullinan-su3"
+  },
+  {
+    "ID": "cullinan-su4",
+    "parentID": "cullinan",
+    "name": "cullinan-su4",
+    "basecolorMap": "cullinan-su4"
+  },
+  {
+    "ID": "cullinan-su5",
+    "parentID": "cullinan",
+    "name": "cullinan-su5",
+    "basecolorMap": "cullinan-su5"
+  },
+  {
+    "ID": "denver",
+    "name": "denver PADRE",
+    "type": "cloth",
+    "roughnessMap": "denver",
+    "normalMap": "denver",
+    "aoMap": "denver"
+  },
+  {
+    "ID": "denver-a02",
+    "parentID": "denver",
+    "name": "denver-a02",
+    "basecolorMap": "denver-a02"
+  },
+  {
+    "ID": "denver-a03",
+    "parentID": "denver",
+    "name": "denver-a03",
+    "basecolorMap": "denver-a03"
+  },
+  {
+    "ID": "denver-a04",
+    "parentID": "denver",
+    "name": "denver-a04",
+    "basecolorMap": "denver-a04"
+  },
+  {
+    "ID": "denver-a05",
+    "parentID": "denver",
+    "name": "denver-a05",
+    "basecolorMap": "denver-a05"
+  },
+  {
+    "ID": "denver-a06",
+    "parentID": "denver",
+    "name": "denver-a06",
+    "basecolorMap": "denver-a06"
+  },
+  {
+    "ID": "denver-a07",
+    "parentID": "denver",
+    "name": "denver-a07",
+    "basecolorMap": "denver-a07"
+  },
+  {
+    "ID": "denver-a08",
+    "parentID": "denver",
+    "name": "denver-a08",
+    "basecolorMap": "denver-a08"
+  },
+  {
+    "ID": "denver-a09",
+    "parentID": "denver",
+    "name": "denver-a09",
+    "basecolorMap": "denver-a09"
+  },
+  {
+    "ID": "foggy",
+    "name": "foggy PADRE",
+    "type": "cloth",
+    "roughnessMap": "foggy",
+    "normalMap": "foggy",
+    "aoMap": "foggy"
+  },
+  {
+    "ID": "foggy-s5v",
+    "parentID": "foggy",
+    "name": "foggy-s5v",
+    "basecolorMap": "foggy-s5v"
+  },
+  {
+    "ID": "foggy-s5w",
+    "parentID": "foggy",
+    "name": "foggy-s5w",
+    "basecolorMap": "foggy-s5w"
+  },
+  {
+    "ID": "foggy-s5x",
+    "parentID": "foggy",
+    "name": "foggy-s5x",
+    "basecolorMap": "foggy-s5x"
+  },
+  {
+    "ID": "foggy-s5y",
+    "parentID": "foggy",
+    "name": "foggy-s5y",
+    "basecolorMap": "foggy-s5y"
+  },
+  {
+    "ID": "foggy-s5z",
+    "parentID": "foggy",
+    "name": "foggy-s5z",
+    "basecolorMap": "foggy-s5z"
+  },
+  {
+    "ID": "foggy-s6a",
+    "parentID": "foggy",
+    "name": "foggy-s6a",
+    "basecolorMap": "foggy-s6a"
+  },
+  {
+    "ID": "foggy-s6b",
+    "parentID": "foggy",
+    "name": "foggy-s6b",
+    "basecolorMap": "foggy-s6b"
+  },
+  {
+    "ID": "foggy-s6c",
+    "parentID": "foggy",
+    "name": "foggy-s6c",
+    "basecolorMap": "foggy-s6c"
+  },
+  {
+    "ID": "hortensia",
+    "name": "hortensia PADRE",
+    "type": "cloth",
+    "roughnessMap": "hortensia",
+    "normalMap": "hortensia",
+    "aoMap": "hortensia"
+  },
+  {
+    "ID": "hortensia-ss9",
+    "parentID": "hortensia",
+    "name": "hortensia-ss9",
+    "basecolorMap": "hortensia-ss9"
+  },
+  {
+    "ID": "hortensia-st0",
+    "parentID": "hortensia",
+    "name": "hortensia-st0",
+    "basecolorMap": "hortensia-st0"
+  },
+  {
+    "ID": "hortensia-st3",
+    "parentID": "hortensia",
+    "name": "hortensia-st3",
+    "basecolorMap": "hortensia-st3"
+  },
+  {
+    "ID": "hortensia-st4",
+    "parentID": "hortensia",
+    "name": "hortensia-st4",
+    "basecolorMap": "hortensia-st4"
+  },
+  {
+    "ID": "hortensia-st5",
+    "parentID": "hortensia",
+    "name": "hortensia-st5",
+    "basecolorMap": "hortensia-st5"
+  },
+  {
+    "ID": "impiallacciature",
+    "name": "impiallacciature PADRE",
+    "type": "standard",
+    "normalMap": "impiallacciature",
+    "roughness": 0.6
+  },
+  {
+    "ID": "impiallacciature-p15l",
+    "parentID": "impiallacciature",
+    "name": "impiallacciature-p15l",
+    "basecolorMap": "impiallacciature-p15l",
+    "roughnessMap": "impiallacciature-p15l",
+    "normalMap": "impiallacciature-p15l",
+    "aoMap": "impiallacciature-p15l"
+  },
+  {
+    "ID": "impiallacciature-p19w",
+    "parentID": "impiallacciature",
+    "name": "impiallacciature-p19w",
+    "basecolorMap": "impiallacciature-p19w",
+    "roughnessMap": "impiallacciature-p19w",
+    "normalMap": "impiallacciature-p19w",
+    "aoMap": "impiallacciature-p19w"
+  },
+  {
+    "ID": "impiallacciature-p23w",
+    "parentID": "impiallacciature",
+    "name": "impiallacciature-p23w",
+    "basecolorMap": "impiallacciature-p23w",
+    "roughnessMap": "impiallacciature-p23w",
+    "normalMap": "impiallacciature-p23w",
+    "aoMap": "impiallacciature-p23w"
+  },
+  {
+    "ID": "impiallacciature-p201",
+    "parentID": "impiallacciature",
+    "name": "impiallacciature-p201",
+    "basecolorMap": "impiallacciature-p201",
+    "roughnessMap": "impiallacciature-p201",
+    "normalMap": "impiallacciature-p201",
+    "aoMap": "impiallacciature-p201"
+  },
+  {
+    "ID": "jubilee",
+    "name": "jubilee PADRE",
+    "type": "cloth",
+    "roughnessMap": "jubilee",
+    "normalMap": "jubilee",
+    "aoMap": "jubilee"
+  },
+  {
+    "ID": "jubilee-s2b",
+    "parentID": "jubilee",
+    "name": "jubilee-s2b",
+    "basecolorMap": "jubilee-s2b"
+  },
+  {
+    "ID": "jubilee-s2c",
+    "parentID": "jubilee",
+    "name": "jubilee-s2c",
+    "basecolorMap": "jubilee-s2c"
+  },
+  {
+    "ID": "jubilee-s2d",
+    "parentID": "jubilee",
+    "name": "jubilee-s2d",
+    "basecolorMap": "jubilee-s2d"
+  },
+  {
+    "ID": "jubilee-s2e",
+    "parentID": "jubilee",
+    "name": "jubilee-s2e",
+    "basecolorMap": "jubilee-s2e"
+  },
+  {
+    "ID": "jubilee-s2f",
+    "parentID": "jubilee",
+    "name": "jubilee-s2f",
+    "basecolorMap": "jubilee-s2f"
+  },
+  {
+    "ID": "jubilee-s2g",
+    "parentID": "jubilee",
+    "name": "jubilee-s2g",
+    "basecolorMap": "jubilee-s2g"
+  },
+  {
+    "ID": "jubilee-s2h",
+    "parentID": "jubilee",
+    "name": "jubilee-s2h",
+    "basecolorMap": "jubilee-s2h"
+  },
+  {
+    "ID": "jubilee-s2j",
+    "parentID": "jubilee",
+    "name": "jubilee-s2j",
+    "basecolorMap": "jubilee-s2j"
+  },
+  {
+    "ID": "jubilee-s2k",
+    "parentID": "jubilee",
+    "name": "jubilee-s2k",
+    "basecolorMap": "jubilee-s2k"
+  },
+  {
+    "ID": "jubilee-s2l",
+    "parentID": "jubilee",
+    "name": "jubilee-s2l",
+    "basecolorMap": "jubilee-s2l"
+  },
+  {
+    "ID": "kenton",
+    "name": "kenton PADRE",
+    "type": "cloth",
+    "roughnessMap": "kenton",
+    "normalMap": "kenton",
+    "aoMap": "kenton"
+  },
+  {
+    "ID": "kenton-sw0",
+    "parentID": "kenton",
+    "name": "kenton-sw0",
+    "basecolorMap": "kenton-sw0"
+  },
+  {
+    "ID": "kenton-sw1",
+    "parentID": "kenton",
+    "name": "kenton-sw1",
+    "basecolorMap": "kenton-sw1"
+  },
+  {
+    "ID": "kenton-sw2",
+    "parentID": "kenton",
+    "name": "kenton-sw2",
+    "basecolorMap": "kenton-sw2"
+  },
+  {
+    "ID": "kenton-sw3",
+    "parentID": "kenton",
+    "name": "kenton-sw3",
+    "basecolorMap": "kenton-sw3"
+  },
+  {
+    "ID": "kenton-sw4",
+    "parentID": "kenton",
+    "name": "kenton-sw4",
+    "basecolorMap": "kenton-sw4"
+  },
+  {
+    "ID": "kenton-sw5",
+    "parentID": "kenton",
+    "name": "kenton-sw5",
+    "basecolorMap": "kenton-sw5"
+  },
+  {
+    "ID": "kenton-sw6",
+    "parentID": "kenton",
+    "name": "kenton-sw6",
+    "basecolorMap": "kenton-sw6"
+  },
+  {
+    "ID": "kenton-sw7",
+    "parentID": "kenton",
+    "name": "kenton-sw7",
+    "basecolorMap": "kenton-sw7"
+  },
+  {
+    "ID": "kenton-sw8",
+    "parentID": "kenton",
+    "name": "kenton-sw8",
+    "basecolorMap": "kenton-sw8"
+  },
+  {
+    "ID": "kenton-sw9",
+    "parentID": "kenton",
+    "name": "kenton-sw9",
+    "basecolorMap": "kenton-sw9"
+  },
+  {
+    "ID": "kimber",
+    "name": "kimber PADRE",
+    "type": "cloth",
+    "roughnessMap": "kimber",
+    "normalMap": "kimber",
+    "aoMap": "kimber"
+  },
+  {
+    "ID": "kimber-s6d",
+    "parentID": "kimber",
+    "name": "kimber-s6d",
+    "basecolorMap": "kimber-s6d"
+  },
+  {
+    "ID": "kimber-s6e",
+    "parentID": "kimber",
+    "name": "kimber-s6e",
+    "basecolorMap": "kimber-s6e"
+  },
+  {
+    "ID": "kimber-s6f",
+    "parentID": "kimber",
+    "name": "kimber-s6f",
+    "basecolorMap": "kimber-s6f"
+  },
+  {
+    "ID": "kimber-s6g",
+    "parentID": "kimber",
+    "name": "kimber-s6g",
+    "basecolorMap": "kimber-s6g"
+  },
+  {
+    "ID": "kimber-s6h",
+    "parentID": "kimber",
+    "name": "kimber-s6h",
+    "basecolorMap": "kimber-s6h"
+  },
+  {
+    "ID": "kimber-s6j",
+    "parentID": "kimber",
+    "name": "kimber-s6j",
+    "basecolorMap": "kimber-s6j"
+  },
+  {
+    "ID": "kimber-s6k",
+    "parentID": "kimber",
+    "name": "kimber-s6k",
+    "basecolorMap": "kimber-s6k"
+  },
+  {
+    "ID": "kimber-s6l",
+    "parentID": "kimber",
+    "name": "kimber-s6l",
+    "basecolorMap": "kimber-s6l"
+  },
+  {
+    "ID": "kimber-s6m",
+    "parentID": "kimber",
+    "name": "kimber-s6m",
+    "basecolorMap": "kimber-s6m"
+  },
+  {
+    "ID": "laccati-opachi",
+    "name": "laccati-opachi PADRE",
+    "type": "standard",
+    "roughnessMap": "laccati-opachi",
+    "metallicMap": "laccati-opachi",
+    "normalMap": "laccati-opachi",
+    "aoMap": "laccati-opachi"
+  },
+  {
+    "ID": "laccati-opachi-p15l",
+    "parentID": "laccati-opachi",
+    "name": "laccati-opachi-p15l",
+    "basecolor": [0.1,0.1,0.1]
+  },
+  {
+    "ID": "laccati-opachi-p16",
+    "parentID": "laccati-opachi",
+    "name": "laccati-opachi-p16",
+    "basecolor": [0.2,0.2,0.2]
+  },
+  {
+    "ID": "laccati-opachi-p94",
+    "parentID": "laccati-opachi",
+    "name": "laccati-opachi-p94",
+    "basecolor": [1,1,1]
+  },
+  {
+    "ID": "laccati-opachi-p507",
+    "parentID": "laccati-opachi",
+    "name": "laccati-opachi-p507",
+    "basecolorMap": "laccati-opachi-p176"
+  },
+  {
+    "ID": "laccati-opachi-p176",
+    "parentID": "laccati-opachi",
+    "name": "laccati-opachi-p176",
+    "basecolor": [0.4,0.4,0.4]
+  },
+  {
+    "ID": "legno-massello",
+    "name": "legno-massello PADRE",
+    "type": "standard"
+  },
+  {
+    "ID": "legno-massello-p02",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p02",
+    "basecolorMap": "legno-massello-p02",
+    "roughnessMap": "legno-massello-p02",
+    "normalMap" : "legno-massello-p02",
+    "aoMap": "legno-massello-p02"
+  },
+  {
+    "ID": "legno-massello-p12-frassino",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p12-frassino",
+    "basecolorMap": "legno-massello-p12-frassino",
+    "roughnessMap": "legno-massello-p12-frassino",
+    "normalMap" : "legno-massello-p12-frassino",
+    "aoMap": "legno-massello-p12-frassino"
+  },
+  {
+    "ID": "legno-massello-p19w",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p19w",
+    "basecolorMap": "legno-massello-p19w",
+    "roughnessMap": "legno-massello-p19w",
+    "normalMap" : "legno-massello-p19w",
+    "aoMap": "legno-massello-p19w"
+  },
+  {
+    "ID": "legno-massello-p23w",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p23w",
+    "basecolorMap": "legno-massello-p23w",
+    "roughnessMap": "legno-massello-p23w",
+    "aoMap": "legno-massello-p23w"
+  },
+  {
+    "ID": "legno-massello-p27-faggio",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p27-faggio",
+    "basecolorMap": "legno-massello-p27-faggio",
+    "roughnessMap": "legno-massello-p27-faggio",
+    "aoMap": "legno-massello-p27-faggio"
+  },
+  {
+    "ID": "legno-massello-p132",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p132",
+    "basecolorMap": "legno-massello-p132",
+    "roughnessMap": "legno-massello-p132",
+    "aoMap": "legno-massello-p132"
+  },
+  {
+    "ID": "legno-massello-p201-faggio",
+    "parentID": "legno-massello",
+    "name": "legno-massello-p201-faggio",
+    "basecolorMap": "legno-massello-p201-faggio",
+    "roughnessMap": "legno-massello-p201-faggio",
+    "aoMap": "legno-massello-p201-faggio"
+  },
+  {
+    "ID": "malmo",
+    "name": "malmo PADRE",
+    "type": "cloth",
+    "roughnessMap": "malmo",
+    "normalMap": "malmo",
+    "aoMap": "malmo"
+  },
+  {
+    "ID": "malmo-sq1",
+    "parentID": "malmo",
+    "name": "malmo-sq1",
+    "basecolorMap": "malmo-sq1"
+  },
+  {
+    "ID": "malmo-sq2",
+    "parentID": "malmo",
+    "name": "malmo-sq2",
+    "basecolorMap": "malmo-sq2",
+    "aoMap": "malmo-sq2"
+  },
+  {
+    "ID": "malmo-sq3",
+    "parentID": "malmo",
+    "name": "malmo-sq3",
+    "basecolorMap": "malmo-sq3"
+  },
+  {
+    "ID": "malmo-sq4",
+    "parentID": "malmo",
+    "name": "malmo-sq4",
+    "basecolorMap": "malmo-sq4",
+    "aoMap": "malmo-sq4"
+  },
+  {
+    "ID": "malmo-sq5",
+    "parentID": "malmo",
+    "name": "malmo-sq5",
+    "basecolorMap": "malmo-sq5"
+  },
+  {
+    "ID": "malmo-sq6",
+    "parentID": "malmo",
+    "name": "malmo-sq6",
+    "basecolorMap": "malmo-sq6"
+  },
+  {
+    "ID": "malmo-sq7",
+    "parentID": "malmo",
+    "name": "malmo-sq7",
+    "basecolorMap": "malmo-sq7"
+  },
+  {
+    "ID": "malmo-sq8",
+    "parentID": "malmo",
+    "name": "malmo-sq8",
+    "basecolorMap": "malmo-sq8"
+  },
+  {
+    "ID": "melrose",
+    "name": "melrose PADRE",
+    "type": "cloth",
+    "roughnessMap": "melrose",
+    "normalMap": "melrose",
+    "aoMap": "melrose"
+  },
+  {
+    "ID": "melrose-1sg7",
+    "parentID": "melrose",
+    "name": "melrose-1sg7",
+    "basecolorMap": "melrose-1sg7"
+  },
+  {
+    "ID": "melrose-1sg8",
+    "parentID": "melrose",
+    "name": "melrose-1sg8",
+    "basecolorMap": "melrose-1sg8"
+  },
+  {
+    "ID": "melrose-1sg9",
+    "parentID": "melrose",
+    "name": "melrose-1sg9",
+    "basecolorMap": "melrose-1sg9"
+  },
+  {
+    "ID": "melrose-1sh0",
+    "parentID": "melrose",
+    "name": "melrose-1sh0",
+    "basecolorMap": "melrose-1sh0"
+  },
+  {
+    "ID": "melrose-1sh1",
+    "parentID": "melrose",
+    "name": "melrose-1sh1",
+    "basecolorMap": "melrose-1sh1"
+  },
+  {
+    "ID": "melrose-1sh2",
+    "parentID": "melrose",
+    "name": "melrose-1sh2",
+    "basecolorMap": "melrose-1sh2"
+  },
+  {
+    "ID": "melrose-sh4",
+    "parentID": "melrose",
+    "name": "melrose-sh4",
+    "basecolorMap": "melrose-sh4"
+  },
+  {
+    "ID": "melrose-sh6",
+    "parentID": "melrose",
+    "name": "melrose-sh6",
+    "basecolorMap": "melrose-sh6"
+  },
+  {
+    "ID": "melrose-sh7",
+    "parentID": "melrose",
+    "name": "melrose-sh7",
+    "basecolorMap": "melrose-sh7"
+  },
+  {
+    "ID": "melrose-sh8",
+    "parentID": "melrose",
+    "name": "melrose-sh8",
+    "basecolorMap": "melrose-sh8"
+  },
+  {
+    "ID": "metallo",
+    "name": "metallo PADRE",
+    "type": "standard",
+    "metallicMap": "metallo",
+    "normalMap": "metallo",
+    "aoMap": "metallo"
+  },
+  {
+    "ID": "metallo-p13l",
+    "parentID": "metallo",
+    "name": "metallo-p13l",
+    "basecolorMap": "metallo-p13l",
+    "roughnessMap": "metallo-p13l"
+  },
+  {
+    "ID": "metallo-p15",
+    "parentID": "metallo",
+    "name": "metallo-p15",
+    "roughnessMap": "metallo-p15"
+  },
+  {
+    "ID": "metallo-p176",
+    "parentID": "metallo",
+    "name": "metallo-p176",
+    "roughnessMap": "metallo-p15"
+  },
+  {
+    "ID": "metallo-p16",
+    "parentID": "metallo",
+    "name": "metallo-p16",
+    "roughnessMap": "metallo-p16",
+    "basecolor": [0.4,0.4,0.4]
+  },
+  {
+    "ID": "metallo-p94",
+    "parentID": "metallo",
+    "name": "metallo-p94",
+    "roughnessMap": "metallo-p94"
+  },
+  {
+    "ID": "mogol",
+    "name": "mogol PADRE",
+    "type": "cloth",
+    "roughnessMap": "mogol",
+    "normalMap": "mogol"
+  },
+  {
+    "ID": "mogol-s5j",
+    "parentID": "mogol",
+    "name": "mogol-s5j",
+    "basecolorMap": "mogol-s5j"
+  },
+  {
+    "ID": "mogol-s5k",
+    "parentID": "mogol",
+    "name": "mogol-s5k",
+    "basecolorMap": "mogol-s5k"
+  },
+  {
+    "ID": "mogol-s5l",
+    "parentID": "mogol",
+    "name": "mogol-s5l",
+    "basecolorMap": "mogol-s5l"
+  },
+  {
+    "ID": "mogol-s5m",
+    "parentID": "mogol",
+    "name": "mogol-s5m",
+    "basecolorMap": "mogol-s5m"
+  },
+  {
+    "ID": "mogol-s5n",
+    "parentID": "mogol",
+    "name": "mogol-s5n",
+    "basecolorMap": "mogol-s5n"
+  },
+  {
+    "ID": "mogol-s5p",
+    "parentID": "mogol",
+    "name": "mogol-s5p",
+    "basecolorMap": "mogol-s5p"
+  },
+  {
+    "ID": "mogol-s5q",
+    "parentID": "mogol",
+    "name": "mogol-s5q",
+    "basecolorMap": "mogol-s5q"
+  },
+  {
+    "ID": "mogol-s5r",
+    "parentID": "mogol",
+    "name": "mogol-s5r",
+    "basecolorMap": "mogol-s5r"
+  },
+  {
+    "ID": "mogol-s5s",
+    "parentID": "mogol",
+    "name": "mogol-s5s",
+    "basecolorMap": "mogol-s5s"
+  },
+  {
+    "ID": "mogol-s5t",
+    "parentID": "mogol",
+    "name": "mogol-s5t",
+    "basecolorMap": "mogol-s5t"
+  },
+  {
+    "ID": "mogol-s5u",
+    "parentID": "mogol",
+    "name": "mogol-s5u",
+    "basecolorMap": "mogol-s5u"
+  },
+  {
+    "ID": "noor",
+    "name": "noor PADRE",
+    "type": "cloth",
+    "roughnessMap": "noor",
+    "normalMap": "noor",
+    "aoMap": "noor"
+  },
+  {
+    "ID": "noor-sx2",
+    "parentID": "noor",
+    "name": "noor-sx2",
+    "basecolorMap": "noor-sx2"
+  },
+  {
+    "ID": "noor-sx3",
+    "parentID": "noor",
+    "name": "noor-sx3",
+    "basecolorMap": "noor-sx3"
+  },
+  {
+    "ID": "noor-sx4",
+    "parentID": "noor",
+    "name": "noor-sx4",
+    "basecolorMap": "noor-sx4"
+  },
+  {
+    "ID": "noor-sx5",
+    "parentID": "noor",
+    "name": "noor-sx5",
+    "basecolorMap": "noor-sx5"
+  },
+  {
+    "ID": "noor-sx6",
+    "parentID": "noor",
+    "name": "noor-sx6",
+    "basecolorMap": "noor-sx6"
+  },
+  {
+    "ID": "noor-sx7",
+    "parentID": "noor",
+    "name": "noor-sx7",
+    "basecolorMap": "noor-sx7"
+  },
+  {
+    "ID": "noor-sx8",
+    "parentID": "noor",
+    "name": "noor-sx8",
+    "basecolorMap": "noor-sx8"
+  },
+  {
+    "ID": "noor-sx9",
+    "parentID": "noor",
+    "name": "noor-sx9",
+    "basecolorMap": "noor-sx9"
+  },
+  {
+    "ID": "noor-sy0",
+    "parentID": "noor",
+    "name": "noor-sy0",
+    "basecolorMap": "noor-sy0"
+  },
+  {
+    "ID": "pelle",
+    "name": "pelle PADRE",
+    "type": "standard",
+    "roughnessMap": "pelle",
+    "normalMap": "pelle",
+    "aoMap": "pelle"
+  },
+  {
+    "ID": "pelle-470",
+    "parentID": "pelle",
+    "name": "pelle-470",
+    "basecolorMap": "pelle-470"
+  },
+  {
+    "ID": "pelle-705",
+    "parentID": "pelle",
+    "name": "pelle-705",
+    "basecolorMap": "pelle-705"
+  },
+  {
+    "ID": "pelle-d04",
+    "parentID": "pelle",
+    "name": "pelle-d04",
+    "basecolorMap": "pelle-d04"
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti PADRE",
+    "type": "standard",
+    "metallic": 0,
+    "roughness": 0.456,
+    "opacity": 0.7
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-interno",
+    "name": "plastiche-trasparenti-coprenti PADRE - interno",
+    "type": "standard",
+    "metallic": 0,
+    "roughness": 0.456,
+    "opacity": 0.2
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p3l",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p3l",
+    "basecolor": [0.466, 0.204, 0.184]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p17p",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p17p",
+    "basecolor": [0.25, 0.17, 0.07],
+    "transparent": true,
+    "doubleSide": true
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p20p",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p20p",
+    "basecolor": [0.99, 0.99, 0.82]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p21p",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p21p",
+    "basecolor": [0.36, 0, 0]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p24p",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p24p",
+    "basecolor": [0.98, 0.85, 0.8]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p27p",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p27p",
+    "basecolor": [0.194, 0.418, 0.506]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p28p",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p28p",
+    "basecolor": [0.647, 0.520, 0.408]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p266",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p266",
+    "basecolor": [0.2, 0.22, 0.23],
+    "transparent": true,
+    "doubleSide": true
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p276",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p276",
+    "basecolor": [0.45, 0.31, 0.1],
+    "transparent": true,
+    "doubleSide": true
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p799",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p799",
+    "basecolor": [0.98,0.96,0.9]
+  },
+  {
+    "ID": "plastiche-trasparenti-coprenti-p848",
+    "parentID": "plastiche-trasparenti-coprenti",
+    "name": "plastiche-trasparenti-coprenti-p848",
+    "basecolor": [0.55, 0.55, 0.55],
+    "transparent": true,
+    "doubleSide": true
+  },
+  {
+    "ID": "regent",
+    "name": "regent PADRE",
+    "type": "cloth",
+    "roughnessMap": "regent",
+    "normalMap": "regent",
+    "aoMap": "regent"
+  },
+  {
+    "ID": "regent-ss0",
+    "parentID": "regent",
+    "name": "regent-ss0",
+    "basecolorMap": "regent-ss0"
+  },
+  {
+    "ID": "regent-ss1",
+    "parentID": "regent",
+    "name": "regent-ss1",
+    "basecolorMap": "regent-ss1"
+  },
+  {
+    "ID": "regent-ss2",
+    "parentID": "regent",
+    "name": "regent-ss2",
+    "basecolorMap": "regent-ss2"
+  },
+  {
+    "ID": "regent-ss3",
+    "parentID": "regent",
+    "name": "regent-ss3",
+    "basecolorMap": "regent-ss3"
+  },
+  {
+    "ID": "regent-ss4",
+    "parentID": "regent",
+    "name": "regent-ss4",
+    "basecolorMap": "regent-ss4"
+  },
+  {
+    "ID": "regent-ss5",
+    "parentID": "regent",
+    "name": "regent-ss5",
+    "basecolorMap": "regent-ss5"
+  },
+  {
+    "ID": "regent-ss6",
+    "parentID": "regent",
+    "name": "regent-ss6",
+    "basecolorMap": "regent-ss6"
+  },
+  {
+    "ID": "regent-ss7",
+    "parentID": "regent",
+    "name": "regent-ss7",
+    "basecolorMap": "regent-ss7"
+  },
+  {
+    "ID": "regent-ss8",
+    "parentID": "regent",
+    "name": "regent-ss8",
+    "basecolorMap": "regent-ss8"
+  },
+  {
+    "ID": "tiffany",
+    "name": "tiffany PADRE",
+    "type": "cloth",
+    "roughnessMap": "tiffany",
+    "normalMap": "tiffany",
+    "aoMap": "tiffany"
+  },
+  {
+    "ID": "tiffany-sy1",
+    "parentID": "tiffany",
+    "name": "tiffany-sy1",
+    "basecolorMap": "tiffany-sy1"
+  },
+  {
+    "ID": "tiffany-sy2",
+    "parentID": "tiffany",
+    "name": "tiffany-sy2",
+    "basecolorMap": "tiffany-sy2"
+  },
+  {
+    "ID": "tiffany-sy3",
+    "parentID": "tiffany",
+    "name": "tiffany-sy3",
+    "basecolorMap": "tiffany-sy3"
+  },
+  {
+    "ID": "tiffany-sy4",
+    "parentID": "tiffany",
+    "name": "tiffany-sy4",
+    "basecolorMap": "tiffany-sy4"
+  },
+  {
+    "ID": "tiffany-sy5",
+    "parentID": "tiffany",
+    "name": "tiffany-sy5",
+    "basecolorMap": "tiffany-sy5"
+  },
+  {
+    "ID": "tiffany-sy6",
+    "parentID": "tiffany",
+    "name": "tiffany-sy6",
+    "basecolorMap": "tiffany-sy6"
+  },
+  {
+    "ID": "tiffany-sy7",
+    "parentID": "tiffany",
+    "name": "tiffany-sy7",
+    "basecolorMap": "tiffany-sy7"
+  },
+  {
+    "ID": "tiffany-sy8",
+    "parentID": "tiffany",
+    "name": "tiffany-sy8",
+    "basecolorMap": "tiffany-sy8"
+  },
+  {
+    "ID": "tiffany-y2",
+    "parentID": "tiffany",
+    "name": "tiffany-y2",
+    "basecolorMap": "tiffany-y2"
+  },
+  {
+    "ID": "vetri-serigrafati-acidati-gab",
+    "name": "vetri-serigrafati-acidati-gab",
+    "type": "standard",
+    "basecolor" : [0.01,0.01,0.01],
+    "roughness": 1
+  },
+  {
+    "ID": "cuciture",
+    "name": "cuciture",
+    "type": "cloth",
+    "basecolorMap" : "cuciture",
+    "transparent": true,
+    "minAlpha": 0.5
+  },
+  {
+    "ID": "igloo-cuciture",
+    "name": "igloo-cuciture",
+    "type": "cloth",
+    "basecolorMap" : "igloo-cuciture",
+    "roughnessMap" : "igloo-cuciture",
+    "normalMap"    : "igloo-cuciture",
+    "transparent": true,
+    "minAlpha": 0.01,
+    "quality": "2048_png_loseless_2048_png_loseless"
+  },
+  {
+    "ID": "cuciture-sq2",
+    "parentID": "igloo-cuciture",
+    "hsvCorrection": [0,0,0]
+  },
+  {
+    "ID": "cuciture-sq4",
+    "parentID": "igloo-cuciture",
+    "hsvCorrection": [0,0,-0.5]
+  },
+  {
+    "ID": "etichettaCalligaris",
+    "name": "etichettaCalligaris",
+    "type": "standard",
+    "basecolorMap" : "etichettaCalligaris"
+  },
+  {
+    "ID": "bollinoCalligaris",
+    "name": "bollinoCalligaris",
+    "type": "standard",
+    "basecolorMap" : "bollinoCalligaris"
+  }
+]

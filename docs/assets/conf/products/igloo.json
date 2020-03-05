@@ -1,0 +1,190 @@
+{
+    "ID": "igloo",
+    "name": "Igloo LH",
+    "clientCodes": [
+        "CS/1838-LH"
+    ],
+    "metadata": {
+        "height": "90", 
+        "width": "62", 
+        "depth": "61", 
+        "seat height": "54",
+        "collection": "2018"
+    },
+    "model3D": [
+        {
+            "ID": "igloo",
+            "url": "igloo\/igloo.glb",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "scale": [0.01, 0.01, 0.01],
+            "aoMaps": {
+                "seduta": "seduta",
+                "struttura": "altro",
+                "etichetta": "etichetta",
+                "anello": "altro",
+                "gambe": "altro",
+                "ruote": "altro"
+            },
+            "floor" : {
+                "map": "floor",
+                "size": [283.765472,0,283.765472]
+            }
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "igloo",
+            "name": "seduta",
+            "ID": "1",
+            "meshes": [
+                "seduta"
+            ]
+        },
+        {
+            "modelID": "igloo",
+            "name": "struttura",
+            "ID": "2",
+            "meshes": [
+                "gambe"
+            ]
+        },
+        {
+            "modelID": "igloo",
+            "name": "argenteria",
+            "ID": "3",
+            "meshes": [
+                "struttura"
+            ],
+            "repeat": 1,
+            "material": "alluminio-p74"
+        },
+        {
+            "modelID": "igloo",
+            "name": "seduta_cuciture",
+            "ID": "4",
+            "meshes": [
+                "seduta_cuciture"
+            ]
+        },
+        {
+            "modelID": "igloo",
+            "name": "etichetta",
+            "ID": "5",
+            "meshes": [
+                "etichetta"
+            ],
+            "repeat": 1,
+            "material": "etichettaCalligaris"
+        },
+        {
+            "modelID": "igloo",
+            "name": "anello",
+            "ID": "6",
+            "meshes": [
+                "anello"
+            ],
+            "repeat": 1,
+            "material": "alluminio-p15"
+        },
+        {
+            "modelID": "igloo",
+            "name": "ruote",
+            "ID": "7",
+            "meshes": [
+                "ruote"
+            ]
+        }
+    ],
+    "groups": [],
+    "configurables": [
+        {
+            "ID": "seduta",
+            "name": "seduta",
+            "parts": [
+                "1"
+            ],
+            "materials": [
+                {
+                    "material": "malmo-sq2",
+                    "repeat": 2
+                },
+                {
+                    "material": "malmo-sq4",
+                    "repeat": 2
+                },
+                {
+                    "material": "pelle-470",
+                    "repeat": 10
+                },
+                {
+                    "material": "pelle-705",
+                    "repeat": 10
+                },
+                {
+                    "material": "pelle-d04",
+                    "repeat": 10
+                }
+            ]
+        },
+        {
+            "ID": "struttura",
+            "name": "struttura",
+            "parts": [
+                "2"
+            ],
+            "materials": [{
+                "material": "alluminio-p15",
+                "repeat": 3
+            },
+            {
+                "material": "alluminio-p74",
+                "repeat": 1
+            },
+            {
+                "material": "alluminio-p94",
+                "repeat": 10
+            }
+        ]
+        },
+        {
+            "ID": "ruote",
+            "name": "ruote",
+            "parts": [
+                "7"
+            ],
+            "type": "hidden",
+            "materials": [{
+                "material": "blackPlastic",
+                "repeat": 1
+            },
+            {
+                "material": "greyPlastic",
+                "repeat": 1
+            }
+            ]
+        },
+        {
+            "ID": "cuciture",
+            "name": "cuciture",
+            "parts": [
+                "4"
+            ],
+            "type": "hidden",
+            "materials": [{
+                "material": "cuciture-sq2",
+                "repeat": 1
+            },
+            {
+                "material": "cuciture-sq4",
+                "repeat": 1
+            }
+        ]
+        }
+    ],
+    "states": [],
+    "tags": [
+        "igloo",
+        "collezione 2018"
+    ]
+}

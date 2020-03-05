@@ -1,0 +1,21 @@
+{
+	"author": "Luca Zampetti <lzampetti@gmail.com>",
+	"name": "tiemme-com",
+	"description": "tiemme-com",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/actarian/tiemme-com.git"
+	},
+	"scripts": {
+		"start": "gulp"
+	},
+	"dependencies": {
+		"gsap": "~3.2.1",
+		"rxjs": "~6.5.4"
+	},
+	"devDependencies": {
+		"gulpfile-config": "~1.0.0-alpha.7"
+	}
+}

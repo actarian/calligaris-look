@@ -1,0 +1,244 @@
+{
+    "ID": "cartesio",
+    "name": "Cartesio",
+    "clientCodes": [
+        "CS/4092 RL B"
+    ],
+    "variants": [
+        {
+            "ID": "200",
+            "name": "200"
+        },
+        {
+            "ID": "250",
+            "name": "250"
+        }
+    ],
+    "metadata": {
+        "height": "75",
+        "collection": "2018",
+        "variants": [
+            {
+                "variantID": "200",
+                "width": "200"
+            
+            },
+            {
+                "variantID": "250",
+                "width": "250"
+                
+            }
+        ]
+    },
+    "model3D": [
+        {
+            "ID": "cartesio",
+            "url": "cartesio\/cartesio-200-250.glb",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "scale": [0.01, 0.01, 0.01],
+            "floor" : {
+                "map": "floor",
+                "size": [283.765472,0,283.765472]
+            },
+            "aoMaps": {
+                "piano_bottom_200": "piano_bottom",
+                "piano_bottom_250": "piano_bottom",
+                "piano_legno_200": "piano_legno",
+                "piano_legno_250": "piano_legno",
+                "gambe": "gambe",
+                "piedini": "piedini",
+                "bollino": "bollino",
+                "sottopiano_200": "sottopiano",
+                "sottopiano_250": "sottopiano"
+            }
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "cartesio",
+            "name": "piano superiore",
+            "ID": "1",
+            "variants": [
+                { 
+                    "variantID": "200",
+                    "meshes": ["piano_top_200"]
+                },
+                { 
+                    "variantID": "250",
+                    "meshes": ["piano_top_250"]
+                }
+            ],
+            "material": "$piano"
+        },
+        {
+            "modelID": "cartesio",
+            "name": "piano inferiore",
+            "ID": "2",
+            "variants": [
+                { 
+                    "variantID": "200",
+                    "meshes": ["piano_bottom_200"]
+                },
+                { 
+                    "variantID": "250",
+                    "meshes": ["piano_bottom_250"]
+                }
+            ],
+            "material": "vetri-serigrafati-acidati-gab",
+            "repeat": 1
+        },
+        {
+            "modelID": "cartesio",
+            "name": "piano legno",
+            "ID": "3",
+            "variants": [
+                { 
+                    "variantID": "200",
+                    "meshes": ["piano_legno_200"]
+                },
+                { 
+                    "variantID": "250",
+                    "meshes": ["piano_legno_250"]
+                }
+            ],
+            "material": "$piano"
+        },
+        {
+            "modelID": "cartesio",
+            "name": "gambe",
+            "ID": "4",
+            "meshes": [
+                "gambe"
+            ],
+            "material": "$gambe"
+        },
+        {
+            "modelID": "cartesio",
+            "name": "piedini",
+            "ID": "5",
+            "meshes": [
+                "piedini"
+            ],
+            "material": "blackPlastic",
+            "repeat": 1
+        },
+        {
+            "modelID": "cartesio",
+            "name": "bollino",
+            "ID": "6",
+            "meshes": [
+                "bollino"
+            ],
+            "material": "bollinoCalligaris",
+            "repeat": 1
+        },
+        {
+            "modelID": "cartesio",
+            "name": "sottopiano",
+            "ID": "7",
+            "variants": [
+                { 
+                    "variantID": "200",
+                    "meshes": ["sottopiano_200"]
+                },
+                { 
+                    "variantID": "250",
+                    "meshes": ["sottopiano_250"]
+                }
+            ],
+            "material": "laccati-opachi-p15l",
+            "repeat": 1
+        }
+    ],
+    "configurables": [
+        {
+            "ID": "piano legno-piano ceramica",
+            "choices": [
+                {
+                    "ID": "piano legno",
+                    "parts": [
+                        "3"
+                    ],
+                    "metadata": {
+                        "depth": "106"
+                    }
+                },
+                {
+                    "ID": "piano ceramica",
+                    "parts": [
+                        "1",
+                        "2",
+                        "7"
+                    ],
+                    "metadata": {
+                        "depth": "120"
+                    }
+                }
+            ],
+            "type": "hidden"
+        },
+        {
+            "ID": "piano",
+            "materials": [
+                {
+                    "material": "accoppiato-ceramica-vetro-p2c",
+                    "repeat": 1
+                },
+                {
+                    "material": "accoppiato-ceramica-vetro-p3c",
+                    "repeat": 1
+                },
+                {
+                    "material": "accoppiato-ceramica-vetro-p4c",
+                    "repeat": 1
+                },
+                {
+                    "material": "accoppiato-ceramica-vetro-p7c",
+                    "repeat": 1
+                },
+                {
+                    "material": "impiallacciature-p19w",
+                    "repeat": 2
+                },
+                {
+                    "material": "impiallacciature-p201",
+                    "repeat":  2
+                },
+                {
+                    "material": "impiallacciature-p23w",
+                    "repeat": 2
+                },
+                {
+                    "material": "impiallacciature-p15l",
+                    "repeat": 2
+                }
+            ]
+        },
+        {
+            "ID": "gambe",
+            "materials": [{
+                "material": "metallo-p13l",
+                "repeat": 1
+            },
+            {
+                "material": "metallo-p15",
+                "repeat": 1
+            },
+            {
+                "material": "metallo-p16",
+                "repeat": 1
+            },
+            {
+                "material": "metallo-p94",
+                "repeat": 1
+            }
+        ]
+        },
+        {
+            "ID": "variant",
+            "type": "variant"
+        }
+    ],
+    "states": []
+}

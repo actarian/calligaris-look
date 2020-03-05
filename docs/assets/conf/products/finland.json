@@ -1,0 +1,154 @@
+{
+    "ID": "finland",
+    "name": "finland",
+    "clientCodes": [
+        "CS/3398"
+    ],
+    "metadata": {
+        "height": "80",
+        "depth": "170",
+        "collection": "2018"
+    },
+    "variants": [
+        {
+            "ID": "FINLCOMB005",
+            "name": "FINLCOMB005"
+        },
+        {
+            "ID": "FINLCOMB006",
+            "name": "FINLCOMB006"
+        }
+    ],
+    "model3D": [
+        {
+            "ID": "finland",
+            "url": "finland\/finland.glb",
+            "name": "finland",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "aoMaps": {
+                "cuscini": "cuscini",
+                "piedini2": "fin2_ao_piedini2_2_AO",
+                "piedini": "piedini",
+                "seduta_0": "seduta",
+                "seduta_1": "seduta"   
+            },
+            "displacementMaps": {
+                "cuscini": {
+                    "map": "height_cuscini",
+                    "scale": 0.01
+                }
+            },
+            "floor" : {
+                "map": "floor",
+                "size": [5,0,5]
+            },
+            "variants": [
+                {
+                    "variantID": "FINLCOMB005",
+                    "scale": [1,1,1]
+                },
+                {
+                    "variantID": "FINLCOMB006",
+                    "scale": [-1,1,1]
+                }
+            ]
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "finland",
+            "name": "seduta",
+            "ID": "1",
+            "meshes": [
+                "seduta_0",
+                "seduta_1",
+                "cuscini"
+            ],
+            "material": "$rivestimento"
+        },
+        {
+            "modelID": "finland",
+            "name": "piedini legno",
+            "ID": "2",
+            "meshes": [
+                        "piedini"
+            ],
+            "material": "$piedini"
+        },
+        {
+            "modelID": "finland",
+            "name": "piedini metallo",
+            "ID": "3",
+            "meshes": [
+                        "piedini2"
+            ],
+            "material": "$piedini"
+        }
+    ],
+    "configurables": [
+        {
+            "ID": "rivestimento",
+            "materials": [{
+                "material": "rigenerati-di-cuoio-315",
+                "repeat": 8
+            },
+            {
+                "material": "rigenerati-di-cuoio-474",
+                "repeat": 8
+            },
+            {
+                "material": "rigenerati-di-cuoio-d03",
+                "repeat": 8
+            },
+            {
+                "material": "rigenerati-di-cuoio-r03",
+                "repeat": 8
+            },
+            {
+                "material": "rigenerati-di-cuoio-r04",
+                "repeat": 8
+            }
+            ]
+        },
+        {
+            "ID": "piedini",
+            "materials": [{
+                "material": "impiallacciature-p19w",
+                "repeat": 1
+            },
+            {
+                "material": "impiallacciature-p23w",
+                "repeat": 1
+            },
+            {
+                "material": "impiallacciature-p201",
+                "repeat": 1
+            }
+            ]
+        },
+        {
+            "ID": "tipo-piede",
+            "choices": [
+                {
+                    "ID": "legno",
+                    "parts": [
+                        "2"
+                    ]
+                },
+                {
+                    "ID": "metallo",
+                    "parts": [
+                        "3"
+                    ]
+                }
+            ],
+            "type": "hidden"
+        },
+        {
+            "ID": "combinazione",
+            "type": "variant"
+        }
+    ],
+    "states": []
+}

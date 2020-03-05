@@ -1,0 +1,224 @@
+{
+    "ID": "tivoli",
+    "name": "Tivoli",
+    "clientCodes": [
+        "CS/4100"
+    ],
+    "metadata": {
+        "height": "75",
+        "width": "75",
+        "depth-closed": "130",
+        "depth-open": "190"
+    },
+    "model3D": [
+        {
+            "ID": "tivoli",
+            "url": "tivoli\/tivoli.glb",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "scale": [0.01, 0.01, 0.01],
+            "floor" : {
+                "map": "floor",
+                "size": [283.765472,0,283.765472]
+            },
+            "aoMaps": {
+                "group_aperto_piano_a": "white",
+                "group_chiuso_paino_c": "white",
+                "group_allunghe_a_aperto": "white",
+                "group_allunghe_c_chiuso": "white",
+                "group_gambe": "gambe",
+                "struttura_group": "struttura"   
+            }
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "tivoli",
+            "name": "piano",
+            "ID": "piano",
+            "meshes": [
+                "group_aperto_piano_a",
+                "group_chiuso_paino_c"
+            ]
+        },
+        {
+            "modelID": "tivoli",
+            "name": "allunghe",
+            "ID": "allunghe",
+            "meshes": [
+                "group_allunghe_a_aperto",
+                "group_allunghe_c_chiuso"
+            ]
+        },
+        {
+            "modelID": "tivoli",
+            "name": "gambe",
+            "ID": "gambe",
+            "meshes": [
+                "group_gambe"
+            ]
+        },
+        {
+            "modelID": "tivoli",
+            "name": "struttura",
+            "ID": "struttura",
+            "meshes": [
+                "struttura_group"
+            ]
+        }
+    ],
+    "groups": [
+        {
+            "modelID": "tivoli",
+            "group": "group_aperto_piano_a",
+            "ID": "group_aperto_piano_a",
+            "name": "group_aperto_piano_a"
+          },
+          {
+            "modelID": "tivoli",
+            "group": "group_chiuso_paino_c",
+            "ID": "group_chiuso_paino_c",
+            "name": "group_chiuso_paino_c"
+          },
+          {
+            "modelID": "tivoli",
+            "group": "group_allunghe_a_aperto",
+            "ID": "group_allunghe_a_aperto",
+            "name": "group_allunghe_a_aperto"
+          },
+          {
+            "modelID": "tivoli",
+            "group": "group_allunghe_c_chiuso",
+            "ID": "group_allunghe_c_chiuso",
+            "name": "group_allunghe_c_chiuso"
+          }
+    ],
+    "configurables": [
+        {
+            "ID": "piano",
+            "name": "piano",
+            "parts": [
+                "piano"
+            ],
+            "materials": [
+                {
+                    "material": "accoppiamento-ceramica-legno-p2c",
+                    "repeat": 4
+                },
+                {
+                    "material": "accoppiamento-ceramica-legno-p321",
+                    "repeat": 4
+                },
+                {
+                    "material": "legno-massello-p12-frassino",
+                    "repeat": 4
+                },
+                {
+                    "material": "impiallacciature-p201",
+                    "repeat":  4
+                },
+                {
+                    "material": "laccati-opachi-p94",
+                    "repeat": 4
+                }
+            ]
+        },
+        {
+            "ID": "allunghe",
+            "name": "allunghe",
+            "parts": [
+                "allunghe"
+            ],
+            "type": "hidden",
+            "materials": [
+                {
+                    "material": "legno-massello-p12-frassino",
+                    "repeat": 4
+                },
+                {
+                    "material": "impiallacciature-p201",
+                    "repeat":  4
+                },
+                {
+                    "material": "laccati-opachi-p94",
+                    "repeat": 4
+                },
+                {
+                    "material": "laccati-opachi-p16",
+                    "repeat": 4
+                }
+            ]
+        },
+        {
+            "ID": "struttura",
+            "name": "struttura",
+            "parts": [
+                "struttura"
+            ],
+            "materials": [
+            {
+                "material": "metallo-p176",
+                "repeat": 1
+            },
+            {
+                "material": "metallo-p16",
+                "repeat": 1
+            },
+            {
+                "material": "metallo-p94",
+                "repeat": 1
+            }
+        ]
+        },
+        {
+            "ID": "gambe",
+            "name": "gambe",
+            "parts": [
+                "gambe"
+            ],
+            "materials": [{
+                "material": "laccati-opachi-p94",
+                "repeat": 1
+            },
+            {
+                "material": "laccati-opachi-p16",
+                "repeat": 1
+            },
+            {
+                "material": "laccati-opachi-p176",
+                "repeat": 1
+            }
+        ]
+        }
+    ],
+    "states": [
+        {
+            "ID": "chiuso",
+            "name": "tavolo chiuso",
+            "groups": [
+                {
+                    "groupID": "group_aperto_piano_a",
+                    "visible": false
+                },
+                {
+                    "groupID": "group_allunghe_a_aperto",
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "ID": "aperto",
+            "name": "tavolo aperto",
+            "groups": [
+                {
+                    "groupID": "group_chiuso_paino_c",
+                    "visible": false
+                },
+                {
+                    "groupID": "group_allunghe_c_chiuso",
+                    "visible": false
+                }
+            ]
+        }
+    ]
+}

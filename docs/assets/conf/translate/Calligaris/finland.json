@@ -1,0 +1,32 @@
+{
+    "allConfigurations": {
+        "FINL" : {
+            "combinazione": ["FINLCOMB005","FINLCOMB006"],
+            "rivestimento":  ["ESI1683","ESI1705","ESI1D04","ESI1L01","ESI1L08","ESI1L16"],
+            "piedino": ["P00138", "P00140", "P00141"]
+        }
+    },
+    "choices": {
+        "piedinoCodice":{
+            "P00138": {
+                "ID": "tipo-piede",
+                "selection": "legno",
+                "material": "IRO-19W",
+                "valueCodice": "P00138"
+            },
+            "P00140": {
+                "ID": "tipo-piede",
+                "selection": "legno",
+                "material": "IRO-23W",
+                "valueCodice": "P00140"
+            },
+            "P00141": {
+                "ID": "tipo-piede",
+                "selection": "metallo",
+                "material": "INA-201",
+                "valueCodice": "P00141"
+            }
+
+        }
+    }
+}

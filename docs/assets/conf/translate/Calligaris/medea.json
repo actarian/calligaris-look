@@ -1,0 +1,35 @@
+{
+    "allConfigurations": {
+        "CS/3407 LH" : {
+            "10": ["530"],
+            "20": ["1300"],
+            "30": ["0683","0705","0D04","0L2V"],
+            "40": ["3407012","340715L", "3407201"]
+        }
+    },
+
+    "choices": {
+        "40":{
+            "3407012": {
+                "ID": "tipo-piede",
+                "selection": "3407",
+                "material": "IRO-19W"
+            },
+            "340715L": {
+                "ID": "tipo-piede",
+                "selection": "3407",
+                "material": "IRO-23W"
+            },
+            "3407201": {
+                "ID": "tipo-piede",
+                "selection": "3407",
+                "material": "INA-201"
+            }
+
+        }
+
+
+    }
+
+
+}

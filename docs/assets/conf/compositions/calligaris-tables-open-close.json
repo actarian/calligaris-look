@@ -1,0 +1,30 @@
+{
+    "ID": "Calligaris Tables Composition",
+    "configurations": [],
+    "position": [0, 0, 0],
+    "rotation": [0, 0, 0],
+    "tags": ["collezione 2018"],
+    "lightingSettings" : "tables-lightingSettings",
+    "materialLibrary"  : "calligaris-library",
+    "currentState": "chiuso",
+    "states": [
+        {
+            "ID": "aperto",
+            "camera": {
+                "position": [0,1,3.5],
+                "target": [0,0.4,0],
+                "setOnDisplayCall": false
+            },
+            "states": ["aperto"]
+        },
+        {
+            "ID": "chiuso",
+            "camera": {
+                "position": [0,1,3.5],
+                "target": [0,0.4,0],
+                "setOnDisplayCall": false
+            },
+            "states": ["chiuso"]
+        }
+    ]
+}

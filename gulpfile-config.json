@@ -1,0 +1,47 @@
+﻿{
+  "targets": {
+    "browser": {
+      "compile": [
+        {
+          "input": "src/*.html",
+          "output": "docs/",
+          "minify": false
+        },
+        {
+          "input": "src/css/total-look.scss",
+          "output": "docs/css/total-look.css",
+          "minify": true
+        },
+        {
+          "input": "src/js/main.js",
+          "output": {
+            "file": "docs/js/total-look.js",
+            "format": "umd"
+          },
+          "globals": {
+            "gsap": "gsap"
+          },
+          "minify": true
+        }
+      ],
+      "bundle": [
+        {
+          "input": [
+            "node_modules/gsap/dist/EasePack.js",
+            "node_modules/gsap/dist/gsap.js"
+          ],
+          "output": "docs/js/total-look-vendors.js",
+          "minify": true
+        }
+      ]
+    }
+  },
+  "tfs": false,
+  "server": {
+    "root": "./docs",
+    "path": "/calligaris-look/",
+    "host": "localhost",
+    "port": 41234,
+    "log": false
+  }
+}

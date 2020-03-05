@@ -1,0 +1,220 @@
+{
+    "ID": "saint-tropez",
+    "name": "Saint Tropez W",
+    "clientCodes": [
+        "CS/1855"
+    ],
+    "metadata": {
+        "height": "84.5",
+        "width": "49",
+        "depth": "50",
+        "seat height": "46",
+        "collection": "2018"
+    },
+    "model3D": [{
+        "ID": "saint-tropez",
+        "url": "saint-tropez\/saint_tropez.glb",
+        "position": [0, 0, 0],
+        "rotation": [0, 0, 0],
+        "scale": [0.01, 0.01, 0.01],
+        "aoMaps": {
+            "seduta_in_schienale": "seduta_in",
+            "seduta_in_seduta": "seduta_in",
+            "seduta_in_dx": "seduta_in",
+            "seduta_in_sx": "seduta_in",
+            "seduta": "seduta",
+            "schienale": "seduta",
+            "ala_dx": "seduta",
+            "ala_sx": "seduta",
+            "gambe": "gambe"
+        },
+        "floor" : {
+            "map": "floor",
+            "size": [283.765472,0,283.765472]
+        }
+    }],
+    "parts": [
+        {
+            "modelID": "saint-tropez",
+            "name": "struttura",
+            "ID": "1",
+            "meshes": [
+                "gambe"
+            ]
+        },
+        {
+            "modelID": "saint-tropez",
+            "name": "seduta",
+            "ID": "2",
+            "meshes": [
+                "seduta"
+            ],
+            "renderOrder": -18
+        },
+        {
+            "modelID": "saint-tropez",
+            "name": "ali",
+            "ID": "3",
+            "meshes": [
+                "ala_dx",
+                "ala_sx"
+            ],
+            "renderOrder": -14
+        },
+        {
+            "modelID": "saint-tropez",
+            "name": "schienale",
+            "ID": "4",
+            "meshes": [
+                "schienale"
+            ],
+            "renderOrder": -10
+        },
+        {
+            "modelID": "saint-tropez",
+            "name": "seduta_in_seduta",
+            "ID": "5",
+            "meshes": [
+                "seduta_in_seduta"
+            ],
+            "material": "plastiche-trasparenti-coprenti-interno/$seduta",
+            "repeat": 2,
+            "renderOrder": -20
+        },
+        {
+            "modelID": "saint-tropez",
+            "name": "seduta_in_ali",
+            "ID": "6",
+            "meshes": [
+                "seduta_in_dx",
+                "seduta_in_sx"
+            ],
+            "material": "plastiche-trasparenti-coprenti-interno/$seduta",
+            "repeat": 2,
+            "renderOrder": -16
+        },
+        {
+            "modelID": "saint-tropez",
+            "name": "seduta_in_schienale",
+            "ID": "7",
+            "meshes": [
+                "seduta_in_schienale"
+            ],
+            "material": "plastiche-trasparenti-coprenti-interno/$seduta",
+            "repeat": 2,
+            "renderOrder": -12
+        }
+    ],
+    "groups": [],
+    "configurables": [
+        {
+            "ID": "seduta",
+            "name": "seduta",
+            "parts": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "materials": [
+                {
+                    "material": "plastiche-trasparenti-coprenti-p17p",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p20p",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p21p",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p24p",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p266",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p276",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p799",
+                    "repeat": 2
+                },
+                {
+                    "material": "plastiche-trasparenti-coprenti-p848",
+                    "repeat": 2
+                }
+            ]
+        },
+        {
+            "ID": "struttura",
+            "name": "struttura",
+            "parts": [
+                "1"
+            ],
+            "materials": [{
+                "material": "legno-massello-p02",
+                "repeat": 4
+            },
+            {
+                "material": "legno-massello-p12-frassino",
+                "repeat": 4
+            },
+            {
+                "material": "legno-massello-p19w",
+                "repeat": 4
+            },
+            {
+                "material": "legno-massello-p27-faggio",
+                "repeat": 4
+            },
+            {
+                "material": "legno-massello-p132",
+                "repeat": 4
+            },
+            {
+                "material": "legno-massello-p201-faggio",
+                "repeat": 4
+            },
+            {
+                "material": "laccati-opachi-p15l",
+                "repeat": 1
+            },
+            {
+                "material": "laccati-opachi-p94",
+                "repeat": 1
+            }
+        ]
+        },
+        {
+            "ID": "interno/no-interno",
+            "name": "interno/no-interno",
+            "choices": [{
+                    "ID": "interno",
+                    "parts": [
+                        "5",
+                        "6",
+                        "7"
+                    ]
+                },
+                {
+                    "ID": "no-interno",
+                    "parts": []
+                }
+            ],
+            "type": "hidden"
+        }
+    ],
+    "states": [],
+    "tags": [
+        "saint-tropez w",
+        "collezione 2018"
+    ]
+}

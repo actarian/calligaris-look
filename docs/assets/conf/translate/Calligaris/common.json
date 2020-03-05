@@ -1,0 +1,4500 @@
+{
+    "products": {
+      "CS1348": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1354": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1355": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1356": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1359": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1359-E": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1366": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1495": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1496": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1820": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1856 180": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1856 360": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS1857": {
+        "name": "BASIL",
+        "productID": "basil",
+        "compositionID": "calligaris-chairs"
+      },
+      "CS4092-FE 200": {
+        "name": "CARTESIO",
+        "productID": "cartesio",
+        "compositionID": "calligaris-tables",
+        "variantID": "200",
+        "parteCodice": "000"
+      },
+      "CS4092-FR 200": {
+        "name": "CARTESIO",
+        "productID": "cartesio",
+        "compositionID": "calligaris-tables",
+        "variantID": "200",
+        "parteCodice": "000"
+      },
+      "CS4092-FE 250": {
+        "name": "CARTESIO",
+        "productID": "cartesio",
+        "compositionID": "calligaris-tables",
+        "variantID": "250",
+        "parteCodice": "000"
+      },
+      "CS4092-FR 250": {
+        "name": "CARTESIO",
+        "productID": "cartesio",
+        "compositionID": "calligaris-tables",
+        "variantID": "250",
+        "parteCodice": "000"
+      },
+      "CS/3407 LH": {
+        "name": "MEDEA",
+        "productID": "medea",
+        "compositionID": "calligaris-chairs",
+        "productType": "divcal"
+      },
+      "FINL" : {
+        "name":  "FINLAND",
+        "productID": "finland",
+        "compositionID": "calligaris-tables",
+        "productType": "divd3"
+      }
+    },
+  "materials": {
+    "AL-015": {
+      "materialID": "alluminio-p15",
+      "materialeCodice": "AL",
+      "finituraCodice": "015",
+      "immagineCodice": "7670"
+    },
+    "AL-074": {
+      "materialID": "alluminio-p74",
+      "materialeCodice": "AL",
+      "finituraCodice": "074",
+      "immagineCodice": "2820"
+    },
+    "AL-083": {
+      "materialID": "",
+      "materialeCodice": "AL",
+      "finituraCodice": "083",
+      "immagineCodice": "14320"
+    },
+    "AL-094": {
+      "materialID": "alluminio-p94",
+      "materialeCodice": "AL",
+      "finituraCodice": "094",
+      "immagineCodice": "4350"
+    },
+    "AL-100": {
+      "materialID": "",
+      "materialeCodice": "AL",
+      "finituraCodice": "100",
+      "immagineCodice": "10850"
+    },
+    "AL-139": {
+      "materialID": "",
+      "materialeCodice": "AL",
+      "finituraCodice": "139",
+      "immagineCodice": "7660"
+    },
+    "AL-176": {
+      "materialID": "",
+      "materialeCodice": "AL",
+      "finituraCodice": "176",
+      "immagineCodice": "7690"
+    },
+    "CEA-02C": {
+      "materialID": "",
+      "materialeCodice": "CEA",
+      "finituraCodice": "02C",
+      "immagineCodice": "12970"
+    },
+    "CEA-03C": {
+      "materialID": "",
+      "materialeCodice": "CEA",
+      "finituraCodice": "03C",
+      "immagineCodice": "13010"
+    },
+    "CEA-04C": {
+      "materialID": "",
+      "materialeCodice": "CEA",
+      "finituraCodice": "04C",
+      "immagineCodice": "13070"
+    },
+    "CEA-07C": {
+      "materialID": "",
+      "materialeCodice": "CEA",
+      "finituraCodice": "07C",
+      "immagineCodice": "13180"
+    },
+    "CEA-09C": {
+      "materialID": "",
+      "materialeCodice": "CEA",
+      "finituraCodice": "09C",
+      "immagineCodice": "13860"
+    },
+    "CEA-15C": {
+      "materialID": "",
+      "materialeCodice": "CEA",
+      "finituraCodice": "15C",
+      "immagineCodice": "13650"
+    },
+    "CEL-01C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "01C",
+      "immagineCodice": "12920"
+    },
+    "CEL-02C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "02C",
+      "immagineCodice": "12360"
+    },
+    "CEL-03C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "03C",
+      "immagineCodice": "12290"
+    },
+    "CEL-04C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "04C",
+      "immagineCodice": "11980"
+    },
+    "CEL-05C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "05C",
+      "immagineCodice": "13120"
+    },
+    "CEL-06C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "06C",
+      "immagineCodice": "13150"
+    },
+    "CEL-07C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "07C",
+      "immagineCodice": "13190"
+    },
+    "CEL-092": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "092",
+      "immagineCodice": ""
+    },
+    "CEL-09C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "09C",
+      "immagineCodice": "14140"
+    },
+    "CEL-117": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "117",
+      "immagineCodice": "12820"
+    },
+    "CEL-133": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "133",
+      "immagineCodice": "15290"
+    },
+    "CEL-15C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "15C",
+      "immagineCodice": "13450"
+    },
+    "CEL-166": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "166",
+      "immagineCodice": "15300"
+    },
+    "CEL-17C": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "17C",
+      "immagineCodice": "15890"
+    },
+    "CEL-321": {
+      "materialID": "",
+      "materialeCodice": "CEL",
+      "finituraCodice": "321",
+      "immagineCodice": "12370"
+    },
+    "CER-01C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "01C",
+      "immagineCodice": "10940"
+    },
+    "CER-02C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "02C",
+      "immagineCodice": "11500"
+    },
+    "CER-03C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "03C",
+      "immagineCodice": "11970"
+    },
+    "CER-04C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "04C",
+      "immagineCodice": "12300"
+    },
+    "CER-05C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "05C",
+      "immagineCodice": "13110"
+    },
+    "CER-06C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "06C",
+      "immagineCodice": "13140"
+    },
+    "CER-07C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "07C",
+      "immagineCodice": "13170"
+    },
+    "CER-09C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "09C",
+      "immagineCodice": "13690"
+    },
+    "CER-117": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "117",
+      "immagineCodice": "8500"
+    },
+    "CER-12C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "12C",
+      "immagineCodice": "12830"
+    },
+    "CER-133": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "133",
+      "immagineCodice": "1030"
+    },
+    "CER-13C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "13C",
+      "immagineCodice": "12840"
+    },
+    "CER-14C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "14C",
+      "immagineCodice": "14100"
+    },
+    "CER-15C": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "15C",
+      "immagineCodice": "13820"
+    },
+    "CER-166": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "166",
+      "immagineCodice": "8230"
+    },
+    "CER-321": {
+      "materialID": "",
+      "materialeCodice": "CER",
+      "finituraCodice": "321",
+      "immagineCodice": "8250"
+    },
+    "CEV-01C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "01C",
+      "immagineCodice": "12260"
+    },
+    "CEV-02C": {
+      "materialID": "accoppiato-ceramica-vetro-p2c",
+      "materialeCodice": "CEV",
+      "finituraCodice": "02C",
+      "immagineCodice": "12280"
+    },
+    "CEV-03C": {
+      "materialID": "accoppiato-ceramica-vetro-p3c",
+      "materialeCodice": "CEV",
+      "finituraCodice": "03C",
+      "immagineCodice": "12390"
+    },
+    "CEV-04C": {
+      "materialID": "accoppiato-ceramica-vetro-p4c",
+      "materialeCodice": "CEV",
+      "finituraCodice": "04C",
+      "immagineCodice": "11990"
+    },
+    "CEV-05C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "05C",
+      "immagineCodice": "13130"
+    },
+    "CEV-06C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "06C",
+      "immagineCodice": "13160"
+    },
+    "CEV-07C": {
+      "materialID": "accoppiato-ceramica-vetro-p7c",
+      "materialeCodice": "CEV",
+      "finituraCodice": "07C",
+      "immagineCodice": "13200"
+    },
+    "CEV-08C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "08C",
+      "immagineCodice": "13210"
+    },
+    "CEV-09C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "09C",
+      "immagineCodice": "13470"
+    },
+    "CEV-117": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "117",
+      "immagineCodice": "11950"
+    },
+    "CEV-133": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "133",
+      "immagineCodice": "12320"
+    },
+    "CEV-14C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "14C",
+      "immagineCodice": "13640"
+    },
+    "CEV-15C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "15C",
+      "immagineCodice": "13830"
+    },
+    "CEV-166": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "166",
+      "immagineCodice": "12080"
+    },
+    "CEV-17C": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "17C",
+      "immagineCodice": "15880"
+    },
+    "CEV-321": {
+      "materialID": "",
+      "materialeCodice": "CEV",
+      "finituraCodice": "321",
+      "immagineCodice": "12380"
+    },
+    "FG-002": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "002",
+      "immagineCodice": "910"
+    },
+    "FG-012": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "012",
+      "immagineCodice": "7640"
+    },
+    "FG-015": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "015",
+      "immagineCodice": "12870"
+    },
+    "FG-016": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "016",
+      "immagineCodice": "12890"
+    },
+    "FG-027": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "027",
+      "immagineCodice": "7710"
+    },
+    "FG-094": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "094",
+      "immagineCodice": "6270"
+    },
+    "FG-128": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "128",
+      "immagineCodice": "2460"
+    },
+    "FG-132": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "132",
+      "immagineCodice": ""
+    },
+    "FG-176": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "176",
+      "immagineCodice": "12900"
+    },
+    "FG-19W": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "19W",
+      "immagineCodice": "12910"
+    },
+    "FG-201": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "201",
+      "immagineCodice": "3950"
+    },
+    "FG-269": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "269",
+      "immagineCodice": "14530"
+    },
+    "FG-290": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "290",
+      "immagineCodice": "14550"
+    },
+    "FG-328": {
+      "materialID": "",
+      "materialeCodice": "FG",
+      "finituraCodice": "328",
+      "immagineCodice": "14630"
+    },
+    "FIN-012": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "012",
+      "immagineCodice": "7650"
+    },
+    "FIN-027": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "027",
+      "immagineCodice": "7720"
+    },
+    "FIN-02L": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "02L",
+      "immagineCodice": "15900"
+    },
+    "FIN-03L": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "03L",
+      "immagineCodice": "15920"
+    },
+    "FIN-063": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "063",
+      "immagineCodice": "15390"
+    },
+    "FIN-064": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "064",
+      "immagineCodice": "15400"
+    },
+    "FIN-094": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "094",
+      "immagineCodice": "4360"
+    },
+    "FIN-139": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "139",
+      "immagineCodice": "1050"
+    },
+    "FIN-15L": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "15L",
+      "immagineCodice": "12340"
+    },
+    "FIN-176": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "176",
+      "immagineCodice": "1090"
+    },
+    "FIN-201": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "201",
+      "immagineCodice": "16080"
+    },
+    "FIN-328": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "328",
+      "immagineCodice": "8670"
+    },
+    "FIN-51W": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "51W",
+      "immagineCodice": "12430"
+    },
+    "FIN-52W": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "52W",
+      "immagineCodice": "12450"
+    },
+    "FIN-53W": {
+      "materialID": "",
+      "materialeCodice": "FIN",
+      "finituraCodice": "53W",
+      "immagineCodice": "12470"
+    },
+    "FMM-SQ1": {
+      "materialID": "",
+      "materialeCodice": "FMM",
+      "finituraCodice": "SQ1",
+      "immagineCodice": "13910"
+    },
+    "FMM-SQ4": {
+      "materialID": "",
+      "materialeCodice": "FMM",
+      "finituraCodice": "SQ4",
+      "immagineCodice": "13710"
+    },
+    "FMM-SQ5": {
+      "materialID": "",
+      "materialeCodice": "FMM",
+      "finituraCodice": "SQ5",
+      "immagineCodice": "13540"
+    },
+    "FOS-S03": {
+      "materialID": "",
+      "materialeCodice": "FOS",
+      "finituraCodice": "S03",
+      "immagineCodice": "7900"
+    },
+    "FOS-S04": {
+      "materialID": "",
+      "materialeCodice": "FOS",
+      "finituraCodice": "S04",
+      "immagineCodice": "7760"
+    },
+    "FOS-S06": {
+      "materialID": "",
+      "materialeCodice": "FOS",
+      "finituraCodice": "S06",
+      "immagineCodice": "7920"
+    },
+    "FOS-S08": {
+      "materialID": "",
+      "materialeCodice": "FOS",
+      "finituraCodice": "S08",
+      "immagineCodice": "7800"
+    },
+    "FR-012": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "012",
+      "immagineCodice": "7180"
+    },
+    "FR-027": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "027",
+      "immagineCodice": "7150"
+    },
+    "FR-15L": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "15L",
+      "immagineCodice": "12850"
+    },
+    "FR-16W": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "16W",
+      "immagineCodice": "8650"
+    },
+    "FR-19W": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "19W",
+      "immagineCodice": "10580"
+    },
+    "FR-201": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "201",
+      "immagineCodice": "11460"
+    },
+    "FR-23W": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "23W",
+      "immagineCodice": "12350"
+    },
+    "FR-507": {
+      "materialID": "",
+      "materialeCodice": "FR",
+      "finituraCodice": "507",
+      "immagineCodice": ""
+    },
+    "FRL-507": {
+      "materialID": "",
+      "materialeCodice": "FRL",
+      "finituraCodice": "507",
+      "immagineCodice": "13080"
+    },
+    "FRP-683": {
+      "materialID": "",
+      "materialeCodice": "FRP",
+      "finituraCodice": "683",
+      "immagineCodice": "250"
+    },
+    "FRP-705": {
+      "materialID": "",
+      "materialeCodice": "FRP",
+      "finituraCodice": "705",
+      "immagineCodice": "1750"
+    },
+    "FRP-D04": {
+      "materialID": "",
+      "materialeCodice": "FRP",
+      "finituraCodice": "D04",
+      "immagineCodice": "3450"
+    },
+    "FSK-S92": {
+      "materialID": "",
+      "materialeCodice": "FSK",
+      "finituraCodice": "S92",
+      "immagineCodice": "11680"
+    },
+    "FSK-S95": {
+      "materialID": "",
+      "materialeCodice": "FSK",
+      "finituraCodice": "S95",
+      "immagineCodice": "11690"
+    },
+    "FSK-S96": {
+      "materialID": "",
+      "materialeCodice": "FSK",
+      "finituraCodice": "S96",
+      "immagineCodice": "11700"
+    },
+    "FSK-S98": {
+      "materialID": "",
+      "materialeCodice": "FSK",
+      "finituraCodice": "S98",
+      "immagineCodice": "11710"
+    },
+    "FVE-S0H": {
+      "materialID": "",
+      "materialeCodice": "FVE",
+      "finituraCodice": "S0H",
+      "immagineCodice": "13870"
+    },
+    "FVE-S0J": {
+      "materialID": "",
+      "materialeCodice": "FVE",
+      "finituraCodice": "S0J",
+      "immagineCodice": "13880"
+    },
+    "FVE-S0K": {
+      "materialID": "",
+      "materialeCodice": "FVE",
+      "finituraCodice": "S0K",
+      "immagineCodice": "14150"
+    },
+    "GB-V01": {
+      "materialID": "",
+      "materialeCodice": "GB",
+      "finituraCodice": "V01",
+      "immagineCodice": "4840"
+    },
+    "G-GMB": {
+      "materialID": "",
+      "materialeCodice": "G",
+      "finituraCodice": "GMB",
+      "immagineCodice": ""
+    },
+    "G-GMG": {
+      "materialID": "",
+      "materialeCodice": "G",
+      "finituraCodice": "GMG",
+      "immagineCodice": ""
+    },
+    "G-GMR": {
+      "materialID": "",
+      "materialeCodice": "G",
+      "finituraCodice": "GMR",
+      "immagineCodice": ""
+    },
+    "G-GTG": {
+      "materialID": "",
+      "materialeCodice": "G",
+      "finituraCodice": "GTG",
+      "immagineCodice": "610"
+    },
+    "G-GTR": {
+      "materialID": "",
+      "materialeCodice": "G",
+      "finituraCodice": "GTR",
+      "immagineCodice": "630"
+    },
+    "GTE-GAB": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GAB",
+      "immagineCodice": "11220"
+    },
+    "GTE-GAG": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GAG",
+      "immagineCodice": "15070"
+    },
+    "GTE-GAT": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GAT",
+      "immagineCodice": "11370"
+    },
+    "GTE-GAW": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GAW",
+      "immagineCodice": "3490"
+    },
+    "GTE-GB": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GB",
+      "immagineCodice": "2020"
+    },
+    "GTE-GEW": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GEW",
+      "immagineCodice": "3520"
+    },
+    "GTE-GG": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GG",
+      "immagineCodice": "9690"
+    },
+    "GTE-GK": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GK",
+      "immagineCodice": "2070"
+    },
+    "GTE-GLB": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GLB",
+      "immagineCodice": "12510"
+    },
+    "GTE-GLR": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GLR",
+      "immagineCodice": "12520"
+    },
+    "GTE-GN": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GN",
+      "immagineCodice": "2090"
+    },
+    "GTE-GOW": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GOW",
+      "immagineCodice": "11230"
+    },
+    "GTE-GSB": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GSB",
+      "immagineCodice": ""
+    },
+    "GTE-GTA": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GTA",
+      "immagineCodice": "5540"
+    },
+    "GTE-GTB": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GTB",
+      "immagineCodice": "12550"
+    },
+    "GTE-GTG": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GTG",
+      "immagineCodice": "2110"
+    },
+    "GTE-GTR": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GTR",
+      "immagineCodice": "5550"
+    },
+    "GTE-GXT": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GXT",
+      "immagineCodice": "2120"
+    },
+    "GTE-GXW": {
+      "materialID": "",
+      "materialeCodice": "GTE",
+      "finituraCodice": "GXW",
+      "immagineCodice": "660"
+    },
+    "ICI-087": {
+      "materialID": "",
+      "materialeCodice": "ICI",
+      "finituraCodice": "087",
+      "immagineCodice": "14930"
+    },
+    "IEU-67W": {
+      "materialID": "",
+      "materialeCodice": "IEU",
+      "finituraCodice": "67W",
+      "immagineCodice": "14130"
+    },
+    "IFG-002": {
+      "materialID": "",
+      "materialeCodice": "IFG",
+      "finituraCodice": "002",
+      "immagineCodice": "15790"
+    },
+    "IFG-132": {
+      "materialID": "",
+      "materialeCodice": "IFG",
+      "finituraCodice": "132",
+      "immagineCodice": "15800"
+    },
+    "IFR-128": {
+      "materialID": "",
+      "materialeCodice": "IFR",
+      "finituraCodice": "128",
+      "immagineCodice": "5750"
+    },
+    "IFR-15L": {
+      "materialID": "impiallacciature-p15l",
+      "materialeCodice": "IFR",
+      "finituraCodice": "15L",
+      "immagineCodice": "12860"
+    },
+    "IFR-507": {
+      "materialID": "",
+      "materialeCodice": "IFR",
+      "finituraCodice": "507",
+      "immagineCodice": "13090"
+    },
+    "IMO-008": {
+      "materialID": "",
+      "materialeCodice": "IMO",
+      "finituraCodice": "008",
+      "immagineCodice": "940"
+    },
+    "IMP-012": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "012",
+      "immagineCodice": "6650"
+    },
+    "IMP-027": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "027",
+      "immagineCodice": "6660"
+    },
+    "IMP-15L": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "15L",
+      "immagineCodice": "12060"
+    },
+    "IMP-16W": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "16W",
+      "immagineCodice": "8550"
+    },
+    "IMP-173": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "173",
+      "immagineCodice": "2540"
+    },
+    "IMP-19W": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "19W",
+      "immagineCodice": "13840"
+    },
+    "IMP-201": {
+      "materialID": "",
+      "materialeCodice": "IMP",
+      "finituraCodice": "201",
+      "immagineCodice": "11470"
+    },
+    "INA-201": {
+      "materialID": "impiallacciature-p201",
+      "materialeCodice": "INA",
+      "finituraCodice": "201",
+      "immagineCodice": "1120"
+    },
+    "INX-005": {
+      "materialID": "",
+      "materialeCodice": "INX",
+      "finituraCodice": "005",
+      "immagineCodice": "15320"
+    },
+    "IRL-507": {
+      "materialID": "",
+      "materialeCodice": "IRL",
+      "finituraCodice": "507",
+      "immagineCodice": "4110"
+    },
+    "IRO-128": {
+      "materialID": "",
+      "materialeCodice": "IRO",
+      "finituraCodice": "128",
+      "immagineCodice": "2490"
+    },
+    "IRO-19W": {
+      "materialID": "impiallacciature-p19w",
+      "materialeCodice": "IRO",
+      "finituraCodice": "19W",
+      "immagineCodice": "10590"
+    },
+    "IRO-23W": {
+      "materialID": "impiallacciature-p23w",
+      "materialeCodice": "IRO",
+      "finituraCodice": "23W",
+      "immagineCodice": "10600"
+    },
+    "IRO-507": {
+      "materialID": "",
+      "materialeCodice": "IRO",
+      "finituraCodice": "507",
+      "immagineCodice": ""
+    },
+    "LAC-015": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "015",
+      "immagineCodice": "1070"
+    },
+    "LAC-016": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "016",
+      "immagineCodice": "10560"
+    },
+    "LAC-02L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "02L",
+      "immagineCodice": "15910"
+    },
+    "LAC-03L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "03L",
+      "immagineCodice": "15930"
+    },
+    "LAC-048": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "048",
+      "immagineCodice": "4100"
+    },
+    "LAC-063": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "063",
+      "immagineCodice": "4140"
+    },
+    "LAC-064": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "064",
+      "immagineCodice": "2810"
+    },
+    "LAC-093": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "093",
+      "immagineCodice": "6240"
+    },
+    "LAC-094": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "094",
+      "immagineCodice": "4560"
+    },
+    "LAC-100": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "100",
+      "immagineCodice": "11450"
+    },
+    "LAC-139": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "139",
+      "immagineCodice": "7840"
+    },
+    "LAC-15L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "15L",
+      "immagineCodice": "12240"
+    },
+    "LAC-176": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "176",
+      "immagineCodice": "1100"
+    },
+    "LAC-21L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "21L",
+      "immagineCodice": "15810"
+    },
+    "LAC-23L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "23L",
+      "immagineCodice": "15820"
+    },
+    "LAC-24L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "24L",
+      "immagineCodice": "15830"
+    },
+    "LAC-29L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "29L",
+      "immagineCodice": "13460"
+    },
+    "LAC-328": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "328",
+      "immagineCodice": "8680"
+    },
+    "LAC-35L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "35L",
+      "immagineCodice": "15840"
+    },
+    "LAC-36L": {
+      "materialID": "",
+      "materialeCodice": "LAC",
+      "finituraCodice": "36L",
+      "immagineCodice": "15850"
+    },
+    "LAF-#33": {
+      "materialID": "",
+      "materialeCodice": "LAF",
+      "finituraCodice": "#33",
+      "immagineCodice": ""
+    },
+    "LAF-#34": {
+      "materialID": "",
+      "materialeCodice": "LAF",
+      "finituraCodice": "#34",
+      "immagineCodice": "11350"
+    },
+    "LAH-094": {
+      "materialID": "",
+      "materialeCodice": "LAH",
+      "finituraCodice": "094",
+      "immagineCodice": "15330"
+    },
+    "LAH-20W": {
+      "materialID": "",
+      "materialeCodice": "LAH",
+      "finituraCodice": "20W",
+      "immagineCodice": "15340"
+    },
+    "LAH-421": {
+      "materialID": "",
+      "materialeCodice": "LAH",
+      "finituraCodice": "421",
+      "immagineCodice": "15350"
+    },
+    "LAH-44W": {
+      "materialID": "",
+      "materialeCodice": "LAH",
+      "finituraCodice": "44W",
+      "immagineCodice": "15360"
+    },
+    "LAH-46W": {
+      "materialID": "",
+      "materialeCodice": "LAH",
+      "finituraCodice": "46W",
+      "immagineCodice": "15370"
+    },
+    "LAH-510": {
+      "materialID": "",
+      "materialeCodice": "LAH",
+      "finituraCodice": "510",
+      "immagineCodice": "15380"
+    },
+    "LAM-002": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "002",
+      "immagineCodice": "15230"
+    },
+    "LAM-012": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "012",
+      "immagineCodice": "15080"
+    },
+    "LAM-027": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "027",
+      "immagineCodice": "15090"
+    },
+    "LAM-094": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "094",
+      "immagineCodice": "15130"
+    },
+    "LAM-128": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "128",
+      "immagineCodice": "15140"
+    },
+    "LAM-176": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "176",
+      "immagineCodice": ""
+    },
+    "LAM-19W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "19W",
+      "immagineCodice": "15100"
+    },
+    "LAM-201": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "201",
+      "immagineCodice": "15110"
+    },
+    "LAM-27W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "27W",
+      "immagineCodice": "15240"
+    },
+    "LAM-28W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "28W",
+      "immagineCodice": "15260"
+    },
+    "LAM-36W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "36W",
+      "immagineCodice": "15310"
+    },
+    "LAM-421": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "421",
+      "immagineCodice": "15280"
+    },
+    "LAM-43W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "43W",
+      "immagineCodice": "15120"
+    },
+    "LAM-510": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "510",
+      "immagineCodice": "6100"
+    },
+    "LAM-58W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "58W",
+      "immagineCodice": "15270"
+    },
+    "LAM-649": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "649",
+      "immagineCodice": "15060"
+    },
+    "LAM-68W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "68W",
+      "immagineCodice": "15160"
+    },
+    "LAM-69W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "69W",
+      "immagineCodice": "15170"
+    },
+    "LAM-71W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "71W",
+      "immagineCodice": "15180"
+    },
+    "LAM-73W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "73W",
+      "immagineCodice": "15190"
+    },
+    "LAM-74W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "74W",
+      "immagineCodice": "15200"
+    },
+    "LAM-76W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "76W",
+      "immagineCodice": "15210"
+    },
+    "LAM-78W": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "78W",
+      "immagineCodice": "15220"
+    },
+    "LAM-810": {
+      "materialID": "",
+      "materialeCodice": "LAM",
+      "finituraCodice": "810",
+      "immagineCodice": "4210"
+    },
+    "M03-M4W": {
+      "materialID": "",
+      "materialeCodice": "M03",
+      "finituraCodice": "M4W",
+      "immagineCodice": "12710"
+    },
+    "M03-M4X": {
+      "materialID": "",
+      "materialeCodice": "M03",
+      "finituraCodice": "M4X",
+      "immagineCodice": "12720"
+    },
+    "M03-M4Y": {
+      "materialID": "",
+      "materialeCodice": "M03",
+      "finituraCodice": "M4Y",
+      "immagineCodice": "12730"
+    },
+    "M03-M5E": {
+      "materialID": "",
+      "materialeCodice": "M03",
+      "finituraCodice": "M5E",
+      "immagineCodice": ""
+    },
+    "M03-M5F": {
+      "materialID": "",
+      "materialeCodice": "M03",
+      "finituraCodice": "M5F",
+      "immagineCodice": ""
+    },
+    "M06-M2B": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2B",
+      "immagineCodice": "9830"
+    },
+    "M06-M2E": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2E",
+      "immagineCodice": "10200"
+    },
+    "M06-M2F": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2F",
+      "immagineCodice": "9840"
+    },
+    "M06-M2J": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2J",
+      "immagineCodice": "9860"
+    },
+    "M06-M2L": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2L",
+      "immagineCodice": "9870"
+    },
+    "M06-M2M": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2M",
+      "immagineCodice": "9880"
+    },
+    "M06-M2N": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2N",
+      "immagineCodice": "9890"
+    },
+    "M06-M2X": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2X",
+      "immagineCodice": "10240"
+    },
+    "M06-M2Y": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M2Y",
+      "immagineCodice": "9940"
+    },
+    "M06-M3A": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3A",
+      "immagineCodice": "9960"
+    },
+    "M06-M3D": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3D",
+      "immagineCodice": "10250"
+    },
+    "M06-M3E": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3E",
+      "immagineCodice": "10260"
+    },
+    "M06-M3F": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3F",
+      "immagineCodice": "10270"
+    },
+    "M06-M3I": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3I",
+      "immagineCodice": "10000"
+    },
+    "M06-M3J": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3J",
+      "immagineCodice": "10010"
+    },
+    "M06-M3N": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3N",
+      "immagineCodice": "10040"
+    },
+    "M06-M3P": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3P",
+      "immagineCodice": "10280"
+    },
+    "M06-M3R": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3R",
+      "immagineCodice": "10050"
+    },
+    "M06-M3S": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3S",
+      "immagineCodice": "10390"
+    },
+    "M06-M3U": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M3U",
+      "immagineCodice": "10310"
+    },
+    "M06-M4A": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4A",
+      "immagineCodice": "12040"
+    },
+    "M06-M4H": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4H",
+      "immagineCodice": "12580"
+    },
+    "M06-M4I": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4I",
+      "immagineCodice": "12590"
+    },
+    "M06-M4J": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4J",
+      "immagineCodice": "12600"
+    },
+    "M06-M4L": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4L",
+      "immagineCodice": "12610"
+    },
+    "M06-M4M": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4M",
+      "immagineCodice": "12620"
+    },
+    "M06-M4N": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4N",
+      "immagineCodice": "12630"
+    },
+    "M06-M4P": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4P",
+      "immagineCodice": "12640"
+    },
+    "M06-M4Q": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4Q",
+      "immagineCodice": "12650"
+    },
+    "M06-M4R": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4R",
+      "immagineCodice": "12660"
+    },
+    "M06-M4S": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4S",
+      "immagineCodice": "12670"
+    },
+    "M06-M4T": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4T",
+      "immagineCodice": "12680"
+    },
+    "M06-M4U": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4U",
+      "immagineCodice": "12690"
+    },
+    "M06-M4V": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M4V",
+      "immagineCodice": "12700"
+    },
+    "M06-M5B": {
+      "materialID": "",
+      "materialeCodice": "M06",
+      "finituraCodice": "M5B",
+      "immagineCodice": "12770"
+    },
+    "M07-M0R": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M0R",
+      "immagineCodice": "13970"
+    },
+    "M07-M0Y": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M0Y",
+      "immagineCodice": "13990"
+    },
+    "M07-M1T": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M1T",
+      "immagineCodice": "10160"
+    },
+    "M07-M1V": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M1V",
+      "immagineCodice": "10170"
+    },
+    "M07-M1W": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M1W",
+      "immagineCodice": "9770"
+    },
+    "M07-M2I": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M2I",
+      "immagineCodice": "13360"
+    },
+    "M07-M3X": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M3X",
+      "immagineCodice": "13560"
+    },
+    "M07-M4E": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M4E",
+      "immagineCodice": "13370"
+    },
+    "M07-M58": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M58",
+      "immagineCodice": "13580"
+    },
+    "M07-M5P": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M5P",
+      "immagineCodice": "13400"
+    },
+    "M07-M5Q": {
+      "materialID": "",
+      "materialeCodice": "M07",
+      "finituraCodice": "M5Q",
+      "immagineCodice": "14050"
+    },
+    "M14-M0F": {
+      "materialID": "",
+      "materialeCodice": "M14",
+      "finituraCodice": "M0F",
+      "immagineCodice": "5570"
+    },
+    "M14-M24": {
+      "materialID": "",
+      "materialeCodice": "M14",
+      "finituraCodice": "M24",
+      "immagineCodice": "720"
+    },
+    "M14-M28": {
+      "materialID": "",
+      "materialeCodice": "M14",
+      "finituraCodice": "M28",
+      "immagineCodice": "2170"
+    },
+    "M14-M30": {
+      "materialID": "",
+      "materialeCodice": "M14",
+      "finituraCodice": "M30",
+      "immagineCodice": ""
+    },
+    "M14-M55": {
+      "materialID": "",
+      "materialeCodice": "M14",
+      "finituraCodice": "M55",
+      "immagineCodice": ""
+    },
+    "M14-M5Z": {
+      "materialID": "",
+      "materialeCodice": "M14",
+      "finituraCodice": "M5Z",
+      "immagineCodice": "13790"
+    },
+    "M17-M1J": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M1J",
+      "immagineCodice": "9720"
+    },
+    "M17-M1L": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M1L",
+      "immagineCodice": "10140"
+    },
+    "M17-M1M": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M1M",
+      "immagineCodice": "10150"
+    },
+    "M17-M52": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M52",
+      "immagineCodice": "10320"
+    },
+    "M17-M53": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M53",
+      "immagineCodice": "10440"
+    },
+    "M17-M55": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M55",
+      "immagineCodice": ""
+    },
+    "M17-M62": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M62",
+      "immagineCodice": "8790"
+    },
+    "M17-M94": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M94",
+      "immagineCodice": "10530"
+    },
+    "M17-M95": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M95",
+      "immagineCodice": "10810"
+    },
+    "M17-M99": {
+      "materialID": "",
+      "materialeCodice": "M17",
+      "finituraCodice": "M99",
+      "immagineCodice": "10540"
+    },
+    "M19-M1Q": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M1Q",
+      "immagineCodice": "9740"
+    },
+    "M19-M1S": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M1S",
+      "immagineCodice": "9750"
+    },
+    "M19-M1X": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M1X",
+      "immagineCodice": "9780"
+    },
+    "M19-M1Z": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M1Z",
+      "immagineCodice": "10180"
+    },
+    "M19-M3V": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M3V",
+      "immagineCodice": "11380"
+    },
+    "M19-M4B": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M4B",
+      "immagineCodice": "12210"
+    },
+    "M19-M4C": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M4C",
+      "immagineCodice": "12050"
+    },
+    "M19-M4D": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M4D",
+      "immagineCodice": "12220"
+    },
+    "M19-M5J": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M5J",
+      "immagineCodice": "14020"
+    },
+    "M19-M5M": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M5M",
+      "immagineCodice": "13390"
+    },
+    "M19-M5N": {
+      "materialID": "",
+      "materialeCodice": "M19",
+      "finituraCodice": "M5N",
+      "immagineCodice": "14040"
+    },
+    "M20-M0R": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M0R",
+      "immagineCodice": "7570"
+    },
+    "M20-M0S": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M0S",
+      "immagineCodice": "9710"
+    },
+    "M20-M0T": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M0T",
+      "immagineCodice": "7430"
+    },
+    "M20-M0W": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M0W",
+      "immagineCodice": "7590"
+    },
+    "M20-M24": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M24",
+      "immagineCodice": "7480"
+    },
+    "M20-M2P": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2P",
+      "immagineCodice": "9900"
+    },
+    "M20-M2Q": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2Q",
+      "immagineCodice": "10210"
+    },
+    "M20-M2R": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2R",
+      "immagineCodice": "10220"
+    },
+    "M20-M2S": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2S",
+      "immagineCodice": "9910"
+    },
+    "M20-M2T": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2T",
+      "immagineCodice": "9920"
+    },
+    "M20-M2U": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2U",
+      "immagineCodice": "10230"
+    },
+    "M20-M2V": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M2V",
+      "immagineCodice": "9930"
+    },
+    "M20-M52": {
+      "materialID": "",
+      "materialeCodice": "M20",
+      "finituraCodice": "M52",
+      "immagineCodice": "7490"
+    },
+    "M21-M1F": {
+      "materialID": "",
+      "materialeCodice": "M21",
+      "finituraCodice": "M1F",
+      "immagineCodice": "7610"
+    },
+    "M22-M0R": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M0R",
+      "immagineCodice": "13980"
+    },
+    "M22-M0S": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M0S",
+      "immagineCodice": "13550"
+    },
+    "M22-M2I": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M2I",
+      "immagineCodice": "14000"
+    },
+    "M22-M3W": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M3W",
+      "immagineCodice": "11390"
+    },
+    "M22-M3X": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M3X",
+      "immagineCodice": "11420"
+    },
+    "M22-M3Y": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M3Y",
+      "immagineCodice": "11430"
+    },
+    "M22-M3Z": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M3Z",
+      "immagineCodice": "11440"
+    },
+    "M22-M58": {
+      "materialID": "",
+      "materialeCodice": "M22",
+      "finituraCodice": "M58",
+      "immagineCodice": "11400"
+    },
+    "M23-M1I": {
+      "materialID": "",
+      "materialeCodice": "M23",
+      "finituraCodice": "M1I",
+      "immagineCodice": "12560"
+    },
+    "M23-M3W": {
+      "materialID": "",
+      "materialeCodice": "M23",
+      "finituraCodice": "M3W",
+      "immagineCodice": "12570"
+    },
+    "M23-M58": {
+      "materialID": "",
+      "materialeCodice": "M23",
+      "finituraCodice": "M58",
+      "immagineCodice": "12750"
+    },
+    "M23-M5L": {
+      "materialID": "",
+      "materialeCodice": "M23",
+      "finituraCodice": "M5L",
+      "immagineCodice": "14030"
+    },
+    "M23-S0K": {
+      "materialID": "",
+      "materialeCodice": "M23",
+      "finituraCodice": "S0K",
+      "immagineCodice": "13220"
+    },
+    "M24-M4Z": {
+      "materialID": "",
+      "materialeCodice": "M24",
+      "finituraCodice": "M4Z",
+      "immagineCodice": "12740"
+    },
+    "M24-M5A": {
+      "materialID": "",
+      "materialeCodice": "M24",
+      "finituraCodice": "M5A",
+      "immagineCodice": "12760"
+    },
+    "M25-M5C": {
+      "materialID": "",
+      "materialeCodice": "M25",
+      "finituraCodice": "M5C",
+      "immagineCodice": "12780"
+    },
+    "M25-M5D": {
+      "materialID": "",
+      "materialeCodice": "M25",
+      "finituraCodice": "M5D",
+      "immagineCodice": "12790"
+    },
+    "M25-M5E": {
+      "materialID": "",
+      "materialeCodice": "M25",
+      "finituraCodice": "M5E",
+      "immagineCodice": "13590"
+    },
+    "M25-M5F": {
+      "materialID": "",
+      "materialeCodice": "M25",
+      "finituraCodice": "M5F",
+      "immagineCodice": "13600"
+    },
+    "M27-M5G": {
+      "materialID": "",
+      "materialeCodice": "M27",
+      "finituraCodice": "M5G",
+      "immagineCodice": "13610"
+    },
+    "M27-M5H": {
+      "materialID": "",
+      "materialeCodice": "M27",
+      "finituraCodice": "M5H",
+      "immagineCodice": "13620"
+    },
+    "M27-M5I": {
+      "materialID": "",
+      "materialeCodice": "M27",
+      "finituraCodice": "M5I",
+      "immagineCodice": "13740"
+    },
+    "M27-M6A": {
+      "materialID": "",
+      "materialeCodice": "M27",
+      "finituraCodice": "M6A",
+      "immagineCodice": "15420"
+    },
+    "M27-M6B": {
+      "materialID": "",
+      "materialeCodice": "M27",
+      "finituraCodice": "M6B",
+      "immagineCodice": "15430"
+    },
+    "M27-M95": {
+      "materialID": "",
+      "materialeCodice": "M27",
+      "finituraCodice": "M95",
+      "immagineCodice": "13800"
+    },
+    "M28-M5R": {
+      "materialID": "",
+      "materialeCodice": "M28",
+      "finituraCodice": "M5R",
+      "immagineCodice": ""
+    },
+    "M28-M5S": {
+      "materialID": "",
+      "materialeCodice": "M28",
+      "finituraCodice": "M5S",
+      "immagineCodice": ""
+    },
+    "M28-M5T": {
+      "materialID": "",
+      "materialeCodice": "M28",
+      "finituraCodice": "M5T",
+      "immagineCodice": ""
+    },
+    "M28-M5U": {
+      "materialID": "",
+      "materialeCodice": "M28",
+      "finituraCodice": "M5U",
+      "immagineCodice": ""
+    },
+    "M29-M5R": {
+      "materialID": "",
+      "materialeCodice": "M29",
+      "finituraCodice": "M5R",
+      "immagineCodice": ""
+    },
+    "M29-M5S": {
+      "materialID": "",
+      "materialeCodice": "M29",
+      "finituraCodice": "M5S",
+      "immagineCodice": ""
+    },
+    "M29-M5T": {
+      "materialID": "",
+      "materialeCodice": "M29",
+      "finituraCodice": "M5T",
+      "immagineCodice": ""
+    },
+    "M29-M5U": {
+      "materialID": "",
+      "materialeCodice": "M29",
+      "finituraCodice": "M5U",
+      "immagineCodice": ""
+    },
+    "M30-M5V": {
+      "materialID": "",
+      "materialeCodice": "M30",
+      "finituraCodice": "M5V",
+      "immagineCodice": "14090"
+    },
+    "M30-M5W": {
+      "materialID": "",
+      "materialeCodice": "M30",
+      "finituraCodice": "M5W",
+      "immagineCodice": "13420"
+    },
+    "M30-M5X": {
+      "materialID": "",
+      "materialeCodice": "M30",
+      "finituraCodice": "M5X",
+      "immagineCodice": "13430"
+    },
+    "M30-M5Y": {
+      "materialID": "",
+      "materialeCodice": "M30",
+      "finituraCodice": "M5Y",
+      "immagineCodice": "13440"
+    },
+    "MCU-L05": {
+      "materialID": "",
+      "materialeCodice": "MCU",
+      "finituraCodice": "L05",
+      "immagineCodice": "10080"
+    },
+    "MCU-L06": {
+      "materialID": "",
+      "materialeCodice": "MCU",
+      "finituraCodice": "L06",
+      "immagineCodice": "10100"
+    },
+    "MCU-L07": {
+      "materialID": "",
+      "materialeCodice": "MCU",
+      "finituraCodice": "L07",
+      "immagineCodice": "10110"
+    },
+    "MCU-L10": {
+      "materialID": "",
+      "materialeCodice": "MCU",
+      "finituraCodice": "L10",
+      "immagineCodice": "12030"
+    },
+    "MFF-012": {
+      "materialID": "",
+      "materialeCodice": "MFF",
+      "finituraCodice": "012",
+      "immagineCodice": "14840"
+    },
+    "MFF-15L": {
+      "materialID": "",
+      "materialeCodice": "MFF",
+      "finituraCodice": "15L",
+      "immagineCodice": "16010"
+    },
+    "MFF-19W": {
+      "materialID": "",
+      "materialeCodice": "MFF",
+      "finituraCodice": "19W",
+      "immagineCodice": "14860"
+    },
+    "MFF-201": {
+      "materialID": "",
+      "materialeCodice": "MFF",
+      "finituraCodice": "201",
+      "immagineCodice": "14870"
+    },
+    "MFL-016": {
+      "materialID": "",
+      "materialeCodice": "MFL",
+      "finituraCodice": "016",
+      "immagineCodice": "14620"
+    },
+    "MFL-094": {
+      "materialID": "",
+      "materialeCodice": "MFL",
+      "finituraCodice": "094",
+      "immagineCodice": "14330"
+    },
+    "MFL-176": {
+      "materialID": "",
+      "materialeCodice": "MFL",
+      "finituraCodice": "176",
+      "immagineCodice": "14350"
+    },
+    "MFL-328": {
+      "materialID": "",
+      "materialeCodice": "MFL",
+      "finituraCodice": "328",
+      "immagineCodice": "14640"
+    },
+    "MFV-002": {
+      "materialID": "",
+      "materialeCodice": "MFV",
+      "finituraCodice": "002",
+      "immagineCodice": "14610"
+    },
+    "MFV-094": {
+      "materialID": "",
+      "materialeCodice": "MFV",
+      "finituraCodice": "094",
+      "immagineCodice": "15990"
+    },
+    "MFV-128": {
+      "materialID": "",
+      "materialeCodice": "MFV",
+      "finituraCodice": "128",
+      "immagineCodice": "14340"
+    },
+    "MFV-132": {
+      "materialID": "",
+      "materialeCodice": "MFV",
+      "finituraCodice": "132",
+      "immagineCodice": "14560"
+    },
+    "MFV-176": {
+      "materialID": "",
+      "materialeCodice": "MFV",
+      "finituraCodice": "176",
+      "immagineCodice": "16000"
+    },
+    "MFV-201": {
+      "materialID": "",
+      "materialeCodice": "MFV",
+      "finituraCodice": "201",
+      "immagineCodice": "14360"
+    },
+    "MMM-SQ1": {
+      "materialID": "",
+      "materialeCodice": "MMM",
+      "finituraCodice": "SQ1",
+      "immagineCodice": "14200"
+    },
+    "MMM-SQ4": {
+      "materialID": "",
+      "materialeCodice": "MMM",
+      "finituraCodice": "SQ4",
+      "immagineCodice": "12170"
+    },
+    "MMM-SQ5": {
+      "materialID": "",
+      "materialeCodice": "MMM",
+      "finituraCodice": "SQ5",
+      "immagineCodice": "12180"
+    },
+    "MMM-SQ8": {
+      "materialID": "",
+      "materialeCodice": "MMM",
+      "finituraCodice": "SQ8",
+      "immagineCodice": "14210"
+    },
+    "MPE-683": {
+      "materialID": "",
+      "materialeCodice": "MPE",
+      "finituraCodice": "683",
+      "immagineCodice": "7510"
+    },
+    "MPE-705": {
+      "materialID": "",
+      "materialeCodice": "MPE",
+      "finituraCodice": "705",
+      "immagineCodice": "7520"
+    },
+    "MPE-D04": {
+      "materialID": "",
+      "materialeCodice": "MPE",
+      "finituraCodice": "D04",
+      "immagineCodice": "7340"
+    },
+    "MRL-507": {
+      "materialID": "",
+      "materialeCodice": "MRL",
+      "finituraCodice": "507",
+      "immagineCodice": "14310"
+    },
+    "MRO-19W": {
+      "materialID": "",
+      "materialeCodice": "MRO",
+      "finituraCodice": "19W",
+      "immagineCodice": "14880"
+    },
+    "MRO-507": {
+      "materialID": "",
+      "materialeCodice": "MRO",
+      "finituraCodice": "507",
+      "immagineCodice": "16020"
+    },
+    "MSL-016": {
+      "materialID": "",
+      "materialeCodice": "MSL",
+      "finituraCodice": "016",
+      "immagineCodice": "14910"
+    },
+    "MSL-15L": {
+      "materialID": "",
+      "materialeCodice": "MSL",
+      "finituraCodice": "15L",
+      "immagineCodice": "14850"
+    },
+    "MSL-507": {
+      "materialID": "",
+      "materialeCodice": "MSL",
+      "finituraCodice": "507",
+      "immagineCodice": "14920"
+    },
+    "MT-005": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "005",
+      "immagineCodice": "10840"
+    },
+    "MT-015": {
+      "materialID": "metallo-p15",
+      "materialeCodice": "MT",
+      "finituraCodice": "015",
+      "immagineCodice": "5810"
+    },
+    "MT-016": {
+      "materialID": "metallo-p16",
+      "materialeCodice": "MT",
+      "finituraCodice": "016",
+      "immagineCodice": "8240"
+    },
+    "MT-01L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "01L",
+      "immagineCodice": "12930"
+    },
+    "MT-02L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "02L",
+      "immagineCodice": "12980"
+    },
+    "MT-03L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "03L",
+      "immagineCodice": "13020"
+    },
+    "MT-063": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "063",
+      "immagineCodice": "1440"
+    },
+    "MT-06L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "06L",
+      "immagineCodice": "15480"
+    },
+    "MT-074": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "074",
+      "immagineCodice": "10960"
+    },
+    "MT-077": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "077",
+      "immagineCodice": "6140"
+    },
+    "MT-07L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "07L",
+      "immagineCodice": "15600"
+    },
+    "MT-08L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "08L",
+      "immagineCodice": "15770"
+    },
+    "MT-093": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "093",
+      "immagineCodice": "4770"
+    },
+    "MT-094": {
+      "materialID": "metallo-p94",
+      "materialeCodice": "MT",
+      "finituraCodice": "094",
+      "immagineCodice": "6280"
+    },
+    "MT-095": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "095",
+      "immagineCodice": "6310"
+    },
+    "MT-09L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "09L",
+      "immagineCodice": "15780"
+    },
+    "MT-100": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "100",
+      "immagineCodice": "10860"
+    },
+    "MT-139": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "139",
+      "immagineCodice": "2510"
+    },
+    "MT-13L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "13L",
+      "immagineCodice": "10890"
+    },
+    "MT-14L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "14L",
+      "immagineCodice": "10550"
+    },
+    "MT-151": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "151",
+      "immagineCodice": "13810"
+    },
+    "MT-159": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "159",
+      "immagineCodice": "3890"
+    },
+    "MT-160": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "160",
+      "immagineCodice": "1080"
+    },
+    "MT-175": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "175",
+      "immagineCodice": "12250"
+    },
+    "MT-176": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "176",
+      "immagineCodice": "5860"
+    },
+    "MT-203": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "203",
+      "immagineCodice": "5910"
+    },
+    "MT-231": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "231",
+      "immagineCodice": "8590"
+    },
+    "MT-27P": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "27P",
+      "immagineCodice": "14110"
+    },
+    "MT-28P": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "28P",
+      "immagineCodice": "13850"
+    },
+    "MT-29L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "29L",
+      "immagineCodice": "13660"
+    },
+    "MT-309": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "309",
+      "immagineCodice": "14720"
+    },
+    "MT-328": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "328",
+      "immagineCodice": "8600"
+    },
+    "MT-33L": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "33L",
+      "immagineCodice": "15760"
+    },
+    "MT-#66": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "#66",
+      "immagineCodice": "7330"
+    },
+    "MT-JAU": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JAU",
+      "immagineCodice": "14950"
+    },
+    "MT-JAV": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JAV",
+      "immagineCodice": "15010"
+    },
+    "MT-JBT": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JBT",
+      "immagineCodice": "14940"
+    },
+    "MT-JCX": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JCX",
+      "immagineCodice": "14990"
+    },
+    "MT-JCZ": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JCZ",
+      "immagineCodice": "14980"
+    },
+    "MT-JGA": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JGA",
+      "immagineCodice": "15020"
+    },
+    "MT-JGB": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JGB",
+      "immagineCodice": "15030"
+    },
+    "MT-JLA": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JLA",
+      "immagineCodice": "14960"
+    },
+    "MT-JLB": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JLB",
+      "immagineCodice": "14970"
+    },
+    "MT-JNU": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JNU",
+      "immagineCodice": "15000"
+    },
+    "MT-JPA": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JPA",
+      "immagineCodice": "15040"
+    },
+    "MT-JPB": {
+      "materialID": "",
+      "materialeCodice": "MT",
+      "finituraCodice": "JPB",
+      "immagineCodice": "15050"
+    },
+    "NOB-015": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "015",
+      "immagineCodice": "15150"
+    },
+    "NOB-039": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "039",
+      "immagineCodice": "14220"
+    },
+    "NOB-094": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "094",
+      "immagineCodice": "14230"
+    },
+    "NOB-13W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "13W",
+      "immagineCodice": "8510"
+    },
+    "NOB-14W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "14W",
+      "immagineCodice": "8520"
+    },
+    "NOB-151": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "151",
+      "immagineCodice": "12330"
+    },
+    "NOB-15W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "15W",
+      "immagineCodice": "8540"
+    },
+    "NOB-161": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "161",
+      "immagineCodice": "12070"
+    },
+    "NOB-176": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "176",
+      "immagineCodice": ""
+    },
+    "NOB-17W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "17W",
+      "immagineCodice": "8560"
+    },
+    "NOB-18W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "18W",
+      "immagineCodice": "8570"
+    },
+    "NOB-22W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "22W",
+      "immagineCodice": "12940"
+    },
+    "NOB-262": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "262",
+      "immagineCodice": "10610"
+    },
+    "NOB-278": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "278",
+      "immagineCodice": "10620"
+    },
+    "NOB-35W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "35W",
+      "immagineCodice": "11520"
+    },
+    "NOB-47W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "47W",
+      "immagineCodice": "13050"
+    },
+    "NOB-48W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "48W",
+      "immagineCodice": "15250"
+    },
+    "NOB-49W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "49W",
+      "immagineCodice": "13060"
+    },
+    "NOB-50W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "50W",
+      "immagineCodice": "13670"
+    },
+    "NOB-51W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "51W",
+      "immagineCodice": "12440"
+    },
+    "NOB-52W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "52W",
+      "immagineCodice": "12460"
+    },
+    "NOB-53W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "53W",
+      "immagineCodice": "12480"
+    },
+    "NOB-55W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "55W",
+      "immagineCodice": "12490"
+    },
+    "NOB-56W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "56W",
+      "immagineCodice": "15860"
+    },
+    "NOB-57W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "57W",
+      "immagineCodice": "12500"
+    },
+    "NOB-60W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "60W",
+      "immagineCodice": "13680"
+    },
+    "NOB-63W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "63W",
+      "immagineCodice": "15870"
+    },
+    "NOB-84W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "84W",
+      "immagineCodice": "15460"
+    },
+    "NOB-85W": {
+      "materialID": "",
+      "materialeCodice": "NOB",
+      "finituraCodice": "85W",
+      "immagineCodice": "15470"
+    },
+    "NY-015": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "015",
+      "immagineCodice": "14730"
+    },
+    "NY-094": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "094",
+      "immagineCodice": "14740"
+    },
+    "NY-100": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "100",
+      "immagineCodice": "14750"
+    },
+    "NY-328": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "328",
+      "immagineCodice": "14760"
+    },
+    "NY-900": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "900",
+      "immagineCodice": "14770"
+    },
+    "NY-946": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "946",
+      "immagineCodice": "14780"
+    },
+    "NY-973": {
+      "materialID": "",
+      "materialeCodice": "NY",
+      "finituraCodice": "973",
+      "immagineCodice": "14790"
+    },
+    "PC-17P": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "17P",
+      "immagineCodice": "11490"
+    },
+    "PC-20P": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "20P",
+      "immagineCodice": "12270"
+    },
+    "PC-21P": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "21P",
+      "immagineCodice": "12090"
+    },
+    "PC-24P": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "24P",
+      "immagineCodice": "12100"
+    },
+    "PC-258": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "258",
+      "immagineCodice": "2650"
+    },
+    "PC-266": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "266",
+      "immagineCodice": "6020"
+    },
+    "PC-#27": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "#27",
+      "immagineCodice": "14370"
+    },
+    "PC-276": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "276",
+      "immagineCodice": "2680"
+    },
+    "PC-#29": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "#29",
+      "immagineCodice": "14380"
+    },
+    "PC-296": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "296",
+      "immagineCodice": "4070"
+    },
+    "PC-791": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "791",
+      "immagineCodice": "14420"
+    },
+    "PC-793": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "793",
+      "immagineCodice": "14400"
+    },
+    "PC-794": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "794",
+      "immagineCodice": "14410"
+    },
+    "PC-799": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "799",
+      "immagineCodice": "4190"
+    },
+    "PC-848": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "848",
+      "immagineCodice": "2930"
+    },
+    "PC-901": {
+      "materialID": "",
+      "materialeCodice": "PC",
+      "finituraCodice": "901",
+      "immagineCodice": "14390"
+    },
+    "PLA-35P": {
+      "materialID": "",
+      "materialeCodice": "PLA",
+      "finituraCodice": "35P",
+      "immagineCodice": "14120"
+    },
+    "PMA-266": {
+      "materialID": "",
+      "materialeCodice": "PMA",
+      "finituraCodice": "266",
+      "immagineCodice": "4010"
+    },
+    "PMA-799": {
+      "materialID": "",
+      "materialeCodice": "PMA",
+      "finituraCodice": "799",
+      "immagineCodice": "6930"
+    },
+    "PMA-848": {
+      "materialID": "",
+      "materialeCodice": "PMA",
+      "finituraCodice": "848",
+      "immagineCodice": "4230"
+    },
+    "PMA-852": {
+      "materialID": "",
+      "materialeCodice": "PMA",
+      "finituraCodice": "852",
+      "immagineCodice": "4410"
+    },
+    "PP-015": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "015",
+      "immagineCodice": "5820"
+    },
+    "PP-016": {
+      "materialID": "polipropilene-p16",
+      "materialeCodice": "PP",
+      "finituraCodice": "016",
+      "immagineCodice": "10930"
+    },
+    "PP-02L": {
+      "materialID": "polipropilene-p2l",
+      "materialeCodice": "PP",
+      "finituraCodice": "02L",
+      "immagineCodice": "12990"
+    },
+    "PP-03L": {
+      "materialID": "plastiche-trasparenti-coprenti-p3l",
+      "materialeCodice": "PP",
+      "finituraCodice": "03L",
+      "immagineCodice": "13030"
+    },
+    "PP-07L": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "07L",
+      "immagineCodice": "15440"
+    },
+    "PP-08L": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "08L",
+      "immagineCodice": "15450"
+    },
+    "PP-094": {
+      "materialID": "polipropilene-p94",
+      "materialeCodice": "PP",
+      "finituraCodice": "094",
+      "immagineCodice": "6300"
+    },
+    "PP-100": {
+      "materialID": "polipropilene-p100",
+      "materialeCodice": "PP",
+      "finituraCodice": "100",
+      "immagineCodice": "10880"
+    },
+    "PP-151": {
+      "materialID": "polipropilene-p151",
+      "materialeCodice": "PP",
+      "finituraCodice": "151",
+      "immagineCodice": "12230"
+    },
+    "PP-27P": {
+      "materialID": "plastiche-trasparenti-coprenti-p27p",
+      "materialeCodice": "PP",
+      "finituraCodice": "27P",
+      "immagineCodice": "12950"
+    },
+    "PP-28P": {
+      "materialID": "plastiche-trasparenti-coprenti-p28p",
+      "materialeCodice": "PP",
+      "finituraCodice": "28P",
+      "immagineCodice": "12960"
+    },
+    "PP-328": {
+      "materialID": "polipropilene-p328",
+      "materialeCodice": "PP",
+      "finituraCodice": "328",
+      "immagineCodice": "8700"
+    },
+    "PP-900": {
+      "materialID": "polipropilene-p900",
+      "materialeCodice": "PP",
+      "finituraCodice": "900",
+      "immagineCodice": "10990"
+    },
+    "PP-942": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "942",
+      "immagineCodice": "14450"
+    },
+    "PP-946": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "946",
+      "immagineCodice": "10680"
+    },
+    "PP-947": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "947",
+      "immagineCodice": "14460"
+    },
+    "PP-956": {
+      "materialID": "",
+      "materialeCodice": "PP",
+      "finituraCodice": "956",
+      "immagineCodice": "14890"
+    },
+    "PP-973": {
+      "materialID": "polipropilene-p973",
+      "materialeCodice": "PP",
+      "finituraCodice": "973",
+      "immagineCodice": "11070"
+    },
+    "RAM-SLJ": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLJ",
+      "immagineCodice": "15700"
+    },
+    "RAM-SLK": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLK",
+      "immagineCodice": "15710"
+    },
+    "RAM-SLL": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLL",
+      "immagineCodice": "15720"
+    },
+    "RAM-SLM": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLM",
+      "immagineCodice": "15410"
+    },
+    "RAM-SLN": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLN",
+      "immagineCodice": "15730"
+    },
+    "RAM-SLP": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLP",
+      "immagineCodice": "15740"
+    },
+    "RAM-SLQ": {
+      "materialID": "",
+      "materialeCodice": "RAM",
+      "finituraCodice": "SLQ",
+      "immagineCodice": "15750"
+    },
+    "RAU-B8A": {
+      "materialID": "",
+      "materialeCodice": "RAU",
+      "finituraCodice": "B8A",
+      "immagineCodice": "6790"
+    },
+    "RAU-B8B": {
+      "materialID": "",
+      "materialeCodice": "RAU",
+      "finituraCodice": "B8B",
+      "immagineCodice": "6750"
+    },
+    "RBD-S7K": {
+      "materialID": "",
+      "materialeCodice": "RBD",
+      "finituraCodice": "S7K",
+      "immagineCodice": "15960"
+    },
+    "RBD-S7M": {
+      "materialID": "",
+      "materialeCodice": "RBD",
+      "finituraCodice": "S7M",
+      "immagineCodice": "15940"
+    },
+    "RBD-SLY": {
+      "materialID": "",
+      "materialeCodice": "RBD",
+      "finituraCodice": "SLY",
+      "immagineCodice": "15970"
+    },
+    "RBD-SLZ": {
+      "materialID": "",
+      "materialeCodice": "RBD",
+      "finituraCodice": "SLZ",
+      "immagineCodice": "15950"
+    },
+    "RBN-#30": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "#30",
+      "immagineCodice": "16030"
+    },
+    "RBN-#31": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "#31",
+      "immagineCodice": "16040"
+    },
+    "RBN-#32": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "#32",
+      "immagineCodice": "16050"
+    },
+    "RBN-#35": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "#35",
+      "immagineCodice": "16060"
+    },
+    "RBN-#36": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "#36",
+      "immagineCodice": "16070"
+    },
+    "RBN-S0V": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "S0V",
+      "immagineCodice": "14830"
+    },
+    "RBN-SA3": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "SA3",
+      "immagineCodice": "14470"
+    },
+    "RBN-SA6": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "SA6",
+      "immagineCodice": "14480"
+    },
+    "RBN-SA7": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "SA7",
+      "immagineCodice": "14810"
+    },
+    "RBN-SA8": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "SA8",
+      "immagineCodice": "14820"
+    },
+    "RBN-SB2": {
+      "materialID": "",
+      "materialeCodice": "RBN",
+      "finituraCodice": "SB2",
+      "immagineCodice": "14490"
+    },
+    "RBT-SR6": {
+      "materialID": "",
+      "materialeCodice": "RBT",
+      "finituraCodice": "SR6",
+      "immagineCodice": "11770"
+    },
+    "RBT-SR7": {
+      "materialID": "",
+      "materialeCodice": "RBT",
+      "finituraCodice": "SR7",
+      "immagineCodice": "11620"
+    },
+    "RCK-481": {
+      "materialID": "",
+      "materialeCodice": "RCK",
+      "finituraCodice": "481",
+      "immagineCodice": "14710"
+    },
+    "RCS-SKZ": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SKZ",
+      "immagineCodice": "15610"
+    },
+    "RCS-SLA": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLA",
+      "immagineCodice": "15620"
+    },
+    "RCS-SLB": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLB",
+      "immagineCodice": "15630"
+    },
+    "RCS-SLC": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLC",
+      "immagineCodice": "15670"
+    },
+    "RCS-SLD": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLD",
+      "immagineCodice": "15640"
+    },
+    "RCS-SLE": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLE",
+      "immagineCodice": "15680"
+    },
+    "RCS-SLF": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLF",
+      "immagineCodice": "15650"
+    },
+    "RCS-SLG": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLG",
+      "immagineCodice": "15690"
+    },
+    "RCS-SLH": {
+      "materialID": "",
+      "materialeCodice": "RCS",
+      "finituraCodice": "SLH",
+      "immagineCodice": "15660"
+    },
+    "RCU-377": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "377",
+      "immagineCodice": "1620"
+    },
+    "RCU-399": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "399",
+      "immagineCodice": "1630"
+    },
+    "RCU-D09": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "D09",
+      "immagineCodice": "3470"
+    },
+    "RCU-L05": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "L05",
+      "immagineCodice": "10070"
+    },
+    "RCU-L06": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "L06",
+      "immagineCodice": "10090"
+    },
+    "RCU-L07": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "L07",
+      "immagineCodice": "9700"
+    },
+    "RCU-L10": {
+      "materialID": "",
+      "materialeCodice": "RCU",
+      "finituraCodice": "L10",
+      "immagineCodice": "12200"
+    },
+    "RDN-A02": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A02",
+      "immagineCodice": "5190"
+    },
+    "RDN-A03": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A03",
+      "immagineCodice": "1800"
+    },
+    "RDN-A04": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A04",
+      "immagineCodice": "5200"
+    },
+    "RDN-A05": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A05",
+      "immagineCodice": "280"
+    },
+    "RDN-A06": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A06",
+      "immagineCodice": "5210"
+    },
+    "RDN-A07": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A07",
+      "immagineCodice": "3260"
+    },
+    "RDN-A08": {
+      "materialID": "",
+      "materialeCodice": "RDN",
+      "finituraCodice": "A08",
+      "immagineCodice": "290"
+    },
+    "RDY-SZ0": {
+      "materialID": "",
+      "materialeCodice": "RDY",
+      "finituraCodice": "SZ0",
+      "immagineCodice": "11790"
+    },
+    "RDY-SZ2": {
+      "materialID": "",
+      "materialeCodice": "RDY",
+      "finituraCodice": "SZ2",
+      "immagineCodice": "11650"
+    },
+    "RDY-SZ6": {
+      "materialID": "",
+      "materialeCodice": "RDY",
+      "finituraCodice": "SZ6",
+      "immagineCodice": "11660"
+    },
+    "REK-G8J": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8J",
+      "immagineCodice": "14800"
+    },
+    "REK-G8K": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8K",
+      "immagineCodice": "8060"
+    },
+    "REK-G8L": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8L",
+      "immagineCodice": "14660"
+    },
+    "REK-G8M": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8M",
+      "immagineCodice": "9660"
+    },
+    "REK-G8N": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8N",
+      "immagineCodice": "14670"
+    },
+    "REK-G8P": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8P",
+      "immagineCodice": "9680"
+    },
+    "REK-G8Q": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8Q",
+      "immagineCodice": "10060"
+    },
+    "REK-G8R": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8R",
+      "immagineCodice": "14680"
+    },
+    "REK-G8S": {
+      "materialID": "",
+      "materialeCodice": "REK",
+      "finituraCodice": "G8S",
+      "immagineCodice": "14690"
+    },
+    "REV-M01": {
+      "materialID": "",
+      "materialeCodice": "REV",
+      "finituraCodice": "M01",
+      "immagineCodice": "7380"
+    },
+    "REV-M02": {
+      "materialID": "",
+      "materialeCodice": "REV",
+      "finituraCodice": "M02",
+      "immagineCodice": "7390"
+    },
+    "REV-M03": {
+      "materialID": "",
+      "materialeCodice": "REV",
+      "finituraCodice": "M03",
+      "immagineCodice": "7400"
+    },
+    "REV-M04": {
+      "materialID": "",
+      "materialeCodice": "REV",
+      "finituraCodice": "M04",
+      "immagineCodice": "7550"
+    },
+    "RGC-315": {
+      "materialID": "rigenerati-di-cuoio-315",
+      "materialeCodice": "RGC",
+      "finituraCodice": "315",
+      "immagineCodice": "3040"
+    },
+    "RGC-463": {
+      "materialID": "",
+      "materialeCodice": "RGC",
+      "finituraCodice": "463",
+      "immagineCodice": "1690"
+    },
+    "RGC-474": {
+      "materialID": "rigenerati-di-cuoio-474",
+      "materialeCodice": "RGC",
+      "finituraCodice": "474",
+      "immagineCodice": "1710"
+    },
+    "RGC-D03": {
+      "materialID": "rigenerati-di-cuoio-d03",
+      "materialeCodice": "RGC",
+      "finituraCodice": "D03",
+      "immagineCodice": "5410"
+    },
+    "RGC-R03": {
+      "materialID": "rigenerati-di-cuoio-r03",
+      "materialeCodice": "RGC",
+      "finituraCodice": "R03",
+      "immagineCodice": "11540"
+    },
+    "RGC-R04": {
+      "materialID": "rigenerati-di-cuoio-r04",
+      "materialeCodice": "RGC",
+      "finituraCodice": "R04",
+      "immagineCodice": "12400"
+    },
+    "RGC-R16": {
+      "materialID": "rigenerati-di-cuoio-r16",
+      "materialeCodice": "RGC",
+      "finituraCodice": "R16",
+      "immagineCodice": "8620"
+    },
+    "RGE-S7G": {
+      "materialID": "",
+      "materialeCodice": "RGE",
+      "finituraCodice": "S7G",
+      "immagineCodice": "14180"
+    },
+    "RGE-S7H": {
+      "materialID": "",
+      "materialeCodice": "RGE",
+      "finituraCodice": "S7H",
+      "immagineCodice": "13890"
+    },
+    "RGL-B82": {
+      "materialID": "",
+      "materialeCodice": "RGL",
+      "finituraCodice": "B82",
+      "immagineCodice": "6720"
+    },
+    "RGL-B83": {
+      "materialID": "",
+      "materialeCodice": "RGL",
+      "finituraCodice": "B83",
+      "immagineCodice": "6770"
+    },
+    "RGL-B84": {
+      "materialID": "",
+      "materialeCodice": "RGL",
+      "finituraCodice": "B84",
+      "immagineCodice": "6730"
+    },
+    "RGL-B8C": {
+      "materialID": "",
+      "materialeCodice": "RGL",
+      "finituraCodice": "B8C",
+      "immagineCodice": "6760"
+    },
+    "RGL-B8D": {
+      "materialID": "",
+      "materialeCodice": "RGL",
+      "finituraCodice": "B8D",
+      "immagineCodice": "6800"
+    },
+    "RGN-S2M": {
+      "materialID": "",
+      "materialeCodice": "RGN",
+      "finituraCodice": "S2M",
+      "immagineCodice": "13300"
+    },
+    "RGN-S2N": {
+      "materialID": "",
+      "materialeCodice": "RGN",
+      "finituraCodice": "S2N",
+      "immagineCodice": "13310"
+    },
+    "RGN-S2P": {
+      "materialID": "",
+      "materialeCodice": "RGN",
+      "finituraCodice": "S2P",
+      "immagineCodice": "13320"
+    },
+    "RGN-S2Q": {
+      "materialID": "",
+      "materialeCodice": "RGN",
+      "finituraCodice": "S2Q",
+      "immagineCodice": "13330"
+    },
+    "RGN-S2R": {
+      "materialID": "",
+      "materialeCodice": "RGN",
+      "finituraCodice": "S2R",
+      "immagineCodice": "13340"
+    },
+    "RIV-001": {
+      "materialID": "",
+      "materialeCodice": "RIV",
+      "finituraCodice": "001",
+      "immagineCodice": "14500"
+    },
+    "RIV-045": {
+      "materialID": "",
+      "materialeCodice": "RIV",
+      "finituraCodice": "045",
+      "immagineCodice": "14510"
+    },
+    "RIV-094": {
+      "materialID": "",
+      "materialeCodice": "RIV",
+      "finituraCodice": "094",
+      "immagineCodice": "14520"
+    },
+    "RIV-290": {
+      "materialID": "",
+      "materialeCodice": "RIV",
+      "finituraCodice": "290",
+      "immagineCodice": "14540"
+    },
+    "RJO-S70": {
+      "materialID": "",
+      "materialeCodice": "RJO",
+      "finituraCodice": "S70",
+      "immagineCodice": "8630"
+    },
+    "RJO-S71": {
+      "materialID": "",
+      "materialeCodice": "RJO",
+      "finituraCodice": "S71",
+      "immagineCodice": "13490"
+    },
+    "RJO-S72": {
+      "materialID": "",
+      "materialeCodice": "RJO",
+      "finituraCodice": "S72",
+      "immagineCodice": "8750"
+    },
+    "RJO-S73": {
+      "materialID": "",
+      "materialeCodice": "RJO",
+      "finituraCodice": "S73",
+      "immagineCodice": "8640"
+    },
+    "RLE-S7E": {
+      "materialID": "",
+      "materialeCodice": "RLE",
+      "finituraCodice": "S7E",
+      "immagineCodice": "13500"
+    },
+    "RLI-S0M": {
+      "materialID": "",
+      "materialeCodice": "RLI",
+      "finituraCodice": "S0M",
+      "immagineCodice": "13230"
+    },
+    "RLI-S0N": {
+      "materialID": "",
+      "materialeCodice": "RLI",
+      "finituraCodice": "S0N",
+      "immagineCodice": "13240"
+    },
+    "RLI-S0P": {
+      "materialID": "",
+      "materialeCodice": "RLI",
+      "finituraCodice": "S0P",
+      "immagineCodice": "13250"
+    },
+    "RLI-S0T": {
+      "materialID": "",
+      "materialeCodice": "RLI",
+      "finituraCodice": "S0T",
+      "immagineCodice": "13280"
+    },
+    "RME-SG8": {
+      "materialID": "",
+      "materialeCodice": "RME",
+      "finituraCodice": "SG8",
+      "immagineCodice": "9640"
+    },
+    "RME-SG9": {
+      "materialID": "",
+      "materialeCodice": "RME",
+      "finituraCodice": "SG9",
+      "immagineCodice": "9650"
+    },
+    "RME-SH4": {
+      "materialID": "",
+      "materialeCodice": "RME",
+      "finituraCodice": "SH4",
+      "immagineCodice": "10800"
+    },
+    "RMK-S6P": {
+      "materialID": "",
+      "materialeCodice": "RMK",
+      "finituraCodice": "S6P",
+      "immagineCodice": "14170"
+    },
+    "RMM-SQ1": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ1",
+      "immagineCodice": "13920"
+    },
+    "RMM-SQ2": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ2",
+      "immagineCodice": "11580"
+    },
+    "RMM-SQ3": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ3",
+      "immagineCodice": "11590"
+    },
+    "RMM-SQ4": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ4",
+      "immagineCodice": "11600"
+    },
+    "RMM-SQ5": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ5",
+      "immagineCodice": "11740"
+    },
+    "RMM-SQ6": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ6",
+      "immagineCodice": "11750"
+    },
+    "RMM-SQ8": {
+      "materialID": "",
+      "materialeCodice": "RMM",
+      "finituraCodice": "SQ8",
+      "immagineCodice": "11610"
+    },
+    "RNE-450": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "450",
+      "immagineCodice": "14240"
+    },
+    "RNE-459": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "459",
+      "immagineCodice": "14250"
+    },
+    "RNE-460": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "460",
+      "immagineCodice": "14260"
+    },
+    "RNE-461": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "461",
+      "immagineCodice": "14270"
+    },
+    "RNE-473": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "473",
+      "immagineCodice": "14580"
+    },
+    "RNE-AV0": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "AV0",
+      "immagineCodice": "14290"
+    },
+    "RNE-AV1": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "AV1",
+      "immagineCodice": "14300"
+    },
+    "RNE-AV7": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "AV7",
+      "immagineCodice": "14280"
+    },
+    "RNE-C6A": {
+      "materialID": "",
+      "materialeCodice": "RNE",
+      "finituraCodice": "C6A",
+      "immagineCodice": "14570"
+    },
+    "RNO-SX2": {
+      "materialID": "",
+      "materialeCodice": "RNO",
+      "finituraCodice": "SX2",
+      "immagineCodice": "11630"
+    },
+    "RNO-SX8": {
+      "materialID": "",
+      "materialeCodice": "RNO",
+      "finituraCodice": "SX8",
+      "immagineCodice": "11780"
+    },
+    "RNO-SY0": {
+      "materialID": "",
+      "materialeCodice": "RNO",
+      "finituraCodice": "SY0",
+      "immagineCodice": "11640"
+    },
+    "ROS-S01": {
+      "materialID": "",
+      "materialeCodice": "ROS",
+      "finituraCodice": "S01",
+      "immagineCodice": "15980"
+    },
+    "ROS-S03": {
+      "materialID": "",
+      "materialeCodice": "ROS",
+      "finituraCodice": "S03",
+      "immagineCodice": "6680"
+    },
+    "ROS-S04": {
+      "materialID": "",
+      "materialeCodice": "ROS",
+      "finituraCodice": "S04",
+      "immagineCodice": "7190"
+    },
+    "ROS-S06": {
+      "materialID": "",
+      "materialeCodice": "ROS",
+      "finituraCodice": "S06",
+      "immagineCodice": "7160"
+    },
+    "ROS-S08": {
+      "materialID": "",
+      "materialeCodice": "ROS",
+      "finituraCodice": "S08",
+      "immagineCodice": "6710"
+    },
+    "RPE-470": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "470",
+      "immagineCodice": "3200"
+    },
+    "RPE-683": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "683",
+      "immagineCodice": "1740"
+    },
+    "RPE-705": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "705",
+      "immagineCodice": "1760"
+    },
+    "RPE-D04": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "D04",
+      "immagineCodice": "1950"
+    },
+    "RPE-L01": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "L01",
+      "immagineCodice": "6950"
+    },
+    "RPE-L02": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "L02",
+      "immagineCodice": "6940"
+    },
+    "RPE-L08": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "L08",
+      "immagineCodice": "12020"
+    },
+    "RPE-L16": {
+      "materialID": "",
+      "materialeCodice": "RPE",
+      "finituraCodice": "L16",
+      "immagineCodice": "8440"
+    },
+    "RPN-SKQ": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKQ",
+      "immagineCodice": "15510"
+    },
+    "RPN-SKR": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKR",
+      "immagineCodice": "15520"
+    },
+    "RPN-SKS": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKS",
+      "immagineCodice": "15530"
+    },
+    "RPN-SKT": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKT",
+      "immagineCodice": "15540"
+    },
+    "RPN-SKU": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKU",
+      "immagineCodice": "15550"
+    },
+    "RPN-SKV": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKV",
+      "immagineCodice": "15560"
+    },
+    "RPN-SKW": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKW",
+      "immagineCodice": "15570"
+    },
+    "RPN-SKX": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKX",
+      "immagineCodice": "15580"
+    },
+    "RPN-SKY": {
+      "materialID": "",
+      "materialeCodice": "RPN",
+      "finituraCodice": "SKY",
+      "immagineCodice": "15590"
+    },
+    "RQZ-512": {
+      "materialID": "",
+      "materialeCodice": "RQZ",
+      "finituraCodice": "512",
+      "immagineCodice": "7730"
+    },
+    "RSB-S92": {
+      "materialID": "",
+      "materialeCodice": "RSB",
+      "finituraCodice": "S92",
+      "immagineCodice": "11310"
+    },
+    "RSB-S93": {
+      "materialID": "",
+      "materialeCodice": "RSB",
+      "finituraCodice": "S93",
+      "immagineCodice": "11320"
+    },
+    "RSB-S95": {
+      "materialID": "",
+      "materialeCodice": "RSB",
+      "finituraCodice": "S95",
+      "immagineCodice": "11340"
+    },
+    "RSB-S96": {
+      "materialID": "",
+      "materialeCodice": "RSB",
+      "finituraCodice": "S96",
+      "immagineCodice": "11550"
+    },
+    "RSB-S98": {
+      "materialID": "",
+      "materialeCodice": "RSB",
+      "finituraCodice": "S98",
+      "immagineCodice": "11560"
+    },
+    "RSB-SA0": {
+      "materialID": "",
+      "materialeCodice": "RSB",
+      "finituraCodice": "SA0",
+      "immagineCodice": "14900"
+    },
+    "RSL-S8W": {
+      "materialID": "",
+      "materialeCodice": "RSL",
+      "finituraCodice": "S8W",
+      "immagineCodice": "13700"
+    },
+    "RSL-S8X": {
+      "materialID": "",
+      "materialeCodice": "RSL",
+      "finituraCodice": "S8X",
+      "immagineCodice": "13510"
+    },
+    "RSL-S8Z": {
+      "materialID": "",
+      "materialeCodice": "RSL",
+      "finituraCodice": "S8Z",
+      "immagineCodice": "13520"
+    },
+    "RSL-S9B": {
+      "materialID": "",
+      "materialeCodice": "RSL",
+      "finituraCodice": "S9B",
+      "immagineCodice": "14190"
+    },
+    "RSL-S9C": {
+      "materialID": "",
+      "materialeCodice": "RSL",
+      "finituraCodice": "S9C",
+      "immagineCodice": "13900"
+    },
+    "RSO-480": {
+      "materialID": "",
+      "materialeCodice": "RSO",
+      "finituraCodice": "480",
+      "immagineCodice": "14700"
+    },
+    "RTW-S90": {
+      "materialID": "",
+      "materialeCodice": "RTW",
+      "finituraCodice": "S90",
+      "immagineCodice": "11160"
+    },
+    "RTW-S91": {
+      "materialID": "",
+      "materialeCodice": "RTW",
+      "finituraCodice": "S91",
+      "immagineCodice": "13530"
+    },
+    "RVI-S0A": {
+      "materialID": "",
+      "materialeCodice": "RVI",
+      "finituraCodice": "S0A",
+      "immagineCodice": "12110"
+    },
+    "RVI-S0B": {
+      "materialID": "",
+      "materialeCodice": "RVI",
+      "finituraCodice": "S0B",
+      "immagineCodice": "12120"
+    },
+    "RVI-S0C": {
+      "materialID": "",
+      "materialeCodice": "RVI",
+      "finituraCodice": "S0C",
+      "immagineCodice": "12130"
+    },
+    "RVI-S0W": {
+      "materialID": "",
+      "materialeCodice": "RVI",
+      "finituraCodice": "S0W",
+      "immagineCodice": "14160"
+    },
+    "RVI-S0X": {
+      "materialID": "",
+      "materialeCodice": "RVI",
+      "finituraCodice": "S0X",
+      "immagineCodice": "13480"
+    },
+    "RVN-S0F": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0F",
+      "immagineCodice": "12140"
+    },
+    "RVN-S0G": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0G",
+      "immagineCodice": "12000"
+    },
+    "RVN-S0H": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0H",
+      "immagineCodice": "12150"
+    },
+    "RVN-S0J": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0J",
+      "immagineCodice": "12410"
+    },
+    "RVN-S0K": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0K",
+      "immagineCodice": "12420"
+    },
+    "RVN-S0L": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0L",
+      "immagineCodice": "12310"
+    },
+    "RVN-S0U": {
+      "materialID": "",
+      "materialeCodice": "RVN",
+      "finituraCodice": "S0U",
+      "immagineCodice": "13290"
+    },
+    "SAN-266": {
+      "materialID": "",
+      "materialeCodice": "SAN",
+      "finituraCodice": "266",
+      "immagineCodice": "14430"
+    },
+    "SAN-296": {
+      "materialID": "",
+      "materialeCodice": "SAN",
+      "finituraCodice": "296",
+      "immagineCodice": "14590"
+    },
+    "SAN-799": {
+      "materialID": "",
+      "materialeCodice": "SAN",
+      "finituraCodice": "799",
+      "immagineCodice": "14650"
+    },
+    "SAN-848": {
+      "materialID": "",
+      "materialeCodice": "SAN",
+      "finituraCodice": "848",
+      "immagineCodice": "14440"
+    },
+    "SAN-852": {
+      "materialID": "",
+      "materialeCodice": "SAN",
+      "finituraCodice": "852",
+      "immagineCodice": "14600"
+    },
+    "SER-015": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "015",
+      "immagineCodice": "12880"
+    },
+    "SER-016": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "016",
+      "immagineCodice": "10570"
+    },
+    "SER-02L": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "02L",
+      "immagineCodice": "13000"
+    },
+    "SER-03L": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "03L",
+      "immagineCodice": "13040"
+    },
+    "SER-08L": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "08L",
+      "immagineCodice": "15490"
+    },
+    "SER-094": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "094",
+      "immagineCodice": "11040"
+    },
+    "SER-09L": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "09L",
+      "immagineCodice": "15500"
+    },
+    "SER-160": {
+      "materialID": "",
+      "materialeCodice": "SER",
+      "finituraCodice": "160",
+      "immagineCodice": "10910"
+    },
+    "0683": {
+      "materialID": "rigenerati-di-cuoio-315",
+      "rivestimentoCodice": "0683",
+      "immagineCodice": "0683-esprit-nero"
+
+    },
+    "0705": {
+      "materialID": "rigenerati-di-cuoio-474",
+      "rivestimentoCodice": "0705",
+      "immagineCodice": "0705-esprit-bianco-ottico"
+    },
+    "0D04": {
+      "materialID": "rigenerati-di-cuoio-d03",
+      "rivestimentoCodice": "0D04",
+      "immagineCodice": "0d04-esprit-tortora"
+    },
+    "0L01": {
+      "materialID": "rigenerati-di-cuoio-r03",
+      "rivestimentoCodice": "0l01-esprit-antilope",
+      "immagineCodice": "0l01-esprit-antilope"
+    },
+    "0L2V": {
+      "materialID": "rigenerati-di-cuoio-r04",
+      "rivestimentoCodice": "0L2V",
+      "immagineCodice": "0l2v-esprit-siam"
+    },
+    "0L16": {
+      "materialID": "rigenerati-di-cuoio-r16",
+      "rivestimentoCodice": "OL16",
+      "immagineCodice": "0l16-esprit-grigio"
+    },
+
+    "ESI1683": {
+      "materialID": "rigenerati-di-cuoio-315",
+      "valueCodice": "ESI1705",
+      "attributeCodice": "RIVBASE"
+    },
+    "ESI1705": {
+      "materialID": "rigenerati-di-cuoio-474",
+      "valueCodice": "ESI1705",
+      "attributeCodice": "RIVBASE"
+    },
+    "ESI1D04": {
+      "materialID": "rigenerati-di-cuoio-d03",
+      "valueCodice": "ESI1D04",
+      "attributeCodice": "RIVBASE"
+    },
+    "ESI1L01": {
+      "materialID": "rigenerati-di-cuoio-r03",
+      "valueCodice": "ESI1L01",
+      "attributeCodice": "RIVBASE"
+    },
+    "ESI1L08": {
+      "materialID": "rigenerati-di-cuoio-r04",
+      "valueCodice": "ESI1L08",
+      "attributeCodice": "RIVBASE"
+    },
+    "ESI1L16": {
+      "materialID": "rigenerati-di-cuoio-r04",
+      "valueCodice": "ESI1L16",
+      "attributeCodice": "RIVBASE"
+    }
+
+  },
+
+
+
+
+
+
+  "configurables": {
+    "ADX": {
+      "configurableID": "anta_destra",
+      "name": "ANTA DESTRA",
+      "parteCodice": "ADX"
+    },
+    "ALL": {
+      "configurableID": "allunga",
+      "name": "ALLUNGA",
+      "parteCodice": "ALL"
+    },
+    "ALP": {
+      "configurableID": "altre_parti",
+      "name": "ALTRE PARTI",
+      "parteCodice": "ALP"
+    },
+    "ALZ": {
+      "configurableID": "alzatina",
+      "name": "ALZATINA",
+      "parteCodice": "ALZ"
+    },
+    "ANC": {
+      "configurableID": "ante_cassetti",
+      "name": "ANTE\/CASSETTI",
+      "parteCodice": "ANC"
+    },
+    "ANT": {
+      "configurableID": "anta",
+      "name": "ANTA",
+      "parteCodice": "ANT"
+    },
+    "ASX": {
+      "configurableID": "anta_sinistra",
+      "name": "ANTA SINISTRA",
+      "parteCodice": "ASX"
+    },
+    "BAS": {
+      "configurableID": "base",
+      "name": "BASE",
+      "parteCodice": "BAS"
+    },
+    "BLK": {
+      "configurableID": ".",
+      "name": ".",
+      "parteCodice": "BLK"
+    },
+    "BOR": {
+      "configurableID": "bordo",
+      "name": "BORDO",
+      "parteCodice": "BOR"
+    },
+    "CAS": {
+      "configurableID": "cassetto",
+      "name": "CASSETTO",
+      "parteCodice": "CAS"
+    },
+    "CEN": {
+      "configurableID": "centrotavola",
+      "name": "CENTROTAVOLA",
+      "parteCodice": "CEN"
+    },
+    "COL": {
+      "configurableID": "colonna",
+      "name": "COLONNA",
+      "parteCodice": "COL"
+    },
+    "COP": {
+      "configurableID": "coperta",
+      "name": "COPERTA",
+      "parteCodice": "COP"
+    },
+    "CRO": {
+      "configurableID": "crociera",
+      "name": "CROCIERA",
+      "parteCodice": "CRO"
+    },
+    "DIF": {
+      "configurableID": "diffusore",
+      "name": "DIFFUSORE",
+      "parteCodice": "DIF"
+    },
+    "FOD": {
+      "configurableID": "fodera",
+      "name": "FODERA",
+      "parteCodice": "FOD"
+    },
+    "GAM": {
+      "configurableID": "gambe",
+      "name": "GAMBE",
+      "parteCodice": "GAM"
+    },
+    "MAN": {
+      "configurableID": "maniglia",
+      "name": "MANIGLIA",
+      "parteCodice": "MAN"
+    },
+    "MEN": {
+      "configurableID": "mensola",
+      "name": "MENSOLA",
+      "parteCodice": "MEN"
+    },
+    "OGG": {
+      "configurableID": "altri_oggetti",
+      "name": "ALTRI OGGETTI",
+      "parteCodice": "OGG"
+    },
+    "ORO": {
+      "configurableID": "orologio",
+      "name": "OROLOGIO",
+      "parteCodice": "ORO"
+    },
+    "PI1": {
+      "configurableID": "piano_1",
+      "name": "PIANO 1",
+      "parteCodice": "PI1"
+    },
+    "PI2": {
+      "configurableID": "piano_2",
+      "name": "PIANO 2",
+      "parteCodice": "PI2"
+    },
+    "PIA": {
+      "configurableID": "piano",
+      "name": "PIANO",
+      "parteCodice": "PIA"
+    },
+    "PIC": {
+      "configurableID": "picchio",
+      "name": "PICCHIO",
+      "parteCodice": "PIC"
+    },
+    "PIE": {
+      "configurableID": "piedi",
+      "name": "PIEDI",
+      "parteCodice": "PIE"
+    },
+    "PIS": {
+      "configurableID": "piastra",
+      "name": "PIASTRA",
+      "parteCodice": "PIS"
+    },
+    "PTC": {
+      "configurableID": "portacandele",
+      "name": "PORTACANDELE",
+      "parteCodice": "PTC"
+    },
+    "PTO": {
+      "configurableID": "portaoggetti",
+      "name": "PORTAOGGETTI",
+      "parteCodice": "PTO"
+    },
+    "PUN": {
+      "configurableID": "puntali",
+      "name": "PUNTALI",
+      "parteCodice": "PUN"
+    },
+    "RIP": {
+      "configurableID": "ripiano",
+      "name": "RIPIANO",
+      "parteCodice": "RIP"
+    },
+    "SCA": {
+      "configurableID": "schiena",
+      "name": "SCHIENA",
+      "parteCodice": "SCA"
+    },
+    "SCH": {
+      "configurableID": "schienale",
+      "name": "SCHIENALE",
+      "parteCodice": "SCH"
+    },
+    "SED": {
+      "configurableID": "sedile",
+      "name": "SEDILE",
+      "parteCodice": "SED"
+    },
+    "SFR": {
+      "configurableID": "scocca_fronte",
+      "name": "SCOCCA FRONTE",
+      "parteCodice": "SFR"
+    },
+    "SIN": {
+      "configurableID": "struttura_interna",
+      "name": "STRUTTURA INTERNA",
+      "parteCodice": "SIN"
+    },
+    "SRE": {
+      "configurableID": "scocca_retro",
+      "name": "SCOCCA RETRO",
+      "parteCodice": "SRE"
+    },
+    "ST1": {
+      "configurableID": "struttura_1",
+      "name": "STRUTTURA 1",
+      "parteCodice": "ST1"
+    },
+    "ST2": {
+      "configurableID": "struttura_2",
+      "name": "STRUTTURA 2",
+      "parteCodice": "ST2"
+    },
+    "STP": {
+      "configurableID": "sottopiano",
+      "name": "SOTTOPIANO",
+      "parteCodice": "STP"
+    },
+    "STR": {
+      "configurableID": "struttura",
+      "name": "STRUTTURA",
+      "parteCodice": "STR"
+    },
+    "TAP": {
+      "configurableID": "tappeto",
+      "name": "TAPPETO",
+      "parteCodice": "TAP"
+    },
+    "TE1": {
+      "configurableID": "testiera_1",
+      "name": "TESTIERA 1",
+      "parteCodice": "TE1"
+    },
+    "TE2": {
+      "configurableID": "testiera_2",
+      "name": "TESTIERA 2",
+      "parteCodice": "TE2"
+    },
+    "TES": {
+      "configurableID": "testiera",
+      "name": "TESTIERA",
+      "parteCodice": "TES"
+    },
+    "TOP": {
+      "configurableID": "top",
+      "name": "TOP",
+      "parteCodice": "TOP"
+    },
+    "VAS": {
+      "configurableID": "vaso",
+      "name": "VASO",
+      "parteCodice": "VAS"
+    },
+    "VSS": {
+      "configurableID": "vassoio",
+      "name": "VASSOIO",
+      "parteCodice": "VSS"
+    },
+    "000": {
+      "name": "DIMENSIONE TAVOLO",
+      "parteCodice": "000"
+
+    }
+  }
+}

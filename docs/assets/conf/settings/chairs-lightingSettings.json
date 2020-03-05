@@ -1,0 +1,25 @@
+{
+    "envMapName": "set_calligaris02",
+    "envMapLuminance": 40000,
+    "dynamicLights": [
+        {
+            "type": "point",
+            "name": "topLight",
+            "intensity": 30000,  
+            "radius": 5.0,
+            "temperature": 6500,
+            "position": [0,1.5,0.3],
+            "rotateWithCamera": false
+        },
+        {
+            "type": "point",
+            "name": "sideLight",
+            "intensity": 40000,
+            "radius": 5.0,
+            "temperature": 6500,
+            "position": [-1,0.35,0],
+            "rotateWithCamera": true
+
+        }
+    ]
+}

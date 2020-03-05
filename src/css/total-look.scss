@@ -1,0 +1,194 @@
+@import "fonts";
+
+.section--gallery {
+	display: none;
+}
+
+.section--total-look {}
+
+.total-look {
+	display: flex;
+	height: 768px;
+	background: #f6f6f6;
+
+	&>.group--look,
+	&>.listing--products {
+		flex: 1 1 50%;
+		max-width: 50%;
+		overflow: hidden;
+	}
+
+	.group--look {
+		position: relative;
+		// background: green;
+		-webkit-touch-callout: none;
+		user-select: none;
+		cursor: pointer;
+
+		.picture {
+			position: absolute;
+			opacity: 0;
+
+			img {
+				pointer-events: none;
+			}
+		}
+
+		.pin {
+			$size: 24px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -$size / 2;
+				left: -$size / 2;
+				width: $size;
+				height: $size;
+				border-radius: $size / 2;
+				background: #ef3340;
+				opacity: 0.4;
+				transition: opacity ease-in-out 350ms;
+			}
+
+			&:hover,
+			&.active {
+				&:before {
+					opacity: 1;
+				}
+			}
+
+		}
+	}
+
+	&.init {
+		.group--look {
+			.picture {
+				opacity: 1;
+			}
+		}
+	}
+
+	.listing--products {
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+
+			width: 1000px;
+
+			.card--product {
+				height: 768px / 2;
+			}
+		}
+	}
+}
+
+.card--product {
+	position: relative;
+	cursor: pointer;
+
+	.picture {
+		position: relative;
+
+		img {
+			&:first-child {
+				mix-blend-mode: multiply;
+			}
+
+			&:last-child {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: opacity ease-in-out 350ms;
+			}
+		}
+	}
+
+	.content {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity ease-in-out 350ms;
+
+		.group--info {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px;
+
+			font-size: 18px;
+			color: #1d1820;
+
+			.title,
+			.price {
+				flex: 1 1 50%;
+			}
+
+			.title {
+				font-family: 'calligarisbold';
+				font-weight: bold;
+			}
+
+			.price {
+				strong {
+					font-family: 'calligarisbold';
+					font-weight: bold;
+				}
+			}
+
+			.price {
+				text-align: right;
+			}
+
+			.category {
+				flex: 0 0 100%;
+			}
+		}
+
+		.group--cta {
+			display: none;
+		}
+
+		$size: 24px;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: $size;
+			height: $size;
+			border-radius: $size / 2;
+			background: #ef3340;
+		}
+	}
+
+	&:hover,
+	&.active {
+		.picture {
+			img {
+				&:last-child {
+					opacity: 1;
+				}
+			}
+		}
+
+		.content {
+			opacity: 1;
+		}
+	}
+
+}

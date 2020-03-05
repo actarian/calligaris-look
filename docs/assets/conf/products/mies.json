@@ -1,0 +1,205 @@
+{
+    "ID": "mies",
+    "name": "mies",
+    "clientCodes": [
+        "CS/3398"
+    ],
+    "variants": [
+        {
+            "ID": "0011",
+            "name": "0011"
+        },
+        {
+            "ID": "0021",
+            "name": "0021"
+        },
+        {
+            "ID": "0041-L",
+            "name": "0041-L"
+        },
+        {
+            "ID": "0041-R",
+            "name": "0041-R"
+        },
+        {
+            "ID": "0061",
+            "name": "0061"
+        }
+    ],
+    "metadata": {
+        "height": "80",
+        "depth": "170",
+        "collection": "2018",
+        "variants": [
+            {
+                "variantID": "0011",
+                "width": "192"
+            },
+            {
+                "variantID": "0021",
+                "width": "222"
+            },
+            {
+                "variantID": "0041-L",
+                "width": "297"
+            },
+            {
+                "variantID": "0041-R",
+                "width": "297"
+            },
+            {
+                "variantID": "0061",
+                "width": "262"
+            }
+        ]
+    },
+    "model3D": [
+        {
+            "ID": "mies",
+            "url": "mies\/mies_test.glb",
+            "name": "mies",
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "variants": [
+                {
+                    "variantID": "0011",
+                    "floor" : {
+                        "map": "floor_0011",
+                        "size": [7.3,0,7.3]
+                    }
+                },
+                {
+                    "variantID": "0021",
+                    "floor" : {
+                        "map": "floor_0021",
+                        "size": [7.3,0,7.3]
+                    }
+                },
+                {
+                    "variantID": "0041-L",
+                    "floor" : {
+                        "map": "floor_0041",
+                        "size": [7.3,0,7.3]
+                    }
+                },
+                {
+                    "variantID": "0041-R",
+                    "floor" : {
+                        "map": "floor_0041",
+                        "size": [7.3,0,7.3]
+                    },
+                    "scale": [-1,1,1]
+
+                },
+                {
+                    "variantID": "0061",
+                    "floor" : {
+                        "map": "floor_0061",
+                        "size": [7.3,0,7.3]
+                    }
+                }
+            ]
+            
+        }
+    ],
+    "parts": [
+        {
+            "modelID": "mies",
+            "name": "seduta",
+            "ID": "seduta",
+            "variants": [
+                {
+                    "variantID": "0011",
+                    "meshes":
+                    [
+                        "Seduta_0011",
+                        "Etichetta_0011"
+                    ]
+                },
+                {
+                    "variantID": "0021",
+                    "meshes": ["Seduta_0021"]
+                },
+                {
+                    "variantID": "0041-L",
+                    "meshes": ["Seduta_0041"]
+                },
+                {
+                    "variantID": "0041-R",
+                    "meshes": ["Seduta_0041"]
+                },
+                {
+                    "variantID": "0061",
+                    "meshes": ["Seduta_0061"]
+                }
+            ]
+        },
+        {
+            "modelID": "mies",
+            "name": "piedini",
+            "ID": "piedini",
+            "variants": [
+                {
+                    "variantID": "0011",
+                    "meshes": ["Piedini_0011"]
+                },
+                {
+                    "variantID": "0021",
+                    "meshes": ["Piedini_0021"]
+                },
+                {
+                    "variantID": "0041-R",
+                    "meshes": ["Piedini_0041"]
+                },
+                {
+                    "variantID": "0041-L",
+                    "meshes": ["Piedini_0041"]
+                },
+                {
+                    "variantID": "0061",
+                    "meshes": ["Piedini_0061"]
+                }
+            ],
+            "material": "blackPlastic",
+            "repeat": 1
+        }
+    ],
+    "groups": [],
+    "configurables": [
+        {
+            "ID": "seduta",
+            "name": "seduta",
+            "parts": [
+                "seduta"
+            ],
+            "materials": [
+                {
+                    "material": "malmo-sq2",
+                    "repeat": 5
+                },
+                {
+                    "material": "malmo-sq4",
+                    "repeat": 5
+                },
+                {
+                    "material": "pelle-470",
+                    "repeat": 20
+                },
+                {
+                    "material": "pelle-705",
+                    "repeat": 20
+                },
+                {
+                    "material": "pelle-d04",
+                    "repeat": 20
+                }
+            ]
+        },
+        {
+            "ID": "variant",
+            "name": "variante",
+            "type": "variant"
+        }
+    ],
+    "states": []
+}
