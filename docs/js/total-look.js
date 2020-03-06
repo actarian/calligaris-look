@@ -396,6 +396,7 @@
 
     _proto.onInit = function onInit(node) {
       this.item = node.hasAttribute('data-item') ? new Function("return " + node.getAttribute('data-item'))() : {};
+      this.item.info = node.querySelector('.group--info').innerHTML;
       this.addListeners();
     };
 
@@ -448,6 +449,7 @@
     var _proto = TotalLookPinComponent.prototype;
 
     _proto.onInit = function onInit(node) {
+      this.info = this.node.querySelector('.info');
       this.addListeners();
     };
 
@@ -478,7 +480,7 @@
     };
 
     _proto.render = function render() {
-      return "<div class=\"pin\"></div>";
+      return "<div class=\"pin\"><div class=\"info\">" + this.item.info + "</div></div>";
     };
 
     _proto.update = function update() {
@@ -584,6 +586,7 @@
     _proto.onResize = function onResize(event) {
       var _this3 = this;
 
+      this.windowWidth = window.innerWidth;
       var img = this.img;
       var groupLook = this.groupLook;
       var picture = this.picture;
@@ -643,10 +646,22 @@
       this.pins.forEach(function (pin) {
         var pinX = imageWidth / img.naturalWidth * pin.item.position.x;
         var pinY = imageWidth / img.naturalWidth * pin.item.position.y;
+        pin.item.pinX = pinX;
+        pin.item.pinY = pinY;
         gsap.set(pin.node, {
           x: pinX,
           y: pinY
-        });
+        }); // fix baloon position x
+
+        if (pinX < 110) {
+          gsap.set(pin.info, {
+            x: Math.max(0, 110 - pinX)
+          });
+        } else if (pinX > imageWidth - 110) {
+          gsap.set(pin.info, {
+            x: Math.min(0, imageWidth - 110 + pinX)
+          });
+        }
 
         if (pin.item.active) {
           pinPosition.x = pinX;
@@ -657,12 +672,35 @@
       var dy = containerHeight - imageHeight;
       var x = containerWidth / 2 - pinPosition.x;
       var y = containerHeight / 2 - pinPosition.y;
-      (event ? gsap.set : gsap.to)(this.picture, {
-        x: Math.min(0, Math.max(dx, x)),
-        y: Math.min(0, Math.max(dy, y)),
-        duration: 0.3,
-        overwrite: true
-      });
+
+      if (event) {
+        gsap.set(this.picture, {
+          x: Math.min(0, Math.max(dx, x)),
+          y: Math.min(0, Math.max(dy, y))
+        });
+        this.onPictureUpdate();
+      } else {
+        gsap.to(this.picture, {
+          x: Math.min(0, Math.max(dx, x)),
+          y: Math.min(0, Math.max(dy, y)),
+          duration: 0.3,
+          overwrite: true,
+          onUpdate: this.onPictureUpdate,
+          callbackScope: this
+        });
+      }
+    };
+
+    _proto.onPictureUpdate = function onPictureUpdate() {
+      if (this.windowWidth < 1024) {
+        var pin = this.pins.find(function (x) {
+          return x.item.active;
+        });
+
+        if (pin) {
+          console.log(pin, pin.item.pinX);
+        }
+      }
     };
 
     _proto.onWheel = function onWheel(event) {
@@ -757,7 +795,9 @@
           x: Math.min(0, Math.max(dx, x)),
           y: Math.min(0, Math.max(dy, y)),
           duration: 0.3,
-          overwrite: true
+          overwrite: true,
+          onUpdate: _this5.onPictureUpdate,
+          callbackScope: _this5
         });
       }, function (e) {
         //

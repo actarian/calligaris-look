@@ -8,6 +8,7 @@ export default class TotalLookPinComponent extends Component {
 	}
 
 	onInit(node) {
+		this.info = this.node.querySelector('.info');
 		this.addListeners();
 	}
 
@@ -38,7 +39,7 @@ export default class TotalLookPinComponent extends Component {
 	}
 
 	render() {
-		return `<div class="pin"></div>`;
+		return `<div class="pin"><div class="info">${this.item.info}</div></div>`;
 	}
 
 	update() {

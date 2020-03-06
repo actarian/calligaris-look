@@ -4,6 +4,7 @@ export default class TotalLookCardComponent extends Component {
 
 	onInit(node) {
 		this.item = node.hasAttribute('data-item') ? new Function(`return ${node.getAttribute('data-item')}`)() : {};
+		this.item.info = node.querySelector('.group--info').innerHTML;
 		this.addListeners();
 	}
 

@@ -91,6 +91,7 @@ export default class TotalLookComponent extends Component {
 	}
 
 	onResize(event) {
+		this.windowWidth = window.innerWidth;
 		const img = this.img;
 		const groupLook = this.groupLook;
 		const picture = this.picture;
@@ -142,10 +143,22 @@ export default class TotalLookComponent extends Component {
 		this.pins.forEach(pin => {
 			const pinX = imageWidth / img.naturalWidth * pin.item.position.x;
 			const pinY = imageWidth / img.naturalWidth * pin.item.position.y;
+			pin.item.pinX = pinX;
+			pin.item.pinY = pinY;
 			gsap.set(pin.node, {
 				x: pinX,
 				y: pinY,
 			});
+			// fix baloon position x
+			if (pinX < 110) {
+				gsap.set(pin.info, {
+					x: Math.max(0, 110 - pinX),
+				});
+			} else if (pinX > imageWidth - 110) {
+				gsap.set(pin.info, {
+					x: Math.min(0, imageWidth - 110 + pinX),
+				});
+			}
 			if (pin.item.active) {
 				pinPosition.x = pinX;
 				pinPosition.y = pinY;
@@ -155,12 +168,31 @@ export default class TotalLookComponent extends Component {
 		const dy = containerHeight - imageHeight;
 		let x = containerWidth / 2 - pinPosition.x;
 		let y = containerHeight / 2 - pinPosition.y;
-		(event ? gsap.set : gsap.to)(this.picture, {
-			x: Math.min(0, Math.max(dx, x)),
-			y: Math.min(0, Math.max(dy, y)),
-			duration: 0.3,
-			overwrite: true,
-		});
+		if (event) {
+			gsap.set(this.picture, {
+				x: Math.min(0, Math.max(dx, x)),
+				y: Math.min(0, Math.max(dy, y)),
+			})
+			this.onPictureUpdate();
+		} else {
+			gsap.to(this.picture, {
+				x: Math.min(0, Math.max(dx, x)),
+				y: Math.min(0, Math.max(dy, y)),
+				duration: 0.3,
+				overwrite: true,
+				onUpdate: this.onPictureUpdate,
+				callbackScope: this,
+			});
+		}
+	}
+
+	onPictureUpdate() {
+		if (this.windowWidth < 1024) {
+			const pin = this.pins.find(x => x.item.active);
+			if (pin) {
+				console.log(pin, pin.item.pinX);
+			}
+		}
 	}
 
 	onWheel(event) {
@@ -247,6 +279,8 @@ export default class TotalLookComponent extends Component {
 				y: Math.min(0, Math.max(dy, y)),
 				duration: 0.3,
 				overwrite: true,
+				onUpdate: this.onPictureUpdate,
+				callbackScope: this,
 			});
 		}, (e) => {
 			//
