@@ -123,7 +123,7 @@
     .card--product .content .group--info {
       display: flex;
       flex-wrap: wrap;
-      padding: 20px;
+      padding: 0 20px 15px 20px;
       font-size: 18px;
       color: #1d1820; }
       .card--product .content .group--info .title,
