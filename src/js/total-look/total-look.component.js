@@ -11,7 +11,7 @@ export default class TotalLookComponent extends Component {
 		// console.log('TotalLookComponent', node);
 		this.groupLook = node.querySelector('.group--look');
 		this.picture = node.querySelector('.group--look .picture');
-		this.cursor = node.querySelector('.cursor');
+		this.cursor01 = node.querySelector('.cursor-01');
 		this.listing = node.querySelector('.listing--products');
 		this.listingInner = node.querySelector('.listing--products__inner');
 		this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(x => new TotalLookCardComponent().setNode(x));
@@ -45,9 +45,11 @@ export default class TotalLookComponent extends Component {
 				this.node.classList.remove('vertical');
 			}
 			this.node.classList.add('show-hint');
+			/*
 			setTimeout(() => {
 				this.node.classList.remove('show-hint');
 			}, 4000);
+			*/
 		}
 	}
 
@@ -61,7 +63,7 @@ export default class TotalLookComponent extends Component {
 	}
 
 	onMove(event) {
-		gsap.set(this.cursor, {
+		gsap.set(this.cursor01, {
 			x: event.clientX,
 			y: event.clientY,
 			// duration: 0.3,
@@ -121,7 +123,8 @@ export default class TotalLookComponent extends Component {
 			if (card.item.active) {
 				// const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
 				const dx = containerWidth - listingInnerWidth;
-				let x = -card.node.offsetLeft; // (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left);
+				const translation = this.getTranslate(this.listingInner);
+				let x = (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left) + translation.x;
 				x = Math.min(0, Math.max(dx, x));
 				gsap.to(this.listingInner, {
 					x: x,
@@ -177,6 +180,7 @@ export default class TotalLookComponent extends Component {
 				// console.log('TotalLookComponent.card.click', x.item);
 				this.setActive(x.item);
 				this.node.classList.remove('open');
+				this.node.classList.remove('show-hint');
 			});
 		});
 		this.pins.forEach(x => {
@@ -184,6 +188,7 @@ export default class TotalLookComponent extends Component {
 				// console.log('TotalLookComponent.pin.click', x.item);
 				this.setActive(x.item);
 				this.node.classList.add('open');
+				this.node.classList.remove('show-hint');
 			});
 		});
 	}
@@ -198,21 +203,20 @@ export default class TotalLookComponent extends Component {
 
 	addDragListener() {
 		const picture = this.picture;
-		let x_ = 0,
-			y_ = 0;
+		let translation = {
+			x: 0,
+			y: 0
+		};
 		this.draglistener = new DragListener(this.groupLook, (e) => {
-			const transform = picture.style.transform;
-			if (transform) {
-				const coords = transform.split('(')[1].split([')'])[0].split(',');
-				x_ = parseFloat(coords[0]);
-				y_ = parseFloat(coords[1]);
-			}
+			translation = this.getTranslate(picture);
 			this.node.classList.remove('open');
+			this.node.classList.remove('show-hint');
+			this.node.classList.add('grabbing');
 		}, (e) => {
 			const dx = this.containerWidth - this.imageWidth;
 			const dy = this.containerHeight - this.imageHeight;
-			const x = x_ + e.distance.x;
-			const y = y_ + e.distance.y;
+			const x = translation.x + e.distance.x;
+			const y = translation.y + e.distance.y;
 			gsap.to(picture, {
 				x: Math.min(0, Math.max(dx, x)),
 				y: Math.min(0, Math.max(dy, y)),
@@ -221,6 +225,7 @@ export default class TotalLookComponent extends Component {
 			});
 		}, (e) => {
 			//
+			this.node.classList.remove('grabbing');
 		});
 	}
 
@@ -228,6 +233,21 @@ export default class TotalLookComponent extends Component {
 		if (this.draglistener) {
 			this.draglistener.destroy();
 		}
+	}
+
+	getTranslate(node) {
+		let x = 0,
+			y = 0;
+		const transform = node.style.transform;
+		if (transform) {
+			const coords = transform.split('(')[1].split([')'])[0].split(',');
+			x = parseFloat(coords[0]);
+			y = parseFloat(coords[1]);
+		}
+		return {
+			x,
+			y
+		};
 	}
 
 }

@@ -18,7 +18,7 @@ $height: 768px;
 		// background: green;
 		-webkit-touch-callout: none;
 		user-select: none;
-		cursor: pointer;
+		cursor: grab;
 
 		.picture {
 			position: absolute;
@@ -75,8 +75,16 @@ $height: 768px;
 	}
 	*/
 
+	&.grabbing {
+		.group--look {
+			cursor: grabbing;
+		}
+	}
+
 	&.show-hint {
-		.cursor {
+
+		.cursor-02,
+		.cursor-03 {
 			opacity: 1;
 			visibility: visible;
 		}
@@ -328,7 +336,13 @@ $height: 768px;
 
 }
 
-.cursor {
+$hcw: 68px;
+$hch: 78px;
+$vcw: 64px;
+$vch: 86px;
+$scale: 0.5;
+
+.cursor-01 {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -339,18 +353,18 @@ $height: 768px;
 
 	.horizontal {
 		position: absolute;
-		width: 59px;
-		height: 78px;
-		margin-left: -29.5px;
-		margin-top: -39px;
+		width: $hcw * $scale;
+		height: $hch * $scale;
+		margin-left: -$hcw / 2 * $scale;
+		margin-top: -$hch / 2 * $scale;
 	}
 
 	.vertical {
 		display: none;
-		width: 64px;
-		height: 86px;
-		margin-left: -32px;
-		margin-top: -86px;
+		width: $vcw * $scale;
+		height: $vch * $scale;
+		margin-left: -$vcw / 2 * $scale;
+		margin-top: -$vch / 2 * $scale;
 	}
 
 	.enter & {
@@ -369,44 +383,149 @@ $height: 768px;
 	}
 }
 
-.cursor {
+.cursor-02 {
 	position: absolute;
-	visibility: visible;
 	top: 50%;
 	left: 50%;
-	transform: scale(0.7);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity ease-in-out 350ms;
+
+	.horizontal {
+		position: absolute;
+		width: $hcw * $scale;
+		height: $hch * $scale;
+		margin-left: -$hcw / 2 * $scale;
+		margin-top: -$hch / 2 * $scale;
+	}
+
+	.vertical {
+		display: none;
+		width: $vcw * $scale;
+		height: $vch * $scale;
+		margin-left: -$vcw / 2 * $scale;
+		margin-top: -$vch / 2 * $scale;
+	}
+
+	.enter & {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.vertical & {
+		.horizontal {
+			display: none;
+		}
+
+		.vertical {
+			display: block;
+		}
+	}
 }
 
 .total-look {
 	&.vertical {
-		.cursor {
+		.cursor-02 {
 			animation: vertical-drag 0.8s cubic-bezier(0.785, 0.135, 0.150, 0.860) 5 alternate both;
 		}
 	}
 
 	&:not(.vertical) {
-		.cursor {
+		.cursor-02 {
 			animation: horizontal-drag 0.8s cubic-bezier(0.785, 0.135, 0.150, 0.860) 5 alternate both;
+		}
+	}
+}
+
+.cursor-03 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity ease-in-out 350ms;
+
+	.horizontal,
+	.vertical {
+		top: 50%;
+		left: 50%;
+	}
+
+	.horizontal {
+		position: absolute;
+		width: $hcw * $scale;
+		height: $hch * $scale;
+		margin-left: -$hcw / 2 * $scale;
+		margin-top: -$hch / 2 * $scale;
+		animation: horizontal-drag-rotation 0.8s cubic-bezier(0.785, 0.135, 0.150, 0.860) infinite alternate both;
+	}
+
+	.vertical {
+		position: absolute;
+		display: none;
+		width: $vcw * $scale;
+		height: $vch * $scale;
+		margin-left: -$vcw / 2 * $scale;
+		margin-top: -$vch / 2 * $scale;
+		animation: vertical-drag-rotation 0.8s cubic-bezier(0.785, 0.135, 0.150, 0.860) infinite alternate both;
+	}
+
+	.enter & {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.vertical & {
+		.horizontal {
+			display: none;
+		}
+
+		.vertical {
+			display: block;
 		}
 	}
 }
 
 @keyframes vertical-drag {
 	0% {
-		transform: scale(0.7) translateY(50px);
+		transform: translateY(50px);
 	}
 
 	100% {
-		transform: scale(0.7) translateY(-50px);
+		transform: translateY(-50px);
 	}
 }
 
 @keyframes horizontal-drag {
 	0% {
-		transform: scale(0.7) translateX(50px);
+		transform: translateX(50px);
 	}
 
 	100% {
-		transform: scale(0.7) translateX(-50px);
+		transform: translateX(-50px);
+	}
+}
+
+
+@keyframes vertical-drag-rotation {
+	0% {
+		transform: translateY(50px) rotateZ(10deg);
+	}
+
+	100% {
+		transform: translateY(-50px) rotateZ(-10deg);
+	}
+}
+
+@keyframes horizontal-drag-rotation {
+	0% {
+		transform: translateX(50px) rotateZ(-10deg);
+	}
+
+	100% {
+		transform: translateX(-50px) rotateZ(10deg);
 	}
 }

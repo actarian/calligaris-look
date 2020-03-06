@@ -41,7 +41,7 @@
     -webkit-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    cursor: pointer; }
+    cursor: grab; }
     .total-look .group--look .picture {
       position: absolute;
       opacity: 0;
@@ -69,7 +69,10 @@
         opacity: 1; }
   .total-look.init .group--look .picture {
     opacity: 1; }
-  .total-look.show-hint .cursor {
+  .total-look.grabbing .group--look {
+    cursor: grabbing; }
+  .total-look.show-hint .cursor-02,
+  .total-look.show-hint .cursor-03 {
     opacity: 1;
     visibility: visible; }
   @media (min-width: 1024px) {
@@ -221,7 +224,7 @@
   .card--product.active .content:after {
     opacity: 1; }
 
-.cursor {
+.cursor-01 {
   position: fixed;
   top: 0;
   left: 0;
@@ -229,47 +232,116 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity ease-in-out 350ms; }
-  .cursor .horizontal {
+  .cursor-01 .horizontal {
     position: absolute;
-    width: 59px;
-    height: 78px;
-    margin-left: -29.5px;
-    margin-top: -39px; }
-  .cursor .vertical {
+    width: 34px;
+    height: 39px;
+    margin-left: -17px;
+    margin-top: -19.5px; }
+  .cursor-01 .vertical {
     display: none;
-    width: 64px;
-    height: 86px;
-    margin-left: -32px;
-    margin-top: -86px; }
-  .enter .cursor {
+    width: 32px;
+    height: 43px;
+    margin-left: -16px;
+    margin-top: -21.5px; }
+  .enter .cursor-01 {
     visibility: visible;
     opacity: 1; }
-  .vertical .cursor .horizontal {
+  .vertical .cursor-01 .horizontal {
     display: none; }
-  .vertical .cursor .vertical {
+  .vertical .cursor-01 .vertical {
     display: block; }
 
-.cursor {
+.cursor-02 {
   position: absolute;
-  visibility: visible;
   top: 50%;
   left: 50%;
-  transform: scale(0.7); }
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity ease-in-out 350ms; }
+  .cursor-02 .horizontal {
+    position: absolute;
+    width: 34px;
+    height: 39px;
+    margin-left: -17px;
+    margin-top: -19.5px; }
+  .cursor-02 .vertical {
+    display: none;
+    width: 32px;
+    height: 43px;
+    margin-left: -16px;
+    margin-top: -21.5px; }
+  .enter .cursor-02 {
+    visibility: visible;
+    opacity: 1; }
+  .vertical .cursor-02 .horizontal {
+    display: none; }
+  .vertical .cursor-02 .vertical {
+    display: block; }
 
-.total-look.vertical .cursor {
+.total-look.vertical .cursor-02 {
   animation: vertical-drag 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86) 5 alternate both; }
 
-.total-look:not(.vertical) .cursor {
+.total-look:not(.vertical) .cursor-02 {
   animation: horizontal-drag 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86) 5 alternate both; }
+
+.cursor-03 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity ease-in-out 350ms; }
+  .cursor-03 .horizontal,
+  .cursor-03 .vertical {
+    top: 50%;
+    left: 50%; }
+  .cursor-03 .horizontal {
+    position: absolute;
+    width: 34px;
+    height: 39px;
+    margin-left: -17px;
+    margin-top: -19.5px;
+    animation: horizontal-drag-rotation 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite alternate both; }
+  .cursor-03 .vertical {
+    position: absolute;
+    display: none;
+    width: 32px;
+    height: 43px;
+    margin-left: -16px;
+    margin-top: -21.5px;
+    animation: vertical-drag-rotation 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite alternate both; }
+  .enter .cursor-03 {
+    visibility: visible;
+    opacity: 1; }
+  .vertical .cursor-03 .horizontal {
+    display: none; }
+  .vertical .cursor-03 .vertical {
+    display: block; }
 
 @keyframes vertical-drag {
   0% {
-    transform: scale(0.7) translateY(50px); }
+    transform: translateY(50px); }
   100% {
-    transform: scale(0.7) translateY(-50px); } }
+    transform: translateY(-50px); } }
 
 @keyframes horizontal-drag {
   0% {
-    transform: scale(0.7) translateX(50px); }
+    transform: translateX(50px); }
   100% {
-    transform: scale(0.7) translateX(-50px); } }
+    transform: translateX(-50px); } }
+
+@keyframes vertical-drag-rotation {
+  0% {
+    transform: translateY(50px) rotateZ(10deg); }
+  100% {
+    transform: translateY(-50px) rotateZ(-10deg); } }
+
+@keyframes horizontal-drag-rotation {
+  0% {
+    transform: translateX(50px) rotateZ(-10deg); }
+  100% {
+    transform: translateX(-50px) rotateZ(10deg); } }

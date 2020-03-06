@@ -509,7 +509,7 @@
       // console.log('TotalLookComponent', node);
       this.groupLook = node.querySelector('.group--look');
       this.picture = node.querySelector('.group--look .picture');
-      this.cursor = node.querySelector('.cursor');
+      this.cursor01 = node.querySelector('.cursor-01');
       this.listing = node.querySelector('.listing--products');
       this.listingInner = node.querySelector('.listing--products__inner');
       this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(function (x) {
@@ -545,7 +545,7 @@
     	this.node.classList.remove('enter');
     }
     	onMove(event) {
-    	gsap.set(this.cursor, {
+    	gsap.set(this.cursor01, {
     		x: event.clientX,
     		y: event.clientY,
     		// duration: 0.3,
@@ -616,8 +616,10 @@
         if (card.item.active) {
           // const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
           var dx = containerWidth - listingInnerWidth;
-          var x = -card.node.offsetLeft; // (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left);
 
+          var translation = _this3.getTranslate(_this3.listingInner);
+
+          var x = _this3.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left + translation.x;
           x = Math.min(0, Math.max(dx, x));
           gsap.to(_this3.listingInner, {
             x: x,
@@ -677,6 +679,8 @@
           _this4.setActive(x.item);
 
           _this4.node.classList.remove('open');
+
+          _this4.node.classList.remove('show-hint');
         });
       });
       this.pins.forEach(function (x) {
@@ -685,6 +689,8 @@
           _this4.setActive(x.item);
 
           _this4.node.classList.add('open');
+
+          _this4.node.classList.remove('show-hint');
         });
       });
     };
@@ -700,30 +706,32 @@
       var _this5 = this;
 
       var picture = this.picture;
-      var x_ = 0,
-          y_ = 0;
+      var translation = {
+        x: 0,
+        y: 0
+      };
       this.draglistener = new DragListener(this.groupLook, function (e) {
-        var transform = picture.style.transform;
-
-        if (transform) {
-          var coords = transform.split('(')[1].split([')'])[0].split(',');
-          x_ = parseFloat(coords[0]);
-          y_ = parseFloat(coords[1]);
-        }
+        translation = _this5.getTranslate(picture);
 
         _this5.node.classList.remove('open');
+
+        _this5.node.classList.remove('show-hint');
+
+        _this5.node.classList.add('grabbing');
       }, function (e) {
         var dx = _this5.containerWidth - _this5.imageWidth;
         var dy = _this5.containerHeight - _this5.imageHeight;
-        var x = x_ + e.distance.x;
-        var y = y_ + e.distance.y;
+        var x = translation.x + e.distance.x;
+        var y = translation.y + e.distance.y;
         gsap.to(picture, {
           x: Math.min(0, Math.max(dx, x)),
           y: Math.min(0, Math.max(dy, y)),
           duration: 0.3,
           overwrite: true
         });
-      }, function (e) {//
+      }, function (e) {
+        //
+        _this5.node.classList.remove('grabbing');
       });
     };
 
@@ -733,11 +741,26 @@
       }
     };
 
+    _proto.getTranslate = function getTranslate(node) {
+      var x = 0,
+          y = 0;
+      var transform = node.style.transform;
+
+      if (transform) {
+        var coords = transform.split('(')[1].split([')'])[0].split(',');
+        x = parseFloat(coords[0]);
+        y = parseFloat(coords[1]);
+      }
+
+      return {
+        x: x,
+        y: y
+      };
+    };
+
     _createClass(TotalLookComponent, [{
       key: "direction",
       set: function set(direction) {
-        var _this6 = this;
-
         if (this.direction_ !== direction) {
           this.direction_ = direction;
 
@@ -750,9 +773,11 @@
           }
 
           this.node.classList.add('show-hint');
-          setTimeout(function () {
-            _this6.node.classList.remove('show-hint');
+          /*
+          setTimeout(() => {
+          	this.node.classList.remove('show-hint');
           }, 4000);
+          */
         }
       }
     }]);
