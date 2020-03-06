@@ -29,7 +29,12 @@
 .total-look {
   display: flex;
   height: 768px;
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  /*
+	&.enter {
+		cursor: none;
+	}
+	*/ }
   .total-look > .group--look,
   .total-look > .listing--products {
     flex: 1 1 50%;
@@ -78,8 +83,6 @@
       .total-look .listing--products__inner .card--product .picture {
         width: 100%;
         height: 100%; }
-  .total-look.enter {
-    cursor: none; }
   .total-look.show-hint .cursor {
     opacity: 1;
     visibility: visible; }
