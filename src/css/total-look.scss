@@ -6,9 +6,11 @@
 
 .section--total-look {}
 
+$height: 768px;
+
 .total-look {
 	display: flex;
-	height: 768px;
+	height: $height;
 	background: #f6f6f6;
 
 	&>.group--look,
@@ -23,7 +25,6 @@
 		// background: green;
 		-webkit-touch-callout: none;
 		user-select: none;
-		cursor: pointer;
 
 		.picture {
 			position: absolute;
@@ -82,9 +83,19 @@
 			width: 1000px;
 
 			.card--product {
-				height: 768px / 2;
+				height: $height / 2;
+				width: $height / 2 / 384 * 500;
+
+				.picture {
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
+	}
+
+	&.enter {
+		cursor: none;
 	}
 }
 
@@ -95,6 +106,12 @@
 	.picture {
 		position: relative;
 
+		img {
+			opacity: 0.6;
+			transition: opacity ease-in-out 350ms;
+		}
+
+		/*
 		img {
 			&:first-child {
 				mix-blend-mode: multiply;
@@ -110,6 +127,7 @@
 				transition: opacity ease-in-out 350ms;
 			}
 		}
+		*/
 	}
 
 	.content {
@@ -181,9 +199,9 @@
 	&.active {
 		.picture {
 			img {
-				&:last-child {
-					opacity: 1;
-				}
+				// &:last-child {
+				opacity: 1;
+				// }
 			}
 		}
 
@@ -192,4 +210,45 @@
 		}
 	}
 
+}
+
+.cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity ease-in-out 350ms;
+
+	.horizontal {
+		position: absolute;
+		width: 59px;
+		height: 78px;
+		left: -29.5px;
+		top: -39px;
+	}
+
+	.vertical {
+		display: none;
+		width: 64px;
+		height: 86px;
+		left: -32px;
+		top: -86px;
+	}
+
+	.enter & {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.vertical & {
+		.horizontal {
+			display: none;
+		}
+
+		.vertical {
+			display: block;
+		}
+	}
 }

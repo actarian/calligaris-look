@@ -507,6 +507,7 @@
       // console.log('TotalLookComponent', node);
       this.groupLook = node.querySelector('.group--look');
       this.picture = node.querySelector('.group--look .picture');
+      this.cursor = node.querySelector('.cursor');
       this.listing = node.querySelector('.listing--products');
       this.listingInner = node.querySelector('.listing--products__inner');
       this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(function (x) {
@@ -544,9 +545,11 @@
       if (containerRatio > imgRatio) {
         imageWidth = groupLook.offsetWidth;
         imageHeight = groupLook.offsetWidth / imgRatio;
+        this.node.classList.add('vertical');
       } else {
         imageWidth = groupLook.offsetHeight * imgRatio;
         imageHeight = groupLook.offsetHeight;
+        this.node.classList.remove('vertical');
       }
 
       picture.style.width = imageWidth + "px";
@@ -563,12 +566,12 @@
         }
 
         if (card.item.active) {
-          // const dx = containerWidth - listingInnerWidth;
-          var x = card.node.getBoundingClientRect().left - _this2.listing.getBoundingClientRect().left + _this2.listing.scrollLeft; // x = Math.min(0, Math.max(dx, x)) * -1;
-
-
-          gsap.to(_this2.listing, {
-            scrollLeft: x,
+          // const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
+          var dx = containerWidth - listingInnerWidth;
+          var x = _this2.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left;
+          x = Math.min(0, Math.max(dx, x));
+          gsap.to(_this2.listingInner, {
+            x: x,
             duration: 0.3,
             delay: 0.1,
             overwrite: true
@@ -585,13 +588,33 @@
 
         if (pin.item.active) {
           var dx = containerWidth - imageWidth;
+          var dy = containerHeight - imageHeight;
           var x = containerWidth / 2 - pinX;
+          var y = containerHeight / 2 - pinY;
           gsap.to(_this2.picture, {
             x: Math.min(0, Math.max(dx, x)),
+            y: Math.min(0, Math.max(dy, y)),
             duration: 0.3,
             overwrite: true
           });
         }
+      });
+    };
+
+    _proto.onEnter = function onEnter() {
+      this.node.classList.add('enter');
+    };
+
+    _proto.onLeave = function onLeave() {
+      this.node.classList.remove('enter');
+    };
+
+    _proto.onMove = function onMove(event) {
+      gsap.set(this.cursor, {
+        x: event.clientX,
+        y: event.clientY // duration: 0.3,
+        // overwrite: true,
+
       });
     };
 
@@ -624,7 +647,13 @@
 
       this.loadImage();
       this.onResize = this.onResize.bind(this);
+      this.onMove = this.onMove.bind(this);
+      this.onEnter = this.onEnter.bind(this);
+      this.onLeave = this.onLeave.bind(this);
       window.addEventListener('resize', this.onResize);
+      window.addEventListener('mousemove', this.onMove);
+      this.groupLook.addEventListener('mouseenter', this.onEnter);
+      this.groupLook.addEventListener('mouseleave', this.onLeave);
       this.cards.forEach(function (x) {
         x.on('click', function () {
           // console.log('TotalLookComponent.card.click', x.item);
@@ -642,6 +671,9 @@
     _proto.removeListeners = function removeListeners() {
       this.removeDragListener();
       window.removeEventListener('resize', this.onResize);
+      window.removeEventListener('mousemove', this.onMove);
+      this.groupLook.removeEventListener('mouseenter', this.onEnter);
+      this.groupLook.removeEventListener('mouseleave', this.onLeave);
     };
 
     _proto.addDragListener = function addDragListener() {
