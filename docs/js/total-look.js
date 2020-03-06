@@ -492,6 +492,8 @@
     return TotalLookPinComponent;
   }(Component);
 
+  var to;
+
   var TotalLookComponent = /*#__PURE__*/function (_Component) {
     _inheritsLoose(TotalLookComponent, _Component);
 
@@ -535,8 +537,48 @@
       }
     };
 
-    _proto.onResize = function onResize() {
+    /*
+    onEnter() {
+    	this.node.classList.add('enter');
+    }
+    	onLeave() {
+    	this.node.classList.remove('enter');
+    }
+    	onMove(event) {
+    	gsap.set(this.cursor, {
+    		x: event.clientX,
+    		y: event.clientY,
+    		// duration: 0.3,
+    		// overwrite: true,
+    	});
+    }
+    */
+    _proto.loadImage = function loadImage() {
       var _this2 = this;
+
+      var img = this.node.querySelector('.group--look img');
+      var loader = new Image();
+
+      loader.onload = function () {
+        _this2.onImage(img);
+      };
+
+      loader.src = img.src;
+    };
+
+    _proto.setActive = function setActive(item) {
+      this.cards.forEach(function (x) {
+        x.item !== item ? x.item.active = false : x.item.active = true;
+        x.update();
+      });
+      this.pins.forEach(function (x) {
+        return x.update();
+      });
+      this.onResize();
+    };
+
+    _proto.onResize = function onResize() {
+      var _this3 = this;
 
       var img = this.img;
       var groupLook = this.groupLook;
@@ -563,19 +605,20 @@
       this.containerHeight = containerHeight;
       this.imageWidth = imageWidth;
       this.imageHeight = imageHeight;
+      this.listingInner.style.width = 'auto';
       this.cards.forEach(function (card, i) {
-        var listingInnerWidth = card.node.offsetWidth * Math.ceil(_this2.cards.length / 2);
+        var listingInnerWidth = card.node.offsetWidth * Math.ceil(_this3.cards.length / 2);
 
         if (i === 0) {
-          _this2.listingInner.style.width = listingInnerWidth + "px";
+          _this3.listingInner.style.width = listingInnerWidth + "px";
         }
 
         if (card.item.active) {
           // const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
           var dx = containerWidth - listingInnerWidth;
-          var x = _this2.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left;
+          var x = _this3.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left;
           x = Math.min(0, Math.max(dx, x));
-          gsap.to(_this2.listingInner, {
+          gsap.to(_this3.listingInner, {
             x: x,
             duration: 0.3,
             delay: 0.1,
@@ -596,7 +639,7 @@
           var dy = containerHeight - imageHeight;
           var x = containerWidth / 2 - pinX;
           var y = containerHeight / 2 - pinY;
-          gsap.to(_this2.picture, {
+          gsap.to(_this3.picture, {
             x: Math.min(0, Math.max(dx, x)),
             y: Math.min(0, Math.max(dy, y)),
             duration: 0.3,
@@ -604,58 +647,26 @@
           });
         }
       });
-    }
-    /*
-    onEnter() {
-    	this.node.classList.add('enter');
-    }
-    	onLeave() {
-    	this.node.classList.remove('enter');
-    }
-    	onMove(event) {
-    	gsap.set(this.cursor, {
-    		x: event.clientX,
-    		y: event.clientY,
-    		// duration: 0.3,
-    		// overwrite: true,
-    	});
-    }
-    */
-    ;
-
-    _proto.loadImage = function loadImage() {
-      var _this3 = this;
-
-      var img = this.node.querySelector('.group--look img');
-      var loader = new Image();
-
-      loader.onload = function () {
-        _this3.onImage(img);
-      };
-
-      loader.src = img.src;
     };
 
-    _proto.setActive = function setActive(item) {
-      this.cards.forEach(function (x) {
-        x.item !== item ? x.item.active = false : x.item.active = true;
-        x.update();
+    _proto.onDelayedResize = function onDelayedResize() {
+      gsap.set(this.listingInner, {
+        x: 0
       });
-      this.pins.forEach(function (x) {
-        return x.update();
-      });
-      this.onResize();
+      to ? clearTimeout(to) : null;
+      to = setTimeout(this.onResize, 5);
     };
 
     _proto.addListeners = function addListeners() {
       var _this4 = this;
 
       this.loadImage();
-      this.onResize = this.onResize.bind(this); // this.onMove = this.onMove.bind(this);
+      this.onResize = this.onResize.bind(this);
+      this.onDelayedResize = this.onDelayedResize.bind(this); // this.onMove = this.onMove.bind(this);
       // this.onEnter = this.onEnter.bind(this);
       // this.onLeave = this.onLeave.bind(this);
 
-      window.addEventListener('resize', this.onResize); // window.addEventListener('mousemove', this.onMove);
+      window.addEventListener('resize', this.onDelayedResize); // window.addEventListener('mousemove', this.onMove);
       // this.groupLook.addEventListener('mouseenter', this.onEnter);
       // this.groupLook.addEventListener('mouseleave', this.onLeave);
 

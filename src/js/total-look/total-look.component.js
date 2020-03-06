@@ -3,6 +3,8 @@ import DragListener from "../drag/drag.listener";
 import TotalLookCardComponent from "./total-look-card.component";
 import TotalLookPinComponent from "./total-look-pin.component";
 
+let to;
+
 export default class TotalLookComponent extends Component {
 
 	onInit(node) {
@@ -49,6 +51,43 @@ export default class TotalLookComponent extends Component {
 		}
 	}
 
+	/*
+	onEnter() {
+		this.node.classList.add('enter');
+	}
+
+	onLeave() {
+		this.node.classList.remove('enter');
+	}
+
+	onMove(event) {
+		gsap.set(this.cursor, {
+			x: event.clientX,
+			y: event.clientY,
+			// duration: 0.3,
+			// overwrite: true,
+		});
+	}
+	*/
+
+	loadImage() {
+		const img = this.node.querySelector('.group--look img');
+		const loader = new Image();
+		loader.onload = () => {
+			this.onImage(img);
+		}
+		loader.src = img.src;
+	}
+
+	setActive(item) {
+		this.cards.forEach(x => {
+			x.item !== item ? x.item.active = false : x.item.active = true;
+			x.update();
+		});
+		this.pins.forEach(x => x.update());
+		this.onResize();
+	}
+
 	onResize() {
 		const img = this.img;
 		const groupLook = this.groupLook;
@@ -73,6 +112,7 @@ export default class TotalLookComponent extends Component {
 		this.containerHeight = containerHeight;
 		this.imageWidth = imageWidth;
 		this.imageHeight = imageHeight;
+		this.listingInner.style.width = 'auto';
 		this.cards.forEach((card, i) => {
 			const listingInnerWidth = card.node.offsetWidth * Math.ceil(this.cards.length / 2);
 			if (i === 0) {
@@ -113,50 +153,22 @@ export default class TotalLookComponent extends Component {
 		});
 	}
 
-	/*
-	onEnter() {
-		this.node.classList.add('enter');
-	}
-
-	onLeave() {
-		this.node.classList.remove('enter');
-	}
-
-	onMove(event) {
-		gsap.set(this.cursor, {
-			x: event.clientX,
-			y: event.clientY,
-			// duration: 0.3,
-			// overwrite: true,
+	onDelayedResize() {
+		gsap.set(this.listingInner, {
+			x: 0,
 		});
-	}
-	*/
-
-	loadImage() {
-		const img = this.node.querySelector('.group--look img');
-		const loader = new Image();
-		loader.onload = () => {
-			this.onImage(img);
-		}
-		loader.src = img.src;
-	}
-
-	setActive(item) {
-		this.cards.forEach(x => {
-			x.item !== item ? x.item.active = false : x.item.active = true;
-			x.update();
-		});
-		this.pins.forEach(x => x.update());
-		this.onResize();
+		to ? clearTimeout(to) : null;
+		to = setTimeout(this.onResize, 5);
 	}
 
 	addListeners() {
 		this.loadImage();
 		this.onResize = this.onResize.bind(this);
+		this.onDelayedResize = this.onDelayedResize.bind(this);
 		// this.onMove = this.onMove.bind(this);
 		// this.onEnter = this.onEnter.bind(this);
 		// this.onLeave = this.onLeave.bind(this);
-		window.addEventListener('resize', this.onResize);
+		window.addEventListener('resize', this.onDelayedResize);
 		// window.addEventListener('mousemove', this.onMove);
 		// this.groupLook.addEventListener('mouseenter', this.onEnter);
 		// this.groupLook.addEventListener('mouseleave', this.onLeave);
