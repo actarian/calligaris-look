@@ -527,7 +527,12 @@
       this.img = img;
       this.node.classList.add('init');
       this.addDragListener();
-      this.onResize();
+
+      if (this.cards.length) {
+        this.setActive(this.cards[0].item);
+      } else {
+        this.onResize();
+      }
     };
 
     _proto.onResize = function onResize() {
@@ -545,11 +550,11 @@
       if (containerRatio > imgRatio) {
         imageWidth = groupLook.offsetWidth;
         imageHeight = groupLook.offsetWidth / imgRatio;
-        this.node.classList.add('vertical');
+        this.direction = 'vertical';
       } else {
         imageWidth = groupLook.offsetHeight * imgRatio;
         imageHeight = groupLook.offsetHeight;
-        this.node.classList.remove('vertical');
+        this.direction = 'horizontal';
       }
 
       picture.style.width = imageWidth + "px";
@@ -599,24 +604,24 @@
           });
         }
       });
-    };
-
-    _proto.onEnter = function onEnter() {
-      this.node.classList.add('enter');
-    };
-
-    _proto.onLeave = function onLeave() {
-      this.node.classList.remove('enter');
-    };
-
-    _proto.onMove = function onMove(event) {
-      gsap.set(this.cursor, {
-        x: event.clientX,
-        y: event.clientY // duration: 0.3,
-        // overwrite: true,
-
-      });
-    };
+    }
+    /*
+    onEnter() {
+    	this.node.classList.add('enter');
+    }
+    	onLeave() {
+    	this.node.classList.remove('enter');
+    }
+    	onMove(event) {
+    	gsap.set(this.cursor, {
+    		x: event.clientX,
+    		y: event.clientY,
+    		// duration: 0.3,
+    		// overwrite: true,
+    	});
+    }
+    */
+    ;
 
     _proto.loadImage = function loadImage() {
       var _this3 = this;
@@ -646,14 +651,14 @@
       var _this4 = this;
 
       this.loadImage();
-      this.onResize = this.onResize.bind(this);
-      this.onMove = this.onMove.bind(this);
-      this.onEnter = this.onEnter.bind(this);
-      this.onLeave = this.onLeave.bind(this);
-      window.addEventListener('resize', this.onResize);
-      window.addEventListener('mousemove', this.onMove);
-      this.groupLook.addEventListener('mouseenter', this.onEnter);
-      this.groupLook.addEventListener('mouseleave', this.onLeave);
+      this.onResize = this.onResize.bind(this); // this.onMove = this.onMove.bind(this);
+      // this.onEnter = this.onEnter.bind(this);
+      // this.onLeave = this.onLeave.bind(this);
+
+      window.addEventListener('resize', this.onResize); // window.addEventListener('mousemove', this.onMove);
+      // this.groupLook.addEventListener('mouseenter', this.onEnter);
+      // this.groupLook.addEventListener('mouseleave', this.onLeave);
+
       this.cards.forEach(function (x) {
         x.on('click', function () {
           // console.log('TotalLookComponent.card.click', x.item);
@@ -670,10 +675,9 @@
 
     _proto.removeListeners = function removeListeners() {
       this.removeDragListener();
-      window.removeEventListener('resize', this.onResize);
-      window.removeEventListener('mousemove', this.onMove);
-      this.groupLook.removeEventListener('mouseenter', this.onEnter);
-      this.groupLook.removeEventListener('mouseleave', this.onLeave);
+      window.removeEventListener('resize', this.onResize); // window.removeEventListener('mousemove', this.onMove);
+      // this.groupLook.removeEventListener('mouseenter', this.onEnter);
+      // this.groupLook.removeEventListener('mouseleave', this.onLeave);
     };
 
     _proto.addDragListener = function addDragListener() {
@@ -710,6 +714,30 @@
         this.draglistener.destroy();
       }
     };
+
+    _createClass(TotalLookComponent, [{
+      key: "direction",
+      set: function set(direction) {
+        var _this6 = this;
+
+        if (this.direction_ !== direction) {
+          this.direction_ = direction;
+
+          if (direction === 'vertical') {
+            this.node.classList.add('vertical');
+            this.node.classList.remove('horizontal');
+          } else {
+            this.node.classList.add('horizontal');
+            this.node.classList.remove('vertical');
+          }
+
+          this.node.classList.add('show-hint');
+          setTimeout(function () {
+            _this6.node.classList.remove('show-hint');
+          }, 4000);
+        }
+      }
+    }]);
 
     return TotalLookComponent;
   }(Component);

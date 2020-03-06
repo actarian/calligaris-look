@@ -25,7 +25,28 @@ export default class TotalLookComponent extends Component {
 		this.img = img;
 		this.node.classList.add('init');
 		this.addDragListener();
-		this.onResize();
+		if (this.cards.length) {
+			this.setActive(this.cards[0].item);
+		} else {
+			this.onResize();
+		}
+	}
+
+	set direction(direction) {
+		if (this.direction_ !== direction) {
+			this.direction_ = direction;
+			if (direction === 'vertical') {
+				this.node.classList.add('vertical');
+				this.node.classList.remove('horizontal');
+			} else {
+				this.node.classList.add('horizontal');
+				this.node.classList.remove('vertical');
+			}
+			this.node.classList.add('show-hint');
+			setTimeout(() => {
+				this.node.classList.remove('show-hint');
+			}, 4000);
+		}
 	}
 
 	onResize() {
@@ -40,11 +61,11 @@ export default class TotalLookComponent extends Component {
 		if (containerRatio > imgRatio) {
 			imageWidth = groupLook.offsetWidth;
 			imageHeight = (groupLook.offsetWidth / imgRatio);
-			this.node.classList.add('vertical');
+			this.direction = 'vertical';
 		} else {
 			imageWidth = (groupLook.offsetHeight * imgRatio);
 			imageHeight = groupLook.offsetHeight;
-			this.node.classList.remove('vertical');
+			this.direction = 'horizontal';
 		}
 		picture.style.width = `${imageWidth}px`;
 		picture.style.height = `${imageHeight}px`;
@@ -92,6 +113,7 @@ export default class TotalLookComponent extends Component {
 		});
 	}
 
+	/*
 	onEnter() {
 		this.node.classList.add('enter');
 	}
@@ -108,6 +130,7 @@ export default class TotalLookComponent extends Component {
 			// overwrite: true,
 		});
 	}
+	*/
 
 	loadImage() {
 		const img = this.node.querySelector('.group--look img');
@@ -130,13 +153,13 @@ export default class TotalLookComponent extends Component {
 	addListeners() {
 		this.loadImage();
 		this.onResize = this.onResize.bind(this);
-		this.onMove = this.onMove.bind(this);
-		this.onEnter = this.onEnter.bind(this);
-		this.onLeave = this.onLeave.bind(this);
+		// this.onMove = this.onMove.bind(this);
+		// this.onEnter = this.onEnter.bind(this);
+		// this.onLeave = this.onLeave.bind(this);
 		window.addEventListener('resize', this.onResize);
-		window.addEventListener('mousemove', this.onMove);
-		this.groupLook.addEventListener('mouseenter', this.onEnter);
-		this.groupLook.addEventListener('mouseleave', this.onLeave);
+		// window.addEventListener('mousemove', this.onMove);
+		// this.groupLook.addEventListener('mouseenter', this.onEnter);
+		// this.groupLook.addEventListener('mouseleave', this.onLeave);
 		this.cards.forEach(x => {
 			x.on('click', () => {
 				// console.log('TotalLookComponent.card.click', x.item);
@@ -154,9 +177,9 @@ export default class TotalLookComponent extends Component {
 	removeListeners() {
 		this.removeDragListener();
 		window.removeEventListener('resize', this.onResize);
-		window.removeEventListener('mousemove', this.onMove);
-		this.groupLook.removeEventListener('mouseenter', this.onEnter);
-		this.groupLook.removeEventListener('mouseleave', this.onLeave);
+		// window.removeEventListener('mousemove', this.onMove);
+		// this.groupLook.removeEventListener('mouseenter', this.onEnter);
+		// this.groupLook.removeEventListener('mouseleave', this.onLeave);
 	}
 
 	addDragListener() {
