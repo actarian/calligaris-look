@@ -628,6 +628,8 @@
             overwrite: true
           });
         }
+
+        _this3.listingInnerWidth = listingInnerWidth;
       });
       this.pins.forEach(function (pin) {
         var pinX = imageWidth / img.naturalWidth * pin.item.position.x;
@@ -652,6 +654,20 @@
       });
     };
 
+    _proto.onWheel = function onWheel(event) {
+      // console.log(event.deltaY);
+      event.preventDefault();
+      var dx = this.containerWidth - this.listingInnerWidth;
+      var translation = this.getTranslate(this.listingInner);
+      var x = translation.x - event.deltaY;
+      x = Math.min(0, Math.max(dx, x));
+      gsap.to(this.listingInner, {
+        x: x,
+        duration: 0.3,
+        overwrite: true
+      });
+    };
+
     _proto.onDelayedResize = function onDelayedResize() {
       gsap.set(this.listingInner, {
         x: 0
@@ -665,11 +681,13 @@
 
       this.loadImage();
       this.onResize = this.onResize.bind(this);
-      this.onDelayedResize = this.onDelayedResize.bind(this); // this.onMove = this.onMove.bind(this);
+      this.onDelayedResize = this.onDelayedResize.bind(this);
+      this.onWheel = this.onWheel.bind(this); // this.onMove = this.onMove.bind(this);
       // this.onEnter = this.onEnter.bind(this);
       // this.onLeave = this.onLeave.bind(this);
 
-      window.addEventListener('resize', this.onDelayedResize); // window.addEventListener('mousemove', this.onMove);
+      window.addEventListener('resize', this.onDelayedResize);
+      this.listing.addEventListener('mousewheel', this.onWheel); // window.addEventListener('mousemove', this.onMove);
       // this.groupLook.addEventListener('mouseenter', this.onEnter);
       // this.groupLook.addEventListener('mouseleave', this.onLeave);
 
@@ -697,7 +715,8 @@
 
     _proto.removeListeners = function removeListeners() {
       this.removeDragListener();
-      window.removeEventListener('resize', this.onResize); // window.removeEventListener('mousemove', this.onMove);
+      window.removeEventListener('resize', this.onResize);
+      this.listing.removeEventListener('mousewheel', this.onWheel); // window.removeEventListener('mousemove', this.onMove);
       // this.groupLook.removeEventListener('mouseenter', this.onEnter);
       // this.groupLook.removeEventListener('mouseleave', this.onLeave);
     };
