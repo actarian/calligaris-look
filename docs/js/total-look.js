@@ -616,7 +616,8 @@
         if (card.item.active) {
           // const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
           var dx = containerWidth - listingInnerWidth;
-          var x = _this3.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left;
+          var x = -card.node.offsetLeft; // (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left);
+
           x = Math.min(0, Math.max(dx, x));
           gsap.to(_this3.listingInner, {
             x: x,

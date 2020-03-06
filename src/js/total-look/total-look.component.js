@@ -121,7 +121,7 @@ export default class TotalLookComponent extends Component {
 			if (card.item.active) {
 				// const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
 				const dx = containerWidth - listingInnerWidth;
-				let x = (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left);
+				let x = -card.node.offsetLeft; // (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left);
 				x = Math.min(0, Math.max(dx, x));
 				gsap.to(this.listingInner, {
 					x: x,
