@@ -11,7 +11,6 @@ $height: 768px;
 .total-look {
 	position: relative;
 	display: flex;
-	height: $height;
 	background: #f6f6f6;
 
 	.group--look {
@@ -84,6 +83,7 @@ $height: 768px;
 	}
 
 	@media (min-width:1024px) {
+		height: $height;
 
 		&>.group--look,
 		&>.listing--products {
@@ -112,6 +112,7 @@ $height: 768px;
 	}
 
 	@media (max-width:1023px) {
+		height: 100vw;
 
 		&>.group--look {
 			flex: 1 1 100%;
