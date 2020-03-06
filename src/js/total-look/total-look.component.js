@@ -27,10 +27,10 @@ export default class TotalLookComponent extends Component {
 		this.img = img;
 		this.node.classList.add('init');
 		this.addDragListener();
-		if (this.cards.length) {
-			this.setActive(this.cards[0].item);
+		if (this.cards.length && window.innerWidth >= 1024) {
+			this.setActive(this.cards[0].item, true);
 		} else {
-			this.onResize();
+			this.onResize(true);
 		}
 	}
 
@@ -81,16 +81,16 @@ export default class TotalLookComponent extends Component {
 		loader.src = img.src;
 	}
 
-	setActive(item) {
+	setActive(item, immediate = false) {
 		this.cards.forEach(x => {
 			x.item !== item ? x.item.active = false : x.item.active = true;
 			x.update();
 		});
 		this.pins.forEach(x => x.update());
-		this.onResize();
+		this.onResize(immediate);
 	}
 
-	onResize() {
+	onResize(event) {
 		const img = this.img;
 		const groupLook = this.groupLook;
 		const picture = this.picture;
@@ -126,7 +126,7 @@ export default class TotalLookComponent extends Component {
 				const translation = this.getTranslate(this.listingInner);
 				let x = (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left) + translation.x;
 				x = Math.min(0, Math.max(dx, x));
-				gsap.to(this.listingInner, {
+				(event ? gsap.set : gsap.to)(this.listingInner, {
 					x: x,
 					duration: 0.3,
 					delay: 0.1,
@@ -135,6 +135,10 @@ export default class TotalLookComponent extends Component {
 			}
 			this.listingInnerWidth = listingInnerWidth;
 		});
+		const pinPosition = {
+			x: 0,
+			y: 0
+		};
 		this.pins.forEach(pin => {
 			const pinX = imageWidth / img.naturalWidth * pin.item.position.x;
 			const pinY = imageWidth / img.naturalWidth * pin.item.position.y;
@@ -143,17 +147,19 @@ export default class TotalLookComponent extends Component {
 				y: pinY,
 			});
 			if (pin.item.active) {
-				const dx = containerWidth - imageWidth;
-				const dy = containerHeight - imageHeight;
-				const x = containerWidth / 2 - pinX;
-				const y = containerHeight / 2 - pinY;
-				gsap.to(this.picture, {
-					x: Math.min(0, Math.max(dx, x)),
-					y: Math.min(0, Math.max(dy, y)),
-					duration: 0.3,
-					overwrite: true,
-				});
+				pinPosition.x = pinX;
+				pinPosition.y = pinY;
 			}
+		});
+		const dx = containerWidth - imageWidth;
+		const dy = containerHeight - imageHeight;
+		let x = containerWidth / 2 - pinPosition.x;
+		let y = containerHeight / 2 - pinPosition.y;
+		(event ? gsap.set : gsap.to)(this.picture, {
+			x: Math.min(0, Math.max(dx, x)),
+			y: Math.min(0, Math.max(dy, y)),
+			duration: 0.3,
+			overwrite: true,
 		});
 	}
 

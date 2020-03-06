@@ -530,10 +530,10 @@
       this.node.classList.add('init');
       this.addDragListener();
 
-      if (this.cards.length) {
-        this.setActive(this.cards[0].item);
+      if (this.cards.length && window.innerWidth >= 1024) {
+        this.setActive(this.cards[0].item, true);
       } else {
-        this.onResize();
+        this.onResize(true);
       }
     };
 
@@ -566,7 +566,11 @@
       loader.src = img.src;
     };
 
-    _proto.setActive = function setActive(item) {
+    _proto.setActive = function setActive(item, immediate) {
+      if (immediate === void 0) {
+        immediate = false;
+      }
+
       this.cards.forEach(function (x) {
         x.item !== item ? x.item.active = false : x.item.active = true;
         x.update();
@@ -574,10 +578,10 @@
       this.pins.forEach(function (x) {
         return x.update();
       });
-      this.onResize();
+      this.onResize(immediate);
     };
 
-    _proto.onResize = function onResize() {
+    _proto.onResize = function onResize(event) {
       var _this3 = this;
 
       var img = this.img;
@@ -615,14 +619,15 @@
 
         if (card.item.active) {
           // const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
-          var dx = containerWidth - listingInnerWidth;
+          var _dx = containerWidth - listingInnerWidth;
 
           var translation = _this3.getTranslate(_this3.listingInner);
 
-          var x = _this3.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left + translation.x;
-          x = Math.min(0, Math.max(dx, x));
-          gsap.to(_this3.listingInner, {
-            x: x,
+          var _x = _this3.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left + translation.x;
+
+          _x = Math.min(0, Math.max(_dx, _x));
+          (event ? gsap.set : gsap.to)(_this3.listingInner, {
+            x: _x,
             duration: 0.3,
             delay: 0.1,
             overwrite: true
@@ -631,6 +636,10 @@
 
         _this3.listingInnerWidth = listingInnerWidth;
       });
+      var pinPosition = {
+        x: 0,
+        y: 0
+      };
       this.pins.forEach(function (pin) {
         var pinX = imageWidth / img.naturalWidth * pin.item.position.x;
         var pinY = imageWidth / img.naturalWidth * pin.item.position.y;
@@ -640,17 +649,19 @@
         });
 
         if (pin.item.active) {
-          var dx = containerWidth - imageWidth;
-          var dy = containerHeight - imageHeight;
-          var x = containerWidth / 2 - pinX;
-          var y = containerHeight / 2 - pinY;
-          gsap.to(_this3.picture, {
-            x: Math.min(0, Math.max(dx, x)),
-            y: Math.min(0, Math.max(dy, y)),
-            duration: 0.3,
-            overwrite: true
-          });
+          pinPosition.x = pinX;
+          pinPosition.y = pinY;
         }
+      });
+      var dx = containerWidth - imageWidth;
+      var dy = containerHeight - imageHeight;
+      var x = containerWidth / 2 - pinPosition.x;
+      var y = containerHeight / 2 - pinPosition.y;
+      (event ? gsap.set : gsap.to)(this.picture, {
+        x: Math.min(0, Math.max(dx, x)),
+        y: Math.min(0, Math.max(dy, y)),
+        duration: 0.3,
+        overwrite: true
       });
     };
 
