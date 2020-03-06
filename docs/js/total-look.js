@@ -663,12 +663,16 @@
         x.on('click', function () {
           // console.log('TotalLookComponent.card.click', x.item);
           _this4.setActive(x.item);
+
+          _this4.node.classList.remove('open');
         });
       });
       this.pins.forEach(function (x) {
         x.on('click', function () {
           // console.log('TotalLookComponent.pin.click', x.item);
           _this4.setActive(x.item);
+
+          _this4.node.classList.add('open');
         });
       });
     };
@@ -694,6 +698,8 @@
           x_ = parseFloat(coords[0]);
           y_ = parseFloat(coords[1]);
         }
+
+        _this5.node.classList.remove('open');
       }, function (e) {
         var dx = _this5.containerWidth - _this5.imageWidth;
         var dy = _this5.containerHeight - _this5.imageHeight;

@@ -27,6 +27,7 @@
   display: none; }
 
 .total-look {
+  position: relative;
   display: flex;
   height: 768px;
   background: #f6f6f6;
@@ -35,17 +36,13 @@
 		cursor: none;
 	}
 	*/ }
-  .total-look > .group--look,
-  .total-look > .listing--products {
-    flex: 1 1 50%;
-    max-width: 50%;
-    overflow: hidden; }
   .total-look .group--look {
     position: relative;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
         -ms-user-select: none;
-            user-select: none; }
+            user-select: none;
+    cursor: pointer; }
     .total-look .group--look .picture {
       position: absolute;
       opacity: 0;
@@ -73,19 +70,52 @@
         opacity: 1; }
   .total-look.init .group--look .picture {
     opacity: 1; }
-  .total-look .listing--products__inner {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px; }
-    .total-look .listing--products__inner .card--product {
-      height: 384px;
-      width: 500px; }
-      .total-look .listing--products__inner .card--product .picture {
-        width: 100%;
-        height: 100%; }
   .total-look.show-hint .cursor {
     opacity: 1;
     visibility: visible; }
+  @media (min-width: 1024px) {
+    .total-look > .group--look,
+    .total-look > .listing--products {
+      flex: 1 1 50%;
+      max-width: 50%;
+      overflow: hidden; }
+    .total-look .listing--products__inner {
+      display: flex;
+      flex-wrap: wrap; }
+      .total-look .listing--products__inner .card--product {
+        height: 384px;
+        width: 500px; }
+        .total-look .listing--products__inner .card--product .picture {
+          width: 100%;
+          height: 100%; } }
+  @media (max-width: 1023px) {
+    .total-look > .group--look {
+      flex: 1 1 100%;
+      max-width: 100%;
+      overflow: hidden; }
+    .total-look .listing--products {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: auto;
+      max-width: 100%;
+      transform: translateX(-50%) translateY(-50%); }
+      .total-look .listing--products__inner {
+        position: relative;
+        width: auto !important;
+        height: auto;
+        transform: none !important; }
+        .total-look .listing--products__inner .card--product {
+          width: 500px;
+          max-width: 100%; }
+          .total-look .listing--products__inner .card--product .picture {
+            width: 100%;
+            height: 100%; }
+    .total-look .card--product {
+      display: none; }
+    .total-look.open .card--product.active {
+      display: block; } }
 
 .card--product {
   position: relative;

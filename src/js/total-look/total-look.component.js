@@ -164,12 +164,14 @@ export default class TotalLookComponent extends Component {
 			x.on('click', () => {
 				// console.log('TotalLookComponent.card.click', x.item);
 				this.setActive(x.item);
+				this.node.classList.remove('open');
 			});
 		});
 		this.pins.forEach(x => {
 			x.on('click', () => {
 				// console.log('TotalLookComponent.pin.click', x.item);
 				this.setActive(x.item);
+				this.node.classList.add('open');
 			});
 		});
 	}
@@ -193,6 +195,7 @@ export default class TotalLookComponent extends Component {
 				x_ = parseFloat(coords[0]);
 				y_ = parseFloat(coords[1]);
 			}
+			this.node.classList.remove('open');
 		}, (e) => {
 			const dx = this.containerWidth - this.imageWidth;
 			const dy = this.containerHeight - this.imageHeight;
