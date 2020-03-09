@@ -9,7 +9,7 @@ export default class AppComponent extends Component {
 		node.classList.remove('hidden');
 		// console.log('context', context);
 		UserService.user$.pipe(
-			takeUntil(this.unsubscribe$),
+			takeUntil(this.unsubscribe$)
 		).subscribe(user => {
 			console.log('AppComponent.user$', user);
 			this.user = user;

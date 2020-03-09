@@ -397,6 +397,7 @@
     _proto.onInit = function onInit(node) {
       this.item = node.hasAttribute('data-item') ? new Function("return " + node.getAttribute('data-item'))() : {};
       this.item.info = node.querySelector('.group--info').innerHTML;
+      this.buy = node.querySelector('.btn--buy');
       this.addListeners();
     };
 
@@ -407,21 +408,32 @@
     _proto.onResize = function onResize() {// console.log('TotalLookCardComponent.onResize');
     };
 
-    _proto.onClick = function onClick() {
-      // console.log('TotalLookCardComponent.onClick');
-      this.emit('click');
+    _proto.onClick = function onClick(event) {
+      if (window.innerWidth >= 1024) {
+        event.preventDefault(); // console.log('TotalLookCardComponent.onClick');
+
+        this.emit('click');
+      }
+    };
+
+    _proto.onBuyClick = function onBuyClick() {
+      // console.log('TotalLookCardComponent.onBuyClick');
+      window.location.href = this.node.getAttribute('href');
     };
 
     _proto.addListeners = function addListeners() {
       // this.onResize = this.onResize.bind(this);
-      this.onClick = this.onClick.bind(this); // window.addEventListener('resize', this.onResize);
+      this.onClick = this.onClick.bind(this);
+      this.onBuyClick = this.onBuyClick.bind(this); // window.addEventListener('resize', this.onResize);
 
       this.node.addEventListener('click', this.onClick);
+      this.buy.addEventListener('click', this.onBuyClick);
     };
 
     _proto.removeListeners = function removeListeners() {
       // window.removeEventListener('resize', this.onResize);
       this.node.removeEventListener('click', this.onClick);
+      this.buy.removeEventListener('click', this.onBuyClick);
     };
 
     _proto.update = function update() {
@@ -450,6 +462,8 @@
 
     _proto.onInit = function onInit(node) {
       this.info = this.node.querySelector('.info');
+      this.content = this.node.querySelector('.content');
+      this.arrow = this.node.querySelector('.arrow');
       this.addListeners();
     };
 
@@ -480,14 +494,17 @@
     };
 
     _proto.render = function render() {
-      return "<div class=\"pin\"><div class=\"info\">" + this.item.info + "</div></div>";
+      return (
+        /* html */
+        "<div class=\"pin\">\n\t\t\t<div class=\"info\">\n\t\t\t\t<div class=\"content\">" + this.item.info + "</div>\n\t\t\t\t<div class=\"arrow\"></div>\n\t\t\t</div>\n\t\t</div>"
+      );
     };
 
     _proto.update = function update() {
       if (this.item.active) {
-        this.node.classList.add('active');
+        this.node.classList.add('active', 'active-info');
       } else {
-        this.node.classList.remove('active');
+        this.node.classList.remove('active', 'active-info');
       }
     };
 
@@ -510,8 +527,8 @@
 
       // console.log('TotalLookComponent', node);
       this.groupLook = node.querySelector('.group--look');
-      this.picture = node.querySelector('.group--look .picture');
-      this.cursor01 = node.querySelector('.cursor-01');
+      this.picture = node.querySelector('.group--look .picture'); // this.cursor01 = node.querySelector('.cursor-01');
+
       this.listing = node.querySelector('.listing--products');
       this.listingInner = node.querySelector('.listing--products__inner');
       this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(function (x) {
@@ -520,6 +537,8 @@
       this.pins = this.cards.map(function (x) {
         return new TotalLookPinComponent(x.item).setParentNode(_this.picture);
       });
+      this.more = node.querySelector('.btn--more');
+      this.close = node.querySelector('.btn--close');
       this.addListeners();
     };
 
@@ -543,10 +562,12 @@
     onEnter() {
     	this.node.classList.add('enter');
     }
-    	onLeave() {
+    
+    onLeave() {
     	this.node.classList.remove('enter');
     }
-    	onMove(event) {
+    
+    onMove(event) {
     	gsap.set(this.cursor01, {
     		x: event.clientX,
     		y: event.clientY,
@@ -654,11 +675,11 @@
         }); // fix baloon position x
 
         if (pinX < 110) {
-          gsap.set(pin.info, {
+          gsap.set(pin.content, {
             x: Math.max(0, 110 - pinX)
           });
         } else if (pinX > imageWidth - 110) {
-          gsap.set(pin.info, {
+          gsap.set(pin.content, {
             x: Math.min(0, imageWidth - 110 + pinX)
           });
         }
@@ -725,18 +746,30 @@
       to = setTimeout(this.onResize, 5);
     };
 
+    _proto.onOpenPanel = function onOpenPanel() {
+      this.listing.classList.add('opened');
+    };
+
+    _proto.onClosePanel = function onClosePanel() {
+      this.listing.classList.remove('opened');
+    };
+
     _proto.addListeners = function addListeners() {
       var _this4 = this;
 
       this.loadImage();
       this.onResize = this.onResize.bind(this);
       this.onDelayedResize = this.onDelayedResize.bind(this);
-      this.onWheel = this.onWheel.bind(this); // this.onMove = this.onMove.bind(this);
+      this.onWheel = this.onWheel.bind(this);
+      this.onOpenPanel = this.onOpenPanel.bind(this);
+      this.onClosePanel = this.onClosePanel.bind(this); // this.onMove = this.onMove.bind(this);
       // this.onEnter = this.onEnter.bind(this);
       // this.onLeave = this.onLeave.bind(this);
 
       window.addEventListener('resize', this.onDelayedResize);
-      this.listing.addEventListener('mousewheel', this.onWheel); // window.addEventListener('mousemove', this.onMove);
+      this.listing.addEventListener('mousewheel', this.onWheel);
+      this.more.addEventListener('click', this.onOpenPanel);
+      this.close.addEventListener('click', this.onClosePanel); // window.addEventListener('mousemove', this.onMove);
       // this.groupLook.addEventListener('mouseenter', this.onEnter);
       // this.groupLook.addEventListener('mouseleave', this.onLeave);
 
@@ -765,7 +798,9 @@
     _proto.removeListeners = function removeListeners() {
       this.removeDragListener();
       window.removeEventListener('resize', this.onResize);
-      this.listing.removeEventListener('mousewheel', this.onWheel); // window.removeEventListener('mousemove', this.onMove);
+      this.listing.removeEventListener('mousewheel', this.onWheel);
+      this.more.removeEventListener('click', this.onOpenPanel);
+      this.close.removeEventListener('click', this.onClosePanel); // window.removeEventListener('mousemove', this.onMove);
       // this.groupLook.removeEventListener('mouseenter', this.onEnter);
       // this.groupLook.removeEventListener('mouseleave', this.onLeave);
     };
@@ -786,6 +821,10 @@
         _this5.node.classList.remove('show-hint');
 
         _this5.node.classList.add('grabbing');
+
+        _this5.pins.forEach(function (x) {
+          return x.node.classList.remove('active-info');
+        });
       }, function (e) {
         var dx = _this5.containerWidth - _this5.imageWidth;
         var dy = _this5.containerHeight - _this5.imageHeight;

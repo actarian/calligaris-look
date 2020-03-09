@@ -11,11 +11,13 @@ export default class TotalLookComponent extends Component {
 		// console.log('TotalLookComponent', node);
 		this.groupLook = node.querySelector('.group--look');
 		this.picture = node.querySelector('.group--look .picture');
-		this.cursor01 = node.querySelector('.cursor-01');
+		// this.cursor01 = node.querySelector('.cursor-01');
 		this.listing = node.querySelector('.listing--products');
 		this.listingInner = node.querySelector('.listing--products__inner');
 		this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(x => new TotalLookCardComponent().setNode(x));
 		this.pins = this.cards.map(x => new TotalLookPinComponent(x.item).setParentNode(this.picture));
+		this.more = node.querySelector('.btn--more');
+		this.close = node.querySelector('.btn--close');
 		this.addListeners();
 	}
 
@@ -77,7 +79,7 @@ export default class TotalLookComponent extends Component {
 		const loader = new Image();
 		loader.onload = () => {
 			this.onImage(img);
-		}
+		};
 		loader.src = img.src;
 	}
 
@@ -151,11 +153,11 @@ export default class TotalLookComponent extends Component {
 			});
 			// fix baloon position x
 			if (pinX < 110) {
-				gsap.set(pin.info, {
+				gsap.set(pin.content, {
 					x: Math.max(0, 110 - pinX),
 				});
 			} else if (pinX > imageWidth - 110) {
-				gsap.set(pin.info, {
+				gsap.set(pin.content, {
 					x: Math.min(0, imageWidth - 110 + pinX),
 				});
 			}
@@ -172,7 +174,7 @@ export default class TotalLookComponent extends Component {
 			gsap.set(this.picture, {
 				x: Math.min(0, Math.max(dx, x)),
 				y: Math.min(0, Math.max(dy, y)),
-			})
+			});
 			this.onPictureUpdate();
 		} else {
 			gsap.to(this.picture, {
@@ -217,16 +219,28 @@ export default class TotalLookComponent extends Component {
 		to = setTimeout(this.onResize, 5);
 	}
 
+	onOpenPanel() {
+		this.listing.classList.add('opened');
+	}
+
+	onClosePanel() {
+		this.listing.classList.remove('opened');
+	}
+
 	addListeners() {
 		this.loadImage();
 		this.onResize = this.onResize.bind(this);
 		this.onDelayedResize = this.onDelayedResize.bind(this);
 		this.onWheel = this.onWheel.bind(this);
+		this.onOpenPanel = this.onOpenPanel.bind(this);
+		this.onClosePanel = this.onClosePanel.bind(this);
 		// this.onMove = this.onMove.bind(this);
 		// this.onEnter = this.onEnter.bind(this);
 		// this.onLeave = this.onLeave.bind(this);
 		window.addEventListener('resize', this.onDelayedResize);
 		this.listing.addEventListener('mousewheel', this.onWheel);
+		this.more.addEventListener('click', this.onOpenPanel);
+		this.close.addEventListener('click', this.onClosePanel);
 
 		// window.addEventListener('mousemove', this.onMove);
 		// this.groupLook.addEventListener('mouseenter', this.onEnter);
@@ -253,6 +267,8 @@ export default class TotalLookComponent extends Component {
 		this.removeDragListener();
 		window.removeEventListener('resize', this.onResize);
 		this.listing.removeEventListener('mousewheel', this.onWheel);
+		this.more.removeEventListener('click', this.onOpenPanel);
+		this.close.removeEventListener('click', this.onClosePanel);
 		// window.removeEventListener('mousemove', this.onMove);
 		// this.groupLook.removeEventListener('mouseenter', this.onEnter);
 		// this.groupLook.removeEventListener('mouseleave', this.onLeave);
@@ -269,6 +285,7 @@ export default class TotalLookComponent extends Component {
 			this.node.classList.remove('open');
 			this.node.classList.remove('show-hint');
 			this.node.classList.add('grabbing');
+			this.pins.forEach(x => x.node.classList.remove('active-info'));
 		}, (e) => {
 			const dx = this.containerWidth - this.imageWidth;
 			const dy = this.containerHeight - this.imageHeight;

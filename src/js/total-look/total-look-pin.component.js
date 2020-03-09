@@ -9,6 +9,8 @@ export default class TotalLookPinComponent extends Component {
 
 	onInit(node) {
 		this.info = this.node.querySelector('.info');
+		this.content = this.node.querySelector('.content');
+		this.arrow = this.node.querySelector('.arrow');
 		this.addListeners();
 	}
 
@@ -39,14 +41,19 @@ export default class TotalLookPinComponent extends Component {
 	}
 
 	render() {
-		return `<div class="pin"><div class="info">${this.item.info}</div></div>`;
+		return /* html */ `<div class="pin">
+			<div class="info">
+				<div class="content">${this.item.info}</div>
+				<div class="arrow"></div>
+			</div>
+		</div>`;
 	}
 
 	update() {
 		if (this.item.active) {
-			this.node.classList.add('active');
+			this.node.classList.add('active', 'active-info');
 		} else {
-			this.node.classList.remove('active');
+			this.node.classList.remove('active', 'active-info');
 		}
 	}
 
