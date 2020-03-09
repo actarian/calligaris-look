@@ -230,7 +230,7 @@
       pointer-events: none;
       transform: translateY(100%);
       transition: transform ease-in-out 350ms;
-      z-index: 1; }
+      z-index: 1000; }
       .total-look .listing--products-01.opened {
         pointer-events: all;
         transform: translateY(0); }
