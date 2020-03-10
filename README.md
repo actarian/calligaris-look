@@ -1,4 +1,4 @@
-# 💎 tiemme-com
+# 💎 calligaris-look
 ___
 
 ### Install packages
@@ -7,7 +7,7 @@ npm install
 ```
 ___
 
-### Build, Serve & Watch 
+### Build, Serve & Watch
 ```
 gulp
 ```
@@ -19,7 +19,7 @@ gulp build
 ```
 ___
 
-### Build & Watch 
+### Build & Watch
 ```
 gulp start
 ```
@@ -31,7 +31,7 @@ gulp buildJs
 ```
 ___
 
-### Build Js & Watch 
+### Build Js & Watch
 ```
 gulp startJs
 ```
@@ -43,12 +43,12 @@ gulp buildCss
 ```
 ___
 
-### Build Css & Watch 
+### Build Css & Watch
 ```
 gulp startCss
 ```
 
-<!-- 
+<!--
 
 // DEBUGGING RXCOMP
 

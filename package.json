@@ -1,21 +1,20 @@
 {
 	"author": "Luca Zampetti <lzampetti@gmail.com>",
-	"name": "tiemme-com",
-	"description": "tiemme-com",
+	"name": "calligaris-look",
+	"description": "calligaris-look",
 	"version": "1.0.0",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/actarian/tiemme-com.git"
+		"url": "git://github.com/actarian/calligaris-look.git"
 	},
 	"scripts": {
 		"start": "gulp"
 	},
 	"dependencies": {
-		"gsap": "~3.2.1",
-		"rxjs": "~6.5.4"
+		"gsap": "~3.2.1"
 	},
 	"devDependencies": {
-		"gulpfile-config": "~1.0.0-alpha.7"
+		"gulpfile-config": "~1.0.0-alpha.8"
 	}
 }
