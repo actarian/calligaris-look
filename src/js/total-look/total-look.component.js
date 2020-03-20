@@ -11,7 +11,6 @@ export default class TotalLookComponent extends Component {
 		// console.log('TotalLookComponent', node);
 		this.groupLook = node.querySelector('.group--look');
 		this.picture = node.querySelector('.group--look .picture');
-		// this.cursor01 = node.querySelector('.cursor-01');
 		this.listing = node.querySelector('.listing--products');
 		this.listingInner = node.querySelector('.listing--products__inner');
 		this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(x => new TotalLookCardComponent().setNode(x));
@@ -47,32 +46,8 @@ export default class TotalLookComponent extends Component {
 				this.node.classList.remove('vertical');
 			}
 			this.node.classList.add('show-hint');
-			/*
-			setTimeout(() => {
-				this.node.classList.remove('show-hint');
-			}, 4000);
-			*/
 		}
 	}
-
-	/*
-	onEnter() {
-		this.node.classList.add('enter');
-	}
-
-	onLeave() {
-		this.node.classList.remove('enter');
-	}
-
-	onMove(event) {
-		gsap.set(this.cursor01, {
-			x: event.clientX,
-			y: event.clientY,
-			// duration: 0.3,
-			// overwrite: true,
-		});
-	}
-	*/
 
 	loadImage() {
 		const img = this.node.querySelector('.group--look img');
@@ -117,14 +92,12 @@ export default class TotalLookComponent extends Component {
 		this.containerHeight = containerHeight;
 		this.imageWidth = imageWidth;
 		this.imageHeight = imageHeight;
-		this.listingInner.style.width = 'auto';
 		this.cards.forEach((card, i) => {
-			const listingInnerWidth = card.node.offsetWidth * Math.ceil(this.cards.length / 2);
+			const listingInnerWidth = Math.ceil(card.node.getBoundingClientRect().width) * Math.ceil(this.cards.length / 2);
 			if (i === 0) {
-				this.listingInner.style.width = `${listingInnerWidth}px`;
+				this.listingInner.style.minWidth = `${listingInnerWidth}px`;
 			}
 			if (card.item.active) {
-				// const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
 				const dx = containerWidth - listingInnerWidth;
 				const translation = this.getTranslate(this.listingInner);
 				let x = (this.listing.getBoundingClientRect().left - card.node.getBoundingClientRect().left) + translation.x;
@@ -234,17 +207,10 @@ export default class TotalLookComponent extends Component {
 		this.onWheel = this.onWheel.bind(this);
 		this.onOpenPanel = this.onOpenPanel.bind(this);
 		this.onClosePanel = this.onClosePanel.bind(this);
-		// this.onMove = this.onMove.bind(this);
-		// this.onEnter = this.onEnter.bind(this);
-		// this.onLeave = this.onLeave.bind(this);
 		window.addEventListener('resize', this.onDelayedResize);
 		this.listing.addEventListener('mousewheel', this.onWheel);
 		this.more.addEventListener('click', this.onOpenPanel);
 		this.close.addEventListener('click', this.onClosePanel);
-
-		// window.addEventListener('mousemove', this.onMove);
-		// this.groupLook.addEventListener('mouseenter', this.onEnter);
-		// this.groupLook.addEventListener('mouseleave', this.onLeave);
 		this.cards.forEach(x => {
 			x.on('click', () => {
 				// console.log('TotalLookComponent.card.click', x.item);
@@ -269,9 +235,6 @@ export default class TotalLookComponent extends Component {
 		this.listing.removeEventListener('mousewheel', this.onWheel);
 		this.more.removeEventListener('click', this.onOpenPanel);
 		this.close.removeEventListener('click', this.onClosePanel);
-		// window.removeEventListener('mousemove', this.onMove);
-		// this.groupLook.removeEventListener('mouseenter', this.onEnter);
-		// this.groupLook.removeEventListener('mouseleave', this.onLeave);
 	}
 
 	addDragListener() {

@@ -527,8 +527,7 @@
 
       // console.log('TotalLookComponent', node);
       this.groupLook = node.querySelector('.group--look');
-      this.picture = node.querySelector('.group--look .picture'); // this.cursor01 = node.querySelector('.cursor-01');
-
+      this.picture = node.querySelector('.group--look .picture');
       this.listing = node.querySelector('.listing--products');
       this.listingInner = node.querySelector('.listing--products__inner');
       this.cards = Array.prototype.slice.call(node.querySelectorAll('.card--product')).map(function (x) {
@@ -558,24 +557,6 @@
       }
     };
 
-    /*
-    onEnter() {
-    	this.node.classList.add('enter');
-    }
-    
-    onLeave() {
-    	this.node.classList.remove('enter');
-    }
-    
-    onMove(event) {
-    	gsap.set(this.cursor01, {
-    		x: event.clientX,
-    		y: event.clientY,
-    		// duration: 0.3,
-    		// overwrite: true,
-    	});
-    }
-    */
     _proto.loadImage = function loadImage() {
       var _this2 = this;
 
@@ -633,16 +614,14 @@
       this.containerHeight = containerHeight;
       this.imageWidth = imageWidth;
       this.imageHeight = imageHeight;
-      this.listingInner.style.width = 'auto';
       this.cards.forEach(function (card, i) {
-        var listingInnerWidth = card.node.offsetWidth * Math.ceil(_this3.cards.length / 2);
+        var listingInnerWidth = Math.ceil(card.node.getBoundingClientRect().width) * Math.ceil(_this3.cards.length / 2);
 
         if (i === 0) {
-          _this3.listingInner.style.width = listingInnerWidth + "px";
+          _this3.listingInner.style.minWidth = listingInnerWidth + "px";
         }
 
         if (card.item.active) {
-          // const x = (card.node.getBoundingClientRect().left - this.listing.getBoundingClientRect().left) + this.listing.scrollLeft;
           var _dx = containerWidth - listingInnerWidth;
 
           var translation = _this3.getTranslate(_this3.listingInner);
@@ -762,17 +741,11 @@
       this.onDelayedResize = this.onDelayedResize.bind(this);
       this.onWheel = this.onWheel.bind(this);
       this.onOpenPanel = this.onOpenPanel.bind(this);
-      this.onClosePanel = this.onClosePanel.bind(this); // this.onMove = this.onMove.bind(this);
-      // this.onEnter = this.onEnter.bind(this);
-      // this.onLeave = this.onLeave.bind(this);
-
+      this.onClosePanel = this.onClosePanel.bind(this);
       window.addEventListener('resize', this.onDelayedResize);
       this.listing.addEventListener('mousewheel', this.onWheel);
       this.more.addEventListener('click', this.onOpenPanel);
-      this.close.addEventListener('click', this.onClosePanel); // window.addEventListener('mousemove', this.onMove);
-      // this.groupLook.addEventListener('mouseenter', this.onEnter);
-      // this.groupLook.addEventListener('mouseleave', this.onLeave);
-
+      this.close.addEventListener('click', this.onClosePanel);
       this.cards.forEach(function (x) {
         x.on('click', function () {
           // console.log('TotalLookComponent.card.click', x.item);
@@ -800,9 +773,7 @@
       window.removeEventListener('resize', this.onResize);
       this.listing.removeEventListener('mousewheel', this.onWheel);
       this.more.removeEventListener('click', this.onOpenPanel);
-      this.close.removeEventListener('click', this.onClosePanel); // window.removeEventListener('mousemove', this.onMove);
-      // this.groupLook.removeEventListener('mouseenter', this.onEnter);
-      // this.groupLook.removeEventListener('mouseleave', this.onLeave);
+      this.close.removeEventListener('click', this.onClosePanel);
     };
 
     _proto.addDragListener = function addDragListener() {
@@ -882,11 +853,6 @@
           }
 
           this.node.classList.add('show-hint');
-          /*
-          setTimeout(() => {
-          	this.node.classList.remove('show-hint');
-          }, 4000);
-          */
         }
       }
     }]);

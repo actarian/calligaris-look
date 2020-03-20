@@ -15,6 +15,6 @@
 		"gsap": "~3.2.1"
 	},
 	"devDependencies": {
-		"gulpfile-config": "~1.0.0-alpha.8"
+		"gulpfile-config": "~1.0.0-alpha.9"
 	}
 }
