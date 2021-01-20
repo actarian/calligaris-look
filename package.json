@@ -12,7 +12,7 @@
 		"start": "gulp"
 	},
 	"dependencies": {
-		"gsap": "~3.2.1"
+		"gsap": "~3.6.0"
 	},
 	"devDependencies": {
 		"gulpfile-config": "~1.0.0-alpha.9"
